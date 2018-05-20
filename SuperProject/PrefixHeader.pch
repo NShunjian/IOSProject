@@ -1,0 +1,169 @@
+//
+//  PrefixHeader.pch
+//  SuperProject
+//  Created by 崔顺建 on 2018/1/12.
+//  Copyright © 2018年 superMan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//消除对应名称的警告
+#pragma clang diagnostic ignored "-Wdocumentation"
+//#pragma clang diagnostic ignored "-Wuninitialized"
+//#pragma clang diagnostic ignored "-Wstrict-prototypes"
+// category
+#import "UIView+LMJNjHuFrame.h"
+#import "MBProgressHUD+LMJ.h"
+#import "UIView+GestureCallback.h"
+#import "UIColor+Random.h"
+#import "UIButton+LMJ.h"
+#import "UITextView+WZB.h"
+#import "UIViewController+DDPopUpViewController.h"
+#import "NSDecimalNumber+Addtion.h"
+#import "UIView+LMJConfigBlank.h"
+#import "UIView+BlockGesture.h"
+
+// helpers
+#import "LMJConst.h"
+#import "LMJRequestManager.h"
+#import "GVUserDefaults+LMJ.h"
+#import "JXTAlertController.h"
+#import "UIView+Nib.h"
+//#import "UIView+LMJConfigBlank.h"
+#import "UIImageView+FitNet.h"
+
+
+// libs
+//#import "UMessage.h"
+#import <AFNetworking.h>
+#import <IQKeyboardManager.h>
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+//#import <SDCycleScrollView.h>
+#import <UIImageView+WebCache.h>
+//#import <YYAsyncLayer.h>
+#import <YYCategories.h>
+#import <YYImage.h>
+#import <YYText.h>
+#import <Toast.h>
+#import <SMS_SDK/SMSSDK.h>
+
+//弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
+
+#define LMJWeakSelf(type)  __weak typeof(type) weak##type = type
+
+//AppDelegate对象
+#define AppDelegateInstance [[UIApplication sharedApplication] delegate]
+//一些缩写
+#define kApplication        [UIApplication sharedApplication]
+#define kKeyWindow          [UIApplication sharedApplication].keyWindow
+#define kUserDefaults       [NSUserDefaults standardUserDefaults]
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+
+//色值
+#define SUPRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
+
+#define COLOR_RGB(rgbValue,a) [UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 green:((float)(((rgbValue) & 0xFF00)>>8))/255.0 blue: ((float)((rgbValue) & 0xFF))/255.0 alpha:(a)]
+
+// 字体大小(常规/粗体)
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+#define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+
+//是否是空对象
+#define LMJIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+
+//不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
+#define kScreenWidthRatio  (UIScreen.mainScreen.bounds.size.width / 375.0)
+#define kScreenHeightRatio (UIScreen.mainScreen.bounds.size.height / 667.0)
+#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
+
+
+/**
+ *  属性转字符串
+ */
+#define LMJKeyPath(obj, key) @(((void)obj.key, #key))
+
+//由角度转换弧度
+#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
+//由弧度转换角度
+#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+
+// MainScreen Height&Width
+#define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
+#define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+
+// MainScreen bounds
+#define Main_Screen_Bounds [[UIScreen mainScreen] bounds]
+
+#ifdef DEBUG
+
+#define NSLogFunc NSLog(@"=====Begin==========\n FILE: %@\n FUNC: %s\n LINE: %d\n", [NSString stringWithUTF8String:__FILE__].lastPathComponent, __PRETTY_FUNCTION__, __LINE__)
+
+#else
+
+#define NSLogFunc
+
+#endif
+
+#ifdef DEBUG
+#define SUPLog(...) NSLog(__VA_ARGS__)
+#else
+#define SUPLog
+#endif
+
+//objective-c Unicode转中文 重写NSLog
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"\n %s:%d   %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],__LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+
+
+//宏输出函数
+
+#ifdef DEBUG
+
+#define SFun_Log(fmt, ...) NSLog((@"%s," "[lineNum:%d]" fmt) , __FUNCTION__, __LINE__, ##__VA_ARGS__); //带函数名和行数
+
+#define SL_Log(fmt, ...) NSLog((@"===[lineNum:%d]" fmt), __LINE__, ##__VA_ARGS__);  //带行数
+
+#define SC_Log(fmt, ...) NSLog((fmt), ##__VA_ARGS__); //不带函数名和行数
+
+#else
+
+#define SFun_Log(fmt, ...)
+
+#define SL_Log(fmt, ...)
+
+#define SC_Log(fmt, ...)
+
+#endif
+// 是否大于等于IOS8
+#define isIOS8                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=8.0)
+// 是否大于IOS9
+#define isIOS9                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=9.0)
+// 是否iPad
+#define isPad                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+// 是否空对象
+#define IS_NULL_CLASS(OBJECT) [OBJECT isKindOfClass:[NSNull class]]
+
+
+
+#endif /* PrefixHeader_pch */
