@@ -73,7 +73,7 @@
             
             CFTimeInterval start = CFAbsoluteTimeGetCurrent();
             
-            NSString *path = @"/Users/cuishunjian/Desktop/area.json";
+            NSString *path = @"/Users/uihunian/Desktop/area.json";
 //            @"/Users/huxupeng/Demo/area.json";
             NSData *data = [NSData dataWithContentsOfFile:path];
             

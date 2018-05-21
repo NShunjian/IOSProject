@@ -279,7 +279,7 @@
     //@see http://dev.umeng.com/social/ios/进阶文档#6
 //    [UMSocialUIManager addCustomPlatformWithoutFilted:UMSocialPlatformType_UserDefine_Begin+2
 //                                     withPlatformIcon:[UIImage imageNamed:@"cui"]
-//                                     withPlatformName:@"崔哥"];
+//                                     withPlatformName:@"哥"];
 //
 //    [UMSocialShareUIConfig shareInstance].sharePageGroupViewConfig.sharePageGroupViewPostionType = UMSocialSharePageGroupViewPositionType_Bottom;
 //    [UMSocialShareUIConfig shareInstance].sharePageScrollViewConfig.shareScrollViewPageItemStyleType = UMSocialPlatformItemViewBackgroudType_None;

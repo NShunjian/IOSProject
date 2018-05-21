@@ -51,7 +51,7 @@
 //                                  }
 //                          };
 //
-//    if ([username isEqualToString:@"崔顺建"]) {
+//    if ([username isEqualToString:@""]) {
 //        [[NetworkTool shareNetwork] POST:@"http://118.184.186.2:8088//auth_s/auth-user/login" Params:dic Success:^(id responseObject) {
 //            NSLog(@"%@",responseObject);
 //
