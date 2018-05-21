@@ -135,7 +135,7 @@ typedef void(^JXTAlertAppearanceProcess)(JXTAlertController *alertMaker);
 
 @end
 
-@interface UIAlertController (LMJ)
+@interface UIAlertController (SUP)
 /**
  JXTAlertController: show-alert(iOS8)
  

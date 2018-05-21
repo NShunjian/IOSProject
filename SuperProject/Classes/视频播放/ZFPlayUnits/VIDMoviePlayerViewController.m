@@ -41,7 +41,7 @@
     // 自动播放，默认不自动播放
     [self.playerView autoPlayTheVideo];
     
-//    [self lmj_navgationBar];
+//    [self SUP_navgationBar];
     UIView *blackView = [[UIView alloc] init];
     [self.view addSubview:blackView];
     blackView.backgroundColor = [UIColor blackColor];
@@ -194,7 +194,7 @@
     
     
     [UIView animateWithDuration:0.25 animations:^{
-//        self.lmj_navgationBar.alpha = 0;
+//        self.SUP_navgationBar.alpha = 0;
     }];
 }
 /** 控制层即将隐藏 */
@@ -204,7 +204,7 @@
     NSLog(@"控制层即将隐藏 %zd", fullscreen);
     
     [UIView animateWithDuration:0.25 animations:^{
-//        self.lmj_navgationBar.alpha = !fullscreen;
+//        self.SUP_navgationBar.alpha = !fullscreen;
     }];
 }
 
@@ -266,15 +266,15 @@
 }
 
 
-#pragma mark - LMJNavUIBaseViewControllerDataSource
+#pragma mark - SUPNavUIBaseViewControllerDataSource
 
-- (UIStatusBarStyle)navUIBaseViewControllerPreferStatusBarStyle:(LMJNavUIBaseViewController *)navUIBaseViewController
+- (UIStatusBarStyle)navUIBaseViewControllerPreferStatusBarStyle:(SUPNavUIBaseViewController *)navUIBaseViewController
 {
     return UIStatusBarStyleLightContent;
 }
 
 
-- (BOOL)navUIBaseViewControllerIsNeedNavBar:(LMJNavUIBaseViewController *)navUIBaseViewController{
+- (BOOL)navUIBaseViewControllerIsNeedNavBar:(SUPNavUIBaseViewController *)navUIBaseViewController{
     return NO;
 }
 

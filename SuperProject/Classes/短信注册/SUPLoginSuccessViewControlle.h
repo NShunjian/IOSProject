@@ -6,8 +6,8 @@
 //  Copyright © 2018年 superMan. All rights reserved.
 //
 
-#import "LMJBaseViewController.h"
+#import "SUPBaseViewController.h"
 
-@interface SUPLoginSuccessViewControlle : LMJBaseViewController
+@interface SUPLoginSuccessViewControlle : SUPBaseViewController
 
 @end

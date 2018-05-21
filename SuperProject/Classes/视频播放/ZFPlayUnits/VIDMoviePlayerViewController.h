@@ -6,10 +6,10 @@
 //  Copyright © 2018年 superMan. All rights reserved.
 // 
 
-#import "LMJBaseViewController.h"
+#import "SUPBaseViewController.h"
 
 
-@interface VIDMoviePlayerViewController : LMJBaseViewController
+@interface VIDMoviePlayerViewController : SUPBaseViewController
 
 /** <#digest#> */
 @property (nonatomic, copy) NSString *videoURL;

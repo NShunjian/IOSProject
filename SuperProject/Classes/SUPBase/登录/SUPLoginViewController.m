@@ -9,7 +9,7 @@
 #import "SUPLoginViewController.h"
 #import "SUPAppDelegate.h"
 #import "NetworkTool.h"
-#import "LMJRequestManager.h"
+#import "SUPRequestManager.h"
 @interface SUPLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *SUPUserNameTextField;
@@ -36,8 +36,8 @@
 //                                  }
 //                          };
 //
-//    [[LMJRequestManager sharedManager] POST:@"http://118.184.186.2:8088//auth_s/auth-user/login"
-//                                 parameters:dic completion:^(LMJBaseResponse *response) {
+//    [[SUPRequestManager sharedManager] POST:@"http://118.184.186.2:8088//auth_s/auth-user/login"
+//                                 parameters:dic completion:^(SUPBaseResponse *response) {
 //           [(SUPAppDelegate*)AppDelegateInstance setUpHomeViewController];
 ////                                      NSLog(@"%@",response);
 //                                 }];

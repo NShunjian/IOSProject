@@ -215,7 +215,7 @@ typedef void (^JXTAlertActionsConfig)(JXTAlertActionBlock actionBlock);
 
 @end
 
-@implementation UIAlertController (LMJ)
+@implementation UIAlertController (SUP)
 
 /**
  JXTAlertController: show-alert(iOS8)

@@ -18,11 +18,11 @@ typedef NS_ENUM(NSInteger, calculationType) {
 
 typedef enum : NSInteger {
     
-    LMJDY = NSOrderedDescending, // 大于号
-    LMJXY = NSOrderedAscending, // 小于号
-    LMJDD = NSOrderedSame, // 相等
+    SUPDY = NSOrderedDescending, // 大于号
+    SUPXY = NSOrderedAscending, // 小于号
+    SUPDD = NSOrderedSame, // 相等
     
-} LMJMoneyCompare;
+} SUPMoneyCompare;
 
 @interface NSDecimalNumber (Addtion)
 

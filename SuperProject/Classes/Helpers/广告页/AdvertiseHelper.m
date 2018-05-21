@@ -138,7 +138,7 @@
 - (void)adClick:(NSNotification *)noti
 {
     NSString *url = @"https://github.com/NJHu/iOSProject/blob/master/README.md";
-    if (!LMJIsEmpty(url)) {
+    if (!SUPIsEmpty(url)) {
         if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]]) {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{@"username" : @"njhu"} completionHandler:^(BOOL success) {
                 

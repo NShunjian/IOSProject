@@ -7,14 +7,14 @@
 //
 
 #import "SUPAppDelegate.h"
-#import "LMJTabBarController.h"
-#import "LMJIntroductoryPagesHelper.h"
+#import "SUPTabBarController.h"
+#import "SUPIntroductoryPagesHelper.h"
 #import "AdvertiseHelper.h"
 #import "YYFPSLabel.h"
 #import "SUPGuidePushView.h"
 #import "SUPLoginViewController.h"
 #import "WJYAlertView.h"
-#import "LMJUMengHelper.h"
+#import "SUPUMengHelper.h"
 #import "SUPUMeng.h"
 #import <UserNotificationsUI/UserNotificationsUI.h>
 #import <SMS_SDK/SMSSDK+ContactFriends.h>
@@ -64,7 +64,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   //  这个百度地图对应 LMJBaiduMapViewController.h  这个类/////////////////////////
+   //  这个百度地图对应 SUPBaiduMapViewController.h  这个类/////////////////////////
     
     // 要使用百度地图，请先启动BaiduMapManager
     _mapManager = [[BMKMapManager alloc]init];
@@ -149,7 +149,7 @@
     
     if (![GVUserDefaults standardUserDefaults].isLanuchedApp) {
         // 欢迎视图
-        [LMJIntroductoryPagesHelper showIntroductoryPageView:@[@"intro_0.jpg", @"intro_1.jpg", @"intro_2.jpg", @"intro_3.jpg"]];
+        [SUPIntroductoryPagesHelper showIntroductoryPageView:@[@"intro_0.jpg", @"intro_1.jpg", @"intro_2.jpg", @"intro_3.jpg"]];
     }
     
     NSArray <NSString *> *imagesURLS = @[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189872684&di=03f9df0b71bb536223236235515cf227&imgtype=0&src=http%3A%2F%2Fatt1.dzwww.com%2Fforum%2F201405%2F29%2F1033545qqmieznviecgdmm.gif", @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189851096&di=224fad7f17468c2cc080221dd78a4abf&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201505%2F12%2F20150512124019_GPjEJ.gif"];
@@ -163,13 +163,13 @@
      [SUPGuidePushView showGuideView];
     
     // 友盟统计
-    [LMJUMengHelper UMAnalyticStart];
+    [SUPUMengHelper UMAnalyticStart];
     //[SUPUMeng UMSocialShare];//要放在地下调用, 不然setPreDefinePlatforms这个方法会崩
     // 友盟社交化
-     [LMJUMengHelper UMSocialStart];
+     [SUPUMengHelper UMSocialStart];
     
     // 友盟推送
-    [LMJUMengHelper UMPushStart:launchOptions];
+    [SUPUMengHelper UMPushStart:launchOptions];
     
     //键盘统一收回处理
     [self configureBoardManager];
@@ -206,7 +206,7 @@
 -(void)setUpHomeViewController{
     // 设置主窗口,并设置根控制器
     [CYLPlusButtonSubclass registerPlusButton];
-    LMJTabBarController *tabBarControllerConfig = [[LMJTabBarController alloc] init];
+    SUPTabBarController *tabBarControllerConfig = [[SUPTabBarController alloc] init];
     CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
@@ -214,7 +214,7 @@
     
     
     
-//    LMJTabBarController *main = [[LMJTabBarController alloc] init];
+//    SUPTabBarController *main = [[SUPTabBarController alloc] init];
 //    self.window.rootViewController = main;
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];

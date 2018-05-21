@@ -6,8 +6,8 @@
 //  Copyright © 2018年 superMan. All rights reserved.
 //
 
-#import "LMJBaseViewController.h"
+#import "SUPBaseViewController.h"
 
-@interface SUPRegisterViewController : LMJBaseViewController
+@interface SUPRegisterViewController : SUPBaseViewController
 - (instancetype)initWithMethod:(SMSGetCodeMethod)methodType;
 @end

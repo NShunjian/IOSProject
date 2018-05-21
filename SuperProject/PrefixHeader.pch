@@ -12,24 +12,24 @@
 //#pragma clang diagnostic ignored "-Wuninitialized"
 //#pragma clang diagnostic ignored "-Wstrict-prototypes"
 // category
-#import "UIView+LMJNjHuFrame.h"
-#import "MBProgressHUD+LMJ.h"
+#import "UIView+SUPNjHuFrame.h"
+#import "MBProgressHUD+SUP.h"
 #import "UIView+GestureCallback.h"
 #import "UIColor+Random.h"
-#import "UIButton+LMJ.h"
+#import "UIButton+SUP.h"
 #import "UITextView+WZB.h"
 #import "UIViewController+DDPopUpViewController.h"
 #import "NSDecimalNumber+Addtion.h"
-#import "UIView+LMJConfigBlank.h"
+#import "UIView+SUPConfigBlank.h"
 #import "UIView+BlockGesture.h"
 
 // helpers
-#import "LMJConst.h"
-#import "LMJRequestManager.h"
-#import "GVUserDefaults+LMJ.h"
+#import "SUPConst.h"
+#import "SUPRequestManager.h"
+#import "GVUserDefaults+SUP.h"
 #import "JXTAlertController.h"
 #import "UIView+Nib.h"
-//#import "UIView+LMJConfigBlank.h"
+//#import "UIView+SUPConfigBlank.h"
 #import "UIImageView+FitNet.h"
 
 
@@ -52,7 +52,7 @@
 
 //弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
 
-#define LMJWeakSelf(type)  __weak typeof(type) weak##type = type
+#define SUPWeakSelf(type)  __weak typeof(type) weak##type = type
 
 //AppDelegate对象
 #define AppDelegateInstance [[UIApplication sharedApplication] delegate]
@@ -79,7 +79,7 @@
 
 
 //是否是空对象
-#define LMJIsEmpty(_object) (_object == nil \
+#define SUPIsEmpty(_object) (_object == nil \
 || [_object isKindOfClass:[NSNull class]] \
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
@@ -96,7 +96,7 @@
 /**
  *  属性转字符串
  */
-#define LMJKeyPath(obj, key) @(((void)obj.key, #key))
+#define SUPKeyPath(obj, key) @(((void)obj.key, #key))
 
 //由角度转换弧度
 #define kDegreesToRadian(x)      (M_PI * (x) / 180.0)

@@ -6,9 +6,9 @@
 //  Copyright © 2018年 superMan. All rights reserved.
 //
 
-#import "LMJBaseViewController.h"
+#import "SUPBaseViewController.h"
 
-@interface SUPISSRegistController : LMJBaseViewController
+@interface SUPISSRegistController : SUPBaseViewController
 @property(nonatomic, strong)NSString *phoneNum;;
 
 - (instancetype)initWithPhoneNumber:(NSString *)phone zone:(NSString *)zone methodType:(SMSGetCodeMethod)method;
