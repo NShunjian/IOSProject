@@ -41,7 +41,7 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 
 11 增加FCUIID帮助类，用于获取设备标识
 
-12 增加热更新JSPatch插件，并增加相应的帮助类及测试功能（JSPatchViewController）
+12 增加了MQTT协议
 
 13 集成启动广告功能模块，如果不要功能可以在AppDelegate里面进行注掉
 
