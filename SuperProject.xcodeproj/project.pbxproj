@@ -693,7 +693,7 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		C68B03842015E952004B3F51 /* Preview2 */ = {
+		C68B03842015E952004B3F51 /* ViewControllerTwo */ = {
 			isa = PBXGroup;
 			children = (
 				C68B03852015E9A1004B3F51 /* SUPMasonryViewController.h */,
@@ -723,6 +723,7 @@
 				C68B03942016C9F1004B3F51 /* Models */,
 				C68B03952016C9F1004B3F51 /* Views */,
 			);
+			name = ViewControllerTwo;
 			path = Preview2;
 			sourceTree = "<group>";
 		};
@@ -756,7 +757,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C68B03BC201766AB004B3F51 /* Preview3 */ = {
+		C68B03BC201766AB004B3F51 /* ViewControllerThree */ = {
 			isa = PBXGroup;
 			children = (
 				C68B03C0201766CD004B3F51 /* SUPTableSDWebImageViewController.h */,
@@ -772,7 +773,7 @@
 				C68B03BD201766AB004B3F51 /* Models */,
 				C68B03BE201766AB004B3F51 /* Views */,
 			);
-			path = Preview3;
+			path = ViewControllerThree;
 			sourceTree = "<group>";
 		};
 		C68B03BD201766AB004B3F51 /* Models */ = {
@@ -987,9 +988,9 @@
 				C6B34F9B202C229C005DF234 /* 百度地图 */,
 				C68B03C220176858004B3F51 /* 视频播放 */,
 				C68800532029970B00950524 /* 短信注册 */,
-				C6D9C92920108FE800AEA963 /* Preview1 */,
-				C68B03842015E952004B3F51 /* Preview2 */,
-				C68B03BC201766AB004B3F51 /* Preview3 */,
+				C6D9C92920108FE800AEA963 /* ViewControllerOne */,
+				C68B03842015E952004B3F51 /* ViewControllerTwo */,
+				C68B03BC201766AB004B3F51 /* ViewControllerThree */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1141,7 +1142,7 @@
 			path = "百度地图";
 			sourceTree = "<group>";
 		};
-		C6D9C92920108FE800AEA963 /* Preview1 */ = {
+		C6D9C92920108FE800AEA963 /* ViewControllerOne */ = {
 			isa = PBXGroup;
 			children = (
 				C6D9C9812011CB9500AEA963 /* SUPVerticalLayoutViewController.h */,
@@ -1171,8 +1172,8 @@
 				C6D9C92A20108FE800AEA963 /* Model */,
 				C6D9C9682011C33400AEA963 /* View */,
 			);
-			name = Preview1;
-			path = SuperProject/Classes/Preview1;
+			name = ViewControllerOne;
+			path = SuperProject/Classes/ViewControllerOne;
 			sourceTree = SOURCE_ROOT;
 		};
 		C6D9C92A20108FE800AEA963 /* Model */ = {
