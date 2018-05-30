@@ -14,12 +14,22 @@
 + (instancetype)sectionWithItems:(NSArray<SUPWordItem *> *)items andHeaderTitle:(NSString *)headerTitle footerTitle:(NSString *)footerTitle
 {
     SUPItemSection *item = [[self alloc] init];
-    item.items = items;
+    if (items.count) {
+        [item.items addObjectsFromArray:items];
+    }
+//    item.items = items;
     
     item.headerTitle = headerTitle;
     item.footerTitle = footerTitle;
     
     return item;
 }
-
+- (NSMutableArray<SUPWordItem *> *)items
+{
+    if(!_items)
+    {
+        _items = [NSMutableArray array];
+    }
+    return _items;
+}
 @end

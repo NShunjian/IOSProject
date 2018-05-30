@@ -50,6 +50,8 @@
 #import <Toast.h>
 #import <SMS_SDK/SMSSDK.h>
 
+
+#import "ViewControllerFour.h"
 //弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
 
 #define SUPWeakSelf(type)  __weak typeof(type) weak##type = type
@@ -104,8 +106,8 @@
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
 // MainScreen Height&Width
-#define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
-#define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+#define SUPScreenHeight      [[UIScreen mainScreen] bounds].size.height
+#define SUPScreenWidth       [[UIScreen mainScreen] bounds].size.width
 
 // MainScreen bounds
 #define Main_Screen_Bounds [[UIScreen mainScreen] bounds]

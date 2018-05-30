@@ -53,11 +53,23 @@ PODS:
     - MOBFoundation
   - MOBFoundation (3.1.1)
   - MOFSPickerManager (1.0.6)
+  - MQTTClient (0.11.0):
+    - MQTTClient/Core (= 0.11.0)
+  - MQTTClient/Core (0.11.0):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.11.0):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.11.0)
+  - MQTTClient/Websocket (0.11.0):
+    - MQTTClient/Min
+    - SocketRocket
   - pop (1.0.10)
   - Reachability (3.2)
   - SDWebImage (4.3.0):
     - SDWebImage/Core (= 4.3.0)
   - SDWebImage/Core (4.3.0)
+  - SocketRocket (0.5.1)
   - TDTouchID (1.0.2)
   - Toast (4.0.0)
   - TZImagePickerController (2.0.0.4)
@@ -111,9 +123,12 @@ DEPENDENCIES:
   - MJRefresh
   - mob_smssdk
   - MOFSPickerManager
+  - MQTTClient
+  - MQTTClient/Websocket
   - pop
   - Reachability
   - SDWebImage
+  - SocketRocket
   - TDTouchID
   - Toast
   - TZImagePickerController
@@ -147,9 +162,11 @@ SPEC CHECKSUMS:
   mob_smssdk: 50a3c764232919f78578d911a60afc142ee7a405
   MOBFoundation: 981288b6bdff2e1a97ef05db6fceff982306a385
   MOFSPickerManager: 9eafa3d0230e24a79f6f0d9cf191d7f089d31ee9
+  MQTTClient: 524355b7088c59aa31f0a1dfa908b84c1c156ad4
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   TDTouchID: d40027ed36e3d9f528b9b3f6bb6cf46f4f26f954
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TZImagePickerController: 0b45983cd9b31c6bd9eb95b11a932aa381f9cccf
@@ -161,6 +178,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZJScrollPageView: dd8778909cb2413782616ab156e873956f6b0682
 
-PODFILE CHECKSUM: 577f1dd7d95e1e1bda4c1f9f004fa3a5d4f8798e
+PODFILE CHECKSUM: f832c3eb7e8c572765812cebb90c4ce7026a4a5b
 
 COCOAPODS: 1.4.0

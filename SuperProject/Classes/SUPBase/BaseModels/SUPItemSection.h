@@ -18,8 +18,8 @@
 @property (nonatomic, copy) NSString *footerTitle;
 
 /** <#digest#> */
-@property (nonatomic, strong) NSArray<SUPWordItem *> *items;
-
+//@property (nonatomic, strong) NSArray<SUPWordItem *> *items;
+@property (nonatomic, strong) NSMutableArray<SUPWordItem *> *items;
 + (instancetype)sectionWithItems:(NSArray<SUPWordItem *> *)items andHeaderTitle:(NSString *)headerTitle footerTitle:(NSString *)footerTitle;
 
 @end

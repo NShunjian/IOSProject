@@ -39,5 +39,6 @@
 @property (nonatomic, copy) void(^itemOperation)(NSIndexPath *indexPath);
 
 + (instancetype)itemWithTitle:(NSString *)title subTitle:(NSString *)subTitle;
++ (instancetype)itemWithTitle:(NSString *)title subTitle:(NSString *)subTitle itemOperation:(void(^)(NSIndexPath *indexPath))itemOperation;
 
 @end

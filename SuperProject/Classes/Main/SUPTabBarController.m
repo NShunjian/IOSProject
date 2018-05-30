@@ -48,13 +48,13 @@
 - (NSArray *)tabBarItemsAttributesForController {
     
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"基础",
+                                                 CYLTabBarItemTitle : @"功能列表",
                                                  CYLTabBarItemImage : @"tabBar_essence_icon",
                                                  CYLTabBarItemSelectedImage : @"tabBar_essence_click_icon",
                                                  };
     
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"功能列表",
+                                                  CYLTabBarItemTitle : @"基础",
                                                   CYLTabBarItemImage : @"tabBar_friendTrends_icon",
                                                   CYLTabBarItemSelectedImage : @"tabBar_friendTrends_click_icon",
                                                   };
@@ -70,9 +70,10 @@
                                                   };
 
     NSArray *tabBarItemsAttributes = @[
+                                       firstTabBarItemsAttributes,
                                        thirdTabBarItemsAttributes,
                                        secondTabBarItemsAttributes,
-                                       firstTabBarItemsAttributes,
+                                       
                                        fourthTabBarItemsAttributes
                                        ];
     return tabBarItemsAttributes;
@@ -90,7 +91,7 @@
     SUPNavigationController *four = [[SUPNavigationController alloc] initWithRootViewController:[[SUPMeViewController alloc] init]];
 
     NSArray *viewControllers = @[
-                                 two,one,three,four
+                                 three,two,one,four
                                  ];
     
     return viewControllers;

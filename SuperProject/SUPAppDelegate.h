@@ -12,9 +12,13 @@
 #import <BMKLocationkit/BMKLocationComponent.h>
 #import <BMKLocationkit/BMKLocationAuth.h>
 #import "MPLocationManager.h"
+#import <CoreData/CoreData.h>
 @interface SUPAppDelegate : UIResponder <UIApplicationDelegate,UNUserNotificationCenterDelegate,BMKLocationAuthDelegate,BMKGeneralDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, strong) NSPersistentContainer *persistentContainer;
+
+- (void)saveContext;
 
 -(void)setupLoginViewController;
 -(void)setUpHomeViewController;

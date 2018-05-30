@@ -90,6 +90,10 @@ pod 'CocoaLumberjack', '~> 2.0.0-rc'
 #动画
 pod 'pop'
 
+pod 'MQTTClient'
+pod 'MQTTClient/Websocket'
+pod 'SocketRocket'
+
 
 
 

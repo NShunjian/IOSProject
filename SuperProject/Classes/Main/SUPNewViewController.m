@@ -34,8 +34,8 @@
 #import "SUPCalendarViewController.h"
 #import "SUPNavBarFadeViewController.h"
 #import "SUPFingerCheckViewController.h"
-
-
+#import "SUPDownLoadFileViewControllerTWO.h"
+#import "SUPOfflineDownloadViewController.h"
 
 @interface SUPNewViewController ()
 @property (weak, nonatomic) UILabel *backBtn;
@@ -104,11 +104,13 @@
     item11.destVc = [SUPKeyboardHandleViewController class];
 
     SUPWordArrowItem *item12 = [SUPWordArrowItem itemWithTitle:@"文件下载" subTitle: nil];
-
+    SUPWordArrowItem *item120 = [SUPWordArrowItem itemWithTitle:@"文件下载" subTitle: @"不重复下载服务器未更新文件"];
+    SUPWordArrowItem *item121 = [SUPWordArrowItem itemWithTitle:@"断点 缓存 下载" subTitle: nil];
+    item121.destVc = [SUPOfflineDownloadViewController class];
     item12.destVc = [SUPDownLoadFileViewController class];
-
+    item120.destVc = [SUPDownLoadFileViewControllerTWO class];
     SUPWordArrowItem *item13 = [SUPWordArrowItem itemWithTitle:@"Masonry 布局实例" subTitle: nil];
-
+    
     item13.destVc = [SUPMasonryViewController class];
 
     SUPWordArrowItem *item15 = [SUPWordArrowItem itemWithTitle:@"百度地图" subTitle: nil];
@@ -171,7 +173,7 @@
 
     item28.destVc = [SUPFingerCheckViewController class];
 
-    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item15,item,item16,item17,item18,item19,item20,item21,item22,item24,item25,item26,item27,item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
+    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item120,item121,item13,item15,item,item16,item17,item18,item19,item20,item21,item22,item24,item25,item26,item27,item28] andHeaderTitle:@"静态单元格的头部标题" footerTitle:@"静态单元格的尾部标题"];
     
     NSLog(@"%lu",(unsigned long)section0.items.count);
     //弹出提示
@@ -219,7 +221,7 @@
 {
     [leftButton setTitle:@"左边" forState: UIControlStateNormal];
     [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [leftButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [leftButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     
     return nil;
 }
@@ -227,10 +229,10 @@
 
 - (UIImage *)SUPNavigationBarRightButtonImage:(UIButton *)rightButton navigationBar:(SUPNavigationBar *)navigationBar
 {
-    rightButton.backgroundColor = [UIColor redColor];
+//    rightButton.backgroundColor = [UIColor redColor];
     [rightButton setTitle:@"右边" forState:UIControlStateNormal];
     [rightButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [rightButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+//    [rightButton setBackgroundColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     
     return nil;
 }
@@ -366,7 +368,7 @@
                 [UIView animateWithDuration:0.2 animations:^{
                     
                     weakbtn.mj_x = (weakbtn.
-                                    mj_x - Main_Screen_Width / 2) > 0 ? (Main_Screen_Width - weakbtn.SUP_width - 20) : 20;
+                                    mj_x - SUPScreenWidth / 2) > 0 ? (SUPScreenWidth - weakbtn.SUP_width - 20) : 20;
                     weakbtn.mj_y = weakbtn.mj_y > 80 ? weakbtn.mj_y : 80;
                 }];
             }

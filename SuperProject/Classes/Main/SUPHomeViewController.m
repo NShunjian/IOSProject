@@ -113,7 +113,7 @@
 /**头部标题*/
 - (NSMutableAttributedString*)SUPNavigationBarTitle:(SUPNavigationBar *)navigationBar
 {
-    return [self changeTitle:@"预演 功能列表"];
+    return [self changeTitle:@"基础"];
 }
 
 /** 背景图片 */

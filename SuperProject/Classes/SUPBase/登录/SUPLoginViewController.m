@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = SUPRGBColor(206, 218, 229);
+//    [(SUPAppDelegate*)AppDelegateInstance setUpHomeViewController];
 }
 - (IBAction)loginButton:(UIButton *)sender {
      [(SUPAppDelegate*)AppDelegateInstance setUpHomeViewController];

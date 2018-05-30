@@ -106,6 +106,17 @@
     }
     return _sections;
 }
+- (SUPStaticTableViewController *(^)(SUPWordItem *))addItem {
+    
+    SUPWeakSelf(self);
+    if (!self.sections.firstObject) {
+        [self.sections addObject:[SUPItemSection sectionWithItems:@[] andHeaderTitle:nil footerTitle:nil]];
+    }
+    return  ^(SUPWordItem *item) {
+        [weakself.sections.firstObject.items addObject:item];
+        return weakself;
+    };
+}
 
 - (instancetype)init
 {
