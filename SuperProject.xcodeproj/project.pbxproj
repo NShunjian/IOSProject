@@ -198,6 +198,7 @@
 		C6C1256120C132A6006F212B /* HXWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1255D20C132A0006F212B /* HXWKWebView.m */; };
 		C6C1256220C132A6006F212B /* HXWebModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1255F20C132A4006F212B /* HXWebModel.m */; };
 		C6C1256420C13345006F212B /* SUPWKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C1256320C13345006F212B /* SUPWKViewController.xib */; };
+		C6C1256A20C15C0F006F212B /* WWPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1256920C15C0F006F212B /* WWPickerView.m */; };
 		C6D9C92820108A8700AEA963 /* SUPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9C92720108A8700AEA963 /* SUPNewViewController.m */; };
 		C6D9C92E201090E100AEA963 /* SUPAddressPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9C92D201090E100AEA963 /* SUPAddressPickerViewController.m */; };
 		C6D9C931201093BC00AEA963 /* SUPNoNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9C930201093BC00AEA963 /* SUPNoNavBarViewController.m */; };
@@ -705,6 +706,8 @@
 		C6C1255F20C132A4006F212B /* HXWebModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWebModel.m; sourceTree = "<group>"; };
 		C6C1256020C132A6006F212B /* HXWebModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXWebModel.h; sourceTree = "<group>"; };
 		C6C1256320C13345006F212B /* SUPWKViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SUPWKViewController.xib; sourceTree = "<group>"; };
+		C6C1256820C15C0D006F212B /* WWPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPickerView.h; sourceTree = "<group>"; };
+		C6C1256920C15C0F006F212B /* WWPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPickerView.m; sourceTree = "<group>"; };
 		C6D9C92620108A8700AEA963 /* SUPNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPNewViewController.h; sourceTree = "<group>"; };
 		C6D9C92720108A8700AEA963 /* SUPNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPNewViewController.m; sourceTree = "<group>"; };
 		C6D9C92C201090E100AEA963 /* SUPAddressPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPAddressPickerViewController.h; sourceTree = "<group>"; };
@@ -1230,6 +1233,7 @@
 				C6DC20F120BE46FA0005BFA1 /* SUPSearchBarViewController.m */,
 				C6DC244E20BEA31E0005BFA1 /* DesignerViewController.h */,
 				C6DC244D20BEA31D0005BFA1 /* DesignerViewController.m */,
+				C6C1256720C15BFD006F212B /* 日期选择 */,
 				C6C1254B20C13258006F212B /* WKWebView */,
 				C6C124C120C12226006F212B /* oc与js交互 */,
 				C6DC243420BE94F40005BFA1 /* JiaShare */,
@@ -1814,6 +1818,15 @@
 				C6C1255D20C132A0006F212B /* HXWKWebView.m */,
 			);
 			path = WKWebViewManager;
+			sourceTree = "<group>";
+		};
+		C6C1256720C15BFD006F212B /* 日期选择 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C1256820C15C0D006F212B /* WWPickerView.h */,
+				C6C1256920C15C0F006F212B /* WWPickerView.m */,
+			);
+			path = "日期选择";
 			sourceTree = "<group>";
 		};
 		C6D9C92920108FE800AEA963 /* ViewControllerOne */ = {
@@ -3046,6 +3059,7 @@
 				C68B03F620176858004B3F51 /* UIWindow+CurrentViewController.m in Sources */,
 				C6DC23D020BE8C3F0005BFA1 /* NSFileHandle+readLine.m in Sources */,
 				C6DC23D520BE8C3F0005BFA1 /* NSData+Encrypt.m in Sources */,
+				C6C1256A20C15C0F006F212B /* WWPickerView.m in Sources */,
 				C6DC23DB20BE8C400005BFA1 /* NSString+Hash.m in Sources */,
 				C6DC242020BE8C400005BFA1 /* CAAnimation+EasingEquations.m in Sources */,
 				C6D9C94C201098CA00AEA963 /* SUPEasyBlankPageView.m in Sources */,
