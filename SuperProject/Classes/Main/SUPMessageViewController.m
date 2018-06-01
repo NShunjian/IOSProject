@@ -40,7 +40,7 @@
     
     
     
-    SUPWordItem *item0 = [SUPWordItem itemWithTitle:@"MQTT" subTitle: @""];
+    SUPWordItem *item0 = [SUPWordItem itemWithTitle:@"MQTT协议实现物联网开发" subTitle: @""];
     [item0 setItemOperation:^(NSIndexPath *indexPath){
         //        [weakself presentViewController:[[BSJTabBarController alloc] init] animated:YES completion:nil];
         [weakself.navigationController pushViewController:[[SUPMQTTViewController alloc]init] animated:NO];

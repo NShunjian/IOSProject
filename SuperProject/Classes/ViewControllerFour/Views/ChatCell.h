@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ChatCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end

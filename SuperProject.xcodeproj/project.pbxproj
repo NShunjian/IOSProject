@@ -277,6 +277,7 @@
 		C6DC244820BE94F50005BFA1 /* JiaShareMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DC244020BE94F40005BFA1 /* JiaShareMenuView.m */; };
 		C6DC244C20BEA0D90005BFA1 /* Target_Designer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DC244A20BEA0D70005BFA1 /* Target_Designer.m */; };
 		C6DC244F20BEA31E0005BFA1 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DC244D20BEA31D0005BFA1 /* DesignerViewController.m */; };
+		C6E3A92120BFE43200733402 /* mqtt.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6E3A92020BFE43200733402 /* mqtt.plist */; };
 		C6E7113920187A3C00336169 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E7113820187A3C00336169 /* YYFPSLabel.m */; };
 		C6E711422018886700336169 /* SUPGuidePushView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E711412018886700336169 /* SUPGuidePushView.m */; };
 		C6E711442018898900336169 /* SUPGuidePushView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E711432018898900336169 /* SUPGuidePushView.xib */; };
@@ -850,6 +851,7 @@
 		C6DC244B20BEA0D80005BFA1 /* Target_Designer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Designer.h; sourceTree = "<group>"; };
 		C6DC244D20BEA31D0005BFA1 /* DesignerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignerViewController.m; sourceTree = "<group>"; };
 		C6DC244E20BEA31E0005BFA1 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
+		C6E3A92020BFE43200733402 /* mqtt.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mqtt.plist; sourceTree = "<group>"; };
 		C6E7113720187A3C00336169 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		C6E7113820187A3C00336169 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		C6E711402018886700336169 /* SUPGuidePushView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUPGuidePushView.h; sourceTree = "<group>"; };
@@ -1082,6 +1084,7 @@
 				C646FE3120B69C06000DCE65 /* SUPMQTTViewController.h */,
 				C646FE3220B69C06000DCE65 /* SUPMQTTViewController.m */,
 				C646FE3520B6A23A000DCE65 /* SUPMQTTViewController.xib */,
+				C6E3A92020BFE43200733402 /* mqtt.plist */,
 				C6DC20DF20BD94220005BFA1 /* UserViewController.h */,
 				C6DC20DE20BD94200005BFA1 /* UserViewController.m */,
 				C6DC20E220BE37250005BFA1 /* JiaBaseViewController.h */,
@@ -2378,6 +2381,7 @@
 				C6DC240920BE8C400005BFA1 /* NSDateTimeAgo.bundle in Resources */,
 				C6D9C94F2011922500AEA963 /* Preview.xcassets in Resources */,
 				C646FE2520B6980D000DCE65 /* PoiSearchDemoViewController.xib in Resources */,
+				C6E3A92120BFE43200733402 /* mqtt.plist in Resources */,
 				C68800582029972B00950524 /* SUPRegisterViewController.xib in Resources */,
 				C6DC20F720BE47780005BFA1 /* JiaSearchBar_ICON@2x.png in Resources */,
 				C6D9C9702011C90D00AEA963 /* team_dictionary.plist in Resources */,

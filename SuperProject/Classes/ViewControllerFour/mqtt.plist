@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>host</key>
+	<string>192.168.30.150</string>
+	<key>port</key>
+	<real>1883</real>
+	<key>tls</key>
+	<false/>
+	<key>base</key>
+	<string>MQTTChat</string>
+	<key>clean</key>
+	<true/>
+	<key>auth</key>
+	<true/>
+	<key>user</key>
+	<string>admin</string>
+	<key>pass</key>
+	<string>654321</string>
+	<key>will</key>
+	<true/>
+	<key>willTopic</key>
+	<string>/IOTLocation/BLE_thetwo/update</string>
+	<key>willQos</key>
+	<integer>0</integer>
+	<key>withClientId</key>
+	<string>client99999</string>
+</dict>
+</plist>

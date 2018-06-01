@@ -7,7 +7,16 @@
 //
 
 #import "SUPBaseViewController.h"
+/*
+ * MQTTClient: imports
+ * MQTTSessionManager.h is optional
+ */
+#import <MQTTClient/MQTTClient.h>
+#import <MQTTClient/MQTTSessionManager.h>
 
-@interface SUPMQTTViewController : SUPBaseViewController
+/*
+ * MQTTClient: using your main view controller as the MQTTSessionManagerDelegate
+ */
+@interface SUPMQTTViewController : SUPBaseViewController<MQTTSessionManagerDelegate,UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate>
 
 @end
