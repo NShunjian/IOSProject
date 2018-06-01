@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="common.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+        <script src="bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="rem.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+       
+        <section>
+            <div class="col-xs-12 message">
+                <div class="col-xs-3">
+                    <img src="textmsg.png"/>
+                </div>
+                <div class="col-xs-9 title">
+                    <div class="col-xs-8">
+                        <p>信息消息</p>
+                        <p>29条新消息</p>
+                    </div>
+                    <div class="col-xs-4 time">
+                        <p>15:31</p>
+                        <p><img src="pic06.gif"/></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 message">
+                <div class="col-xs-3">
+                    <img src="flowmsg.png"/>
+                </div>
+                <div class="col-xs-9 title">
+                    <div class="col-xs-8">
+                        <p>流程消息</p>
+                        <p>21条新消息</p>
+                    </div>
+                    <div class="col-xs-4 time">
+                        <p>15:31</p>
+                        <p><img src="pic06.gif"/></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 message">
+                <div class="col-xs-3">
+                    <img src="workmsg.png"/>
+                </div>
+                <div class="col-xs-9 title">
+                    <div class="col-xs-8">
+                        <p>工作动态</p>
+                        <p>0条新消息</p>
+                    </div>
+                    <div class="col-xs-4 time">
+                        <p>15:31</p>
+                        <p><img src="pic06.gif"/></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 message">
+                <div class="col-xs-3">
+                    <img src="systemmsg.png"/>
+                </div>
+                <div class="col-xs-9 title">
+                    <div class="col-xs-8">
+                        <p>系统公告</p>
+                        <p>9条新消息</p>
+                    </div>
+                    <div class="col-xs-4 time">
+                        <p>15:31</p>
+                        <p><img src="pic06.gif"/></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            window.onerror = function(err) {
+                log('window.onerror: ' + err)
+            }
+        
+        /*这段代码是固定的，必须要放到js中*/
+        function setupWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+            if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+            window.WVJBCallbacks = [callback];
+            var WVJBIframe = document.createElement('iframe');
+            WVJBIframe.style.display = 'none';
+            WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+            document.documentElement.appendChild(WVJBIframe);
+            setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+        }
+        
+        /*与OC交互的所有JS方法都要放在此处注册，才能调用通过JS调用OC或者让OC调用这里的JS*/
+        setupWebViewJavascriptBridge(function(bridge) {
+                                     //var uniqueId = 1
+                                     function log(message, data) {
+                                     
+                                     
+                                     }
+                                     /* Initialize your app here */
+                                     
+                                     /*JS给ObjC提供公开的API，ObjC端通过注册，就可以在JS端调用此API时，得到回调。ObjC端可以在处理完成后，反馈给JS，这样写就是在载入页面完成时就先调用*/
+
+                                      var callmeId = document.getElementsByTagName('section')[0].children;
+                                     for(var i = 0; i<callmeId.length; i++){
+                                     callmeId[i].onclick = function(e){
+                                     log('JS端 call OC端: callme')
+                                     bridge.callHandler('callme', {'blogURL': 'https://github.com/maying1992'}, function(response) {
+                                                        log('JS端 得到 response', response)
+                                                        })
+                                     }
+                                     }
+                                     
+                                     
+                                     
+                                     
+                                     })
+                                     
+            </script>
+
+    </body>
+</html>

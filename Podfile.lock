@@ -95,6 +95,7 @@ PODS:
     - UMengUShare/Social/ReducedWeChat
   - UMengUShare/UI (6.4.8.2):
     - UMengUShare/Core
+  - WebViewJavascriptBridge (6.0.3)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
@@ -137,6 +138,7 @@ DEPENDENCIES:
   - UMengUShare/Social/Sina
   - UMengUShare/Social/WeChat
   - UMengUShare/UI
+  - WebViewJavascriptBridge
   - YYCategories
   - YYImage
   - YYText
@@ -173,11 +175,12 @@ SPEC CHECKSUMS:
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZJScrollPageView: dd8778909cb2413782616ab156e873956f6b0682
 
-PODFILE CHECKSUM: f832c3eb7e8c572765812cebb90c4ce7026a4a5b
+PODFILE CHECKSUM: e2b1088c6a5652b576d4e9802e5ea81510578f95
 
 COCOAPODS: 1.4.0

@@ -257,5 +257,21 @@ static NSString *const ID = @"ChatCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.chat.count;
 }
+#pragma mark - SUPNavUIBaseViewControllerDataSource
+
+/** 导航条左边的按钮 */
+- (UIImage *)SUPNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(SUPNavigationBar *)navigationBar
+{
+    [leftButton setImage:[UIImage imageNamed:@"NavgationBar_white_back"] forState:UIControlStateHighlighted];
+    
+    return [UIImage imageNamed:@"NavgationBar_blue_back"];
+}
+
+#pragma mark - SUPNavUIBaseViewControllerDelegate
+/** 左边的按钮的点击 */
+-(void)leftButtonEvent:(UIButton *)sender navigationBar:(SUPNavigationBar *)navigationBar
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

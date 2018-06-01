@@ -12,8 +12,6 @@
 #import "JiaMediator+UserModuleActions.h"
 #import "SUPSearchBarViewController.h"
 //#import "JiaAlertView.h"
-
-#import "JiaSearchBarViewController.h"
 //#import "SINTabBarController.h"
 //#import "IMHTabBarController.h"
 //#import "MUSHomeListViewController.h"
@@ -91,7 +89,19 @@
     }];
     
     
-    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4] andHeaderTitle:nil footerTitle:nil];
+    SUPWordItem *item5 = [SUPWordItem itemWithTitle:@"WebViewJS与OC交互" subTitle: @""];
+    [item5 setItemOperation:^(NSIndexPath *indexPath){
+        
+        [weakself.navigationController pushViewController:[[SUPOCandJSViewController alloc]init] animated:NO];
+    }];
+    SUPWordItem *item6 = [SUPWordItem itemWithTitle:@"WKWebViewjs与oc交互" subTitle: @""];
+    [item6 setItemOperation:^(NSIndexPath *indexPath){
+        
+        [weakself.navigationController pushViewController:[[SUPWKViewController alloc]init] animated:NO];
+    }];
+    
+    
+    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6] andHeaderTitle:nil footerTitle:nil];
     
     [self.sections addObject:section0];
     

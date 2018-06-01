@@ -10,9 +10,9 @@
 #define ViewControllerFour_h
 #import "SUPMQTTViewController.h"
 #import "ChatCell.h"
-
+#import "SUPOCandJSViewController.h"
 #import "JiaShareMenuView.h"
-
+#import "SUPWKViewController.h"
 
 static NSString * const kUserModuleActionsDictionaryKeyID=@"ID";
 

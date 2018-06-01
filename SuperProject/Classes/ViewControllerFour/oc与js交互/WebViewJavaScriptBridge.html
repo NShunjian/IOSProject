@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title> 来自html中的jsCallOC标题</title>
+    <style type='text/css'>
+    html { font-family:Helvetica;}
+<!--    h1 { color:steelblue; font-size:24px; margin-top:24px; }-->
+<!--    button { margin:0 3px 10px; font-size:12px; }-->
+#callmeId{width:300px;height:500px;background-color:#f66;}
+    </style>
+   </head>
+
+   <body>
+     <h2>WebViewJavascriptBridge</h2>
+
+     <script>
+       window.onerror = function(err) {
+        log('window.onerror: ' + err)
+       }
+
+       /*这段代码是固定的，必须要放到js中*/
+       function setupWebViewJavascriptBridge(callback) {
+         if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+         if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+         window.WVJBCallbacks = [callback];
+         var WVJBIframe = document.createElement('iframe');
+         WVJBIframe.style.display = 'none';
+         WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+         document.documentElement.appendChild(WVJBIframe);
+         setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+       }
+
+       /*与OC交互的所有JS方法都要放在此处注册，才能调用通过JS调用OC或者让OC调用这里的JS*/
+       setupWebViewJavascriptBridge(function(bridge) {
+        //var uniqueId = 1
+        function log(message, data) {
+         
+                                    
+        }
+        /* Initialize your app here */
+                                    
+        /*JS给ObjC提供公开的API，ObjC端通过注册，就可以在JS端调用此API时，得到回调。ObjC端可以在处理完成后，反馈给JS，这样写就是在载入页面完成时就先调用*/
+        document.getElementById('callmeId').onclick = function (e) {
+          log('JS端 call OC端: callme')
+          bridge.callHandler('callme', {'blogURL': 'https://github.com/maying1992'}, function(response) {
+             log('JS端 得到 response', response)
+          })
+        }
+                                    
+      
+        
+                                    
+        /*JS给ObjC提供公开的API，在ObjC端可以手动调用JS的这个API。接收ObjC传过来的参数，且可以回调ObjC*/
+        bridge.registerHandler('factorial', function(data, responseCallback) {
+                               
+          log("Get user information from ObjC====: ", data)
+          //JS反馈给OC
+          responseCallback({'result': factorial(data)})
+        })
+                                    
+        /*我们在这注册一个js调用OC的方法，不带参数，且不用ObjC端反馈结果给JS*/
+        bridge.registerHandler('openWebviewBridge', function() {
+          log("openWebviewBridge was called with by ObjC")
+        })
+                                    
+                                    
+                                  
+    })
+                                 
+   </script>
+
+<!--   <div id='buttons'></div> <div id='log'></div>-->
+
+   <div>
+<!--    <input type="button" value="JS调用OC传值" id="callmeId"/>-->
+<div id="callmeId"></div>
+
+   </div>
+
+   <div>
+    <input type="button" value="调用原生Alert" id="callAlertId">
+   </div>
+   
+  </body>
+</html>

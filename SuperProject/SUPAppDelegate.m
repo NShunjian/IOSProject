@@ -220,6 +220,15 @@
 //    [self.window makeKeyAndVisible];
 //    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
 
+    
+//   =======================================================================
+    // 检查更新
+//    [[SUPRequestManager sharedManager] GET:[SUPShunJianBaseUrl stringByAppendingPathComponent:@"jsons/updateapp.json"] parameters:nil completion:^(SUPBaseResponse *response) {
+//        [self checkVersion:response];
+//    }];
+    
+    
+    
 }
 #pragma mark -应用跳转
 //Universal link
@@ -447,51 +456,50 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
-
-
-#pragma mark - Core Data stack
-
-@synthesize persistentContainer = _persistentContainer;
-
-- (NSPersistentContainer *)persistentContainer {
-    // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
-    @synchronized (self) {
-        if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"MqttText"];
-            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
-                if (error != nil) {
-                    // Replace this implementation with code to handle the error appropriately.
-                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                    
-                    /*
-                     Typical reasons for an error here include:
-                     * The parent directory does not exist, cannot be created, or disallows writing.
-                     * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                     * The device is out of space.
-                     * The store could not be migrated to the current model version.
-                     Check the error message to determine what the actual problem was.
-                     */
-                    NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-                    abort();
-                }
-            }];
-        }
+#pragma mark - checkVersion
+- (void)checkVersion:(SUPBaseResponse *)response
+{
+    if (response.error || SUPIsEmpty(response.responseObject)) {
+        return;
     }
     
-    return _persistentContainer;
-}
-
-#pragma mark - Core Data Saving support
-
-- (void)saveContext {
-    NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSError *error = nil;
-    if ([context hasChanges] && ![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
-        abort();
+    NSDictionary *responseData = response.responseObject;
+    NSInteger lastest = [responseData[@"lastest"] integerValue];
+    NSString *lastestUrl = responseData[@"lastestUrl"];
+    
+    if (!lastest || SUPIsEmpty(lastestUrl)) {
+        return;
+    }
+    
+    BOOL isForce = [responseData[@"isForce"] boolValue];
+    // 是否在审核
+    BOOL isInGod = [responseData[@"isInGod"] boolValue];
+    NSInteger minSupport = [responseData[@"minSupport"] integerValue];
+    NSString *suggestion = responseData[@"suggestion"];
+    
+    NSInteger currentVersion = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] integerValue];
+    
+    if (currentVersion < lastest) {
+        [UIAlertController mj_showAlertWithTitle:@"提示" message:suggestion appearanceProcess:^(JXTAlertController * _Nonnull alertMaker) {
+            
+            alertMaker.addActionDefaultTitle(@"确认升级");
+            if (!isForce && minSupport <= currentVersion) {
+                alertMaker.addActionCancelTitle(@"先用着吧");
+            }
+            
+        } actionsBlock:^(NSInteger buttonIndex, UIAlertAction * _Nonnull action, JXTAlertController * _Nonnull alertSelf) {
+            
+            if (buttonIndex == 0) {
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:lastestUrl] options:@{} completionHandler:^(BOOL success) {
+                    NSLog(@"%zd", success);
+                }];
+            }
+        }];
+    }else {
+        if (isInGod) {
+            SUPIsInGod = isInGod;
+            self.window.rootViewController = [[SUPTabBarController alloc] init];
+        }
     }
 }
 

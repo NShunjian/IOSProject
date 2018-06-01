@@ -198,7 +198,7 @@ static NSMutableArray *tasks;
 
 
 
-//这个方法待研究
+//这个方法待研究  上传视频
 - (void)uploadVideoWithEntity
 {
     

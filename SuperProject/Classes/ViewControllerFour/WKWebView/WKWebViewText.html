@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iOS与H5交互练习</title>
+	<style type="text/css">
+	*{
+		font-size: 30px;
+	}
+	</style>
+</head>
+
+<body>
+<h1>一起来学习吧！</h1>
+
+      <div><input type="button" value="Alert 提示框" onclick="callJsAlert()"></div>
+      
+      <br/>
+      <div><input type="button" value="Confirm 提示框" onclick="callJsConfirm()"></div>
+      <br/>
+      <div><input type="button" value="点击跳到下个界面" onclick="callPushNextVC()"></div>
+      <br/>
+      <div><input type="text" value="" id="nameID"></div>
+      <br/>
+      <div><input type="button" value="Set Value to Field" onclick="setValue('value')"></div>
+      <br/>
+
+    <div>
+      <div><input type="button" value="Prompt 提示框" onclick="callJsInput()"></div><br/>
+
+      <div><a href="http://www.baidu.com">点我调到百度</a></div>
+    </div>
+    
+    <br/>
+    <div id="SwiftDiv">
+      <span id="jsParamFuncSpan" style="color: orange; font-size: 50px;"></span>
+    </div>
+    
+    <script type="text/javascript">
+        
+        
+        ///以下是iOS7版本利用setupWebViewJavascriptBridge桥接和UIWebView交互
+        ///在html脚本里面必须加上这快代码进行桥接
+        function setupWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+            if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+            window.WVJBCallbacks = [callback];
+            var WVJBIframe = document.createElement('iframe');
+            WVJBIframe.style.display = 'none';
+            WVJBIframe.src = 'https://__bridge_loaded__';
+            document.documentElement.appendChild(WVJBIframe);
+            setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+        }
+        
+        
+    ///在iOS7.0以下版本  JS接受OC发送的消息都写在(function(bridge) 内
+    setupWebViewJavascriptBridge(function(bridge) {
+        
+     /* Initialize your app here */
+     /*
+      JS接受OC发过来的消息
+      'testObjcCallback'    方法名
+      data                  传值
+      */
+                                 
+     ///此处的'testObjcCallback'是指在OC中注册的Hanlder名称(方法名)---registerHandler:@"testObjcCallback"
+     bridge.registerHandler('setValue', function(data, responseCallback) {
+        responseCallback(data)
+        //data为OC传过来的值
+        document.getElementById('nameID').value=data
+        })
+
+     })
+                           
+                                 
+      function callJsAlert() {
+        alert('Please show alert');
+        setupWebViewJavascriptBridge(function(bridge) {
+        
+         /*
+          JS给OC发送消息
+          'testJavascriptSendMessage'               方法名
+          document.getElementById('nameID').value   传值
+          responseCallback(responseData)            返回值
+          */
+         bridge.callHandler('testJavascriptSendMessage', document.getElementById('nameID').value, function responseCallback(responseData) {
+                            
+                            })
+        })
+        window.webkit.messageHandlers.senderModel.postMessage({body: 'Alert'});
+      }
+    
+    function setValue(value) {
+        document.getElementById('nameID').value=value;
+        window.webkit.messageHandlers.senderModel.postMessage('给文本款赋值成功');
+
+    }
+    function callJsConfirm() {
+      if (confirm('Confirm', 'Please show confirm')) {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'true';
+      } else {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'false';
+      }
+      
+      
+      window.webkit.messageHandlers.senderModel.postMessage({body: 'Confirm'});
+    }
+    
+    function callJsInput() {
+      var response = prompt('Hello', 'Please input a Text:');
+      document.getElementById('jsParamFuncSpan').innerHTML = response;
+      
+      
+      window.webkit.messageHandlers.senderModel.postMessage({body: response});
+      
+    }
+    
+    function callPushNextVC() {
+        setupWebViewJavascriptBridge(function(bridge) {
+                                     
+         /*
+          JS给OC发送消息
+          'testJavascriptSendMessage'               方法名
+          document.getElementById('nameID').value   传值
+          responseCallback(responseData)            返回值
+          */
+         bridge.callHandler('testJavascriptSendMessage', 'pushNextVC', function responseCallback(responseData) {
+                            
+                            })
+         })
+
+        window.webkit.messageHandlers.senderModel.postMessage('pushNextVC')
+    }
+
+     
+     
+      </script>
+</body>
+</html>

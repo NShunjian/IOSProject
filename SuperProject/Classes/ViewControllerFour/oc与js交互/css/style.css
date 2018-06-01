@@ -1,0 +1,83 @@
+header {
+  font-size: 0.7rem;
+  font-family: "微软雅黑";
+  background: #f0f0f0;
+  height: 2rem;
+}
+header img {
+  height: 1.2rem;
+  width: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 1rem;
+}
+header span {
+  display: inline-block;
+  width: 13rem;
+  line-height: 2rem;
+  color: #eb7035;
+  text-align: center;
+}
+section {
+  margin: 0 auto;
+  font-size: 0.7rem;
+  font-family: "微软雅黑";
+}
+section .message {
+  height: 3.5rem;
+  margin-top: 0.3rem;
+}
+section .message div:nth-child(1) p:nth-child(1) {
+  font-weight: 700;
+}
+section .message div:nth-child(1) img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.8rem;
+  margin-top: 0.3rem;
+}
+section .message .title {
+  border-bottom: 1px solid #d2d2d2;
+  height: 3rem;
+  margin-top: 0.5rem;
+}
+section .message .title div p:nth-child(1) {
+  color: #3e3e3e;
+}
+section .message .title div p:nth-child(2) {
+  color: #8d8d8d;
+}
+section .message .title .time p:nth-child(1) {
+  margin-top: 0.3rem;
+}
+section .message .title .time p:nth-child(2) {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+section .message .title .time p:nth-child(2) img {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+footer {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid #d2d2d2;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+footer div dt {
+  margin-top: 0.3rem;
+}
+footer div dt img {
+  width: 1rem;
+  height: 1.3rem;
+  padding-top: 0.3rem;
+}
+footer div dt dd {
+  margin-top: 0.3rem;
+  vertical-align: bottom;
+}
+/*# sourceMappingURL=style.css.map */

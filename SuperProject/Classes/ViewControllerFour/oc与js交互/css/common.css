@@ -1,0 +1,70 @@
+html,
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /*font: 12px/1.5 arial, simsun, HELVETICA;*/
+  /*background: #fff;*/
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  color: ##0000ff;
+  text-decoration: none;
+}
+em {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  word-wrap: break-word;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearboth {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}

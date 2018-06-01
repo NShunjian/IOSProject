@@ -65,3 +65,10 @@ UIKIT_EXTERN NSString *const SUPTableViewControllerDeallocNotification;
 
 // 服务器XMG
 UIKIT_EXTERN NSString *const SUPXMGBaseUrl;
+
+// ShunJian
+UIKIT_EXTERN NSString *const SUPShunJianBaseUrl;
+
+// 是否审核状态
+UIKIT_EXTERN  BOOL SUPIsInGod;
+

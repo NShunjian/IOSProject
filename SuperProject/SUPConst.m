@@ -66,3 +66,11 @@ NSString *const SUPTableViewControllerDeallocNotification = @"SUPTableViewContro
 
 // 服务器XMG
 NSString *const SUPXMGBaseUrl = @"http://120.25.226.186:32812";
+
+
+// shunjian
+NSString *const SUPShunJianBaseUrl = @"https://shunjian.github.io";
+// 是否审核状态
+BOOL SUPIsInGod = NO;
+
+
