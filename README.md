@@ -91,9 +91,9 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 
 
  ## <a id="foundation"></a> 效果图
-<img src="https://github.com/NShunjian/IOSProject/imgs/Snip20180603_1.png" width="24%" height="40%">|
-<img src="./imgs/Snip20180603_2.png" width="24%" height="40%">|
-<img src="./imgs/Snip20180603_3.png" width="24%" height="40%">|
+<img src="./imgs/WechatIMG36.png" width="24%" height="40%">|
+<img src="./imgs/WechatIMG35.png" width="24%" height="40%">|
+<img src="./imgs/WechatIMG30.png" width="24%" height="40%">|
 <img src="./imgs/WechatIMG32.png" width="24%" height="40%">|
 <img src="./imgs/WechatIMG32 1.png" width="24%" height="40%">|
 <img src="./imgs/WechatIMG31.png" width="24%" height="40%">|
