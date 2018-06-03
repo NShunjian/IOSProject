@@ -89,6 +89,17 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 
 35 长按列表行拖动效果 实现列表中的某一行进行动态拉动，并插入到其它位置效果
 
+<h2><a id="homeList">首页功能列表</a></h2>
+<div>
+<img src="https://github.com/NShunjian/IOSProject/master/imgs/Snip20180603_4.png" width="24%">|
+<img src="https://github.com/NShunjian/IOSProject/master/imgs/Snip20180603_5.png" width="24%">|
+<img src="https://github.com/NShunjian/IOSProject/master/imgs/Snip20180603_7.png" width="24%">|
+<img src="https://github.com/NShunjian/IOSProject/master/imgs/Snip20180603_8.png" width="24%">
+<img src="https://github.com/NShunjian/IOSProject/master/imgs/QQ20180603-122759-HD.gif" width="24%">
+<img src="https://github.com/NShunjian/IOSProject/master/imgs/QQ20180603-123055-HD.gif" width="24%">
+</div>
+<br>
+<br>
 
  ## <a id="foundation"></a> 效果图
 <img src="./imgs/WechatIMG36.png" width="24%" height="40%">|
