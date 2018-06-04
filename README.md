@@ -121,19 +121,20 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 <br>
 <br>
 
- ## <a id="foundation"></a> 效果图
-<img src="./imgs/WechatIMG36.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG35.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG30.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG32.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG32 1.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG31.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG29.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG28.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG27.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG37.png" width="24%" height="40%">|
+<h2><a id="homeList">友盟分享和第三方登录</a></h2>
+<div>
+<img src="./imgs/QQ20180603-122441-HD.gif" width="24%">|
+<img src="./imgs/WechatIMG27.png" width="24%">|
+<img src="./imgs/WechatIMG28.png" width="24%">|
 <img src="./imgs/WechatIMG38.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG39.png" width="24%" height="40%">
+<img src="./imgs/WechatIMG39.png" width="24%" height="40%">|
+</div>
+<br>
+<br>
+
+ ## <a id="foundation"></a> 效果图
+
+<img src="./imgs/WechatIMG37.png" width="24%" height="40%">|
 <br>
 <br>
 
