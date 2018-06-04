@@ -111,8 +111,8 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 <img src="./imgs/WechatIMG31.png" width="24%">|
 <img src="./imgs/WechatIMG29.png" width="24%">|
 <img src="./imgs/Snip20180604_1.png" width="24%">|
-<img src="./imgs/Snip20180604_3.png" width="24%">
-<img src="./imgs/QQ20180603-120838-HD.gif" width="24%">|
+<img src="./imgs/Snip20180604_3.png" width="24%">|
+<img src="./imgs/QQ20180603-120838-HD.gif" width="24%">
 </div>
 <br>
 <br>
