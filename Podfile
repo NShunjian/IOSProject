@@ -98,6 +98,8 @@ pod 'SocketRocket'
 #JS与OC交互
 pod 'WebViewJavascriptBridge'
 
+#侧滑
+pod 'MMDrawerController'
 
 
 

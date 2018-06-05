@@ -23,6 +23,30 @@ protocolLevel:MQTTProtocolVersion311 connectHandler:^(NSError *error) {
 //  Created by NShunJian on 2018/5/24.
 //  Copyright © 2018年 superMan. All rights reserved.
 //
+/*
+ //这个是网上推荐的
+ [self.manager
+ connectTo:kIP
+ port:kPort
+ tls:false
+ keepalive:30
+ clean:true
+ auth:true
+ user:kMqttuserNmae
+ pass:kMqttpasswd
+ will:false
+ willTopic:@""
+ willMsg:nil
+ willQos:MQTTQosLevelExactlyOnce
+ willRetainFlag:false
+ withClientId:clientID
+ securityPolicy:nil
+ certificates:nil
+ protocolLevel:MQTTProtocolVersion0
+ connectHandler:^(NSError *error) {
+ 
+ }];
+ */
 
 #import "SUPMQTTViewController.h"
 static NSString *const ID = @"ChatCell";

@@ -20,8 +20,14 @@
 #import <SMS_SDK/SMSSDK+ContactFriends.h>
 #import "SYSafeCategory.h"
 #import "CYLPlusButtonSubclass.h"
+#import "SWRevealViewController.h"
+#import "LeftViewController.h"
+#import "BaseAnimationController.h"
+#import "RightViewController.h"
+
 @interface SUPAppDelegate ()
-@property(nonatomic, strong)BMKMapManager* mapManager;;
+@property(nonatomic, strong)BMKMapManager* mapManager;
+@property(nonatomic,strong) MMDrawerController * drawerController;
 @end
 
 @implementation SUPAppDelegate
@@ -63,81 +69,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   //  这个百度地图对应 SUPBaiduMapViewController.h  这个类/////////////////////////
     
-    // 要使用百度地图，请先启动BaiduMapManager
-    _mapManager = [[BMKMapManager alloc]init];
-    if ([BMKMapManager setCoordinateTypeUsedInBaiduMapSDK:BMK_COORDTYPE_BD09LL]) {
-        NSLog(@"经纬度类型设置成功");
-    } else {
-        NSLog(@"经纬度类型设置失败");
-    }
-    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"xYCkm8cw58M4ynpYB24xlT2LcVMdeBHD" authDelegate:self];
-    BOOL ret = [_mapManager start:@"xYCkm8cw58M4ynpYB24xlT2LcVMdeBHD" generalDelegate:self];
-    if (!ret) {
-        NSLog(@"manager start failed!");
-    }
+    [self map];
     
-//////////////////////////////////////////////////////////////////////////////////
-    
- /*  这个只是在启动时定位 与上面的是同样的只是写法不一样 */
-    //地图定位初始化
-    [MPLocationManager installMapSDK];
-    //百度地图定位
-    [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
-        if (error) {
-            SUPLog(@"定位失败,失败原因：%@",error);
-        }
-        else
-        {
-            SUPLog(@"定位信息：%f,%f",loction.location.coordinate.latitude,loction.location.coordinate.longitude);
-            
-            CLGeocoder *geocoder=[[CLGeocoder alloc]init];
-            [geocoder reverseGeocodeLocation:loction.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-                
-                //处理手机语言 获得城市的名称（中文）
-                NSMutableArray *userDefaultLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
-                NSString *currentLanguage = [userDefaultLanguages objectAtIndex:0];
-                //如果不是中文 则强制先转成中文 获得后再转成默认语言
-                if (![currentLanguage isEqualToString:@"zh-Hans"]&&![currentLanguage isEqualToString:@"zh-Hans-CN"]) {
-                    //IOS9前后区分
-                    if (isIOS9) {
-                        [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"zh-Hans-CN", nil] forKey:@"AppleLanguages"];
-                    }
-                    else
-                    {
-                        [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"zh-Hans", nil] forKey:@"AppleLanguages"];
-                    }
-                }
-                
-                //转换地理信息
-                if (placemarks.count>0) {
-                    CLPlacemark *placemark=[placemarks objectAtIndex:0];
-                    //获取城市
-                    NSString *city = placemark.locality;
-                    if (!city) {
-                        //四大直辖市的城市信息无法通过locality获得，只能通过获取省份的方法来获得（如果city为空，则可知为直辖市）
-                        city = placemark.administrativeArea;
-                    }
-                    
-                    NSLog(@"百度当前城市：[%@]",city);
-                    
-                    // 城市名传出去后,立即 Device 语言 还原为默认的语言
-                    [[NSUserDefaults standardUserDefaults] setObject:userDefaultLanguages forKey:@"AppleLanguages"];
-                }
-            }];
-        }
-    }];
-    
-    //系统自带定位
-    //    [[MPLocationManager shareInstance]  startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
-    //        DDLogError(@"系统自带定位信息：%f,%f",loction.coordinate.latitude,loction.coordinate.longitude);
-    //    }];
-    
-    
-  /*   //////////////////////////////////////                 */
-    
-   
     //短信验证
     [SMSSDK enableAppContactFriends:YES];
     
@@ -202,14 +136,106 @@
     [self.window makeKeyAndVisible];
     
 }
+
+//地图
+-(void)map{
+    //  这个百度地图对应 SUPBaiduMapViewController.h  这个类/////////////////////////
+    
+    // 要使用百度地图，请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc]init];
+    if ([BMKMapManager setCoordinateTypeUsedInBaiduMapSDK:BMK_COORDTYPE_BD09LL]) {
+        NSLog(@"经纬度类型设置成功");
+    } else {
+        NSLog(@"经纬度类型设置失败");
+    }
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"xYCkm8cw58M4ynpYB24xlT2LcVMdeBHD" authDelegate:self];
+    BOOL ret = [_mapManager start:@"xYCkm8cw58M4ynpYB24xlT2LcVMdeBHD" generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    
+    /*  这个只是在启动时定位 与上面的是同样的只是写法不一样 */
+    //地图定位初始化
+    [MPLocationManager installMapSDK];
+    //百度地图定位
+    [[MPLocationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error) {
+        if (error) {
+            SUPLog(@"定位失败,失败原因：%@",error);
+        }
+        else
+        {
+            SUPLog(@"定位信息：%f,%f",loction.location.coordinate.latitude,loction.location.coordinate.longitude);
+            
+            CLGeocoder *geocoder=[[CLGeocoder alloc]init];
+            [geocoder reverseGeocodeLocation:loction.location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+                
+                //处理手机语言 获得城市的名称（中文）
+                NSMutableArray *userDefaultLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
+                NSString *currentLanguage = [userDefaultLanguages objectAtIndex:0];
+                //如果不是中文 则强制先转成中文 获得后再转成默认语言
+                if (![currentLanguage isEqualToString:@"zh-Hans"]&&![currentLanguage isEqualToString:@"zh-Hans-CN"]) {
+                    //IOS9前后区分
+                    if (isIOS9) {
+                        [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"zh-Hans-CN", nil] forKey:@"AppleLanguages"];
+                    }
+                    else
+                    {
+                        [[NSUserDefaults standardUserDefaults] setObject:[NSArray arrayWithObjects:@"zh-Hans", nil] forKey:@"AppleLanguages"];
+                    }
+                }
+                
+                //转换地理信息
+                if (placemarks.count>0) {
+                    CLPlacemark *placemark=[placemarks objectAtIndex:0];
+                    //获取城市
+                    NSString *city = placemark.locality;
+                    if (!city) {
+                        //四大直辖市的城市信息无法通过locality获得，只能通过获取省份的方法来获得（如果city为空，则可知为直辖市）
+                        city = placemark.administrativeArea;
+                    }
+                    
+                    NSLog(@"百度当前城市：[%@]",city);
+                    
+                    // 城市名传出去后,立即 Device 语言 还原为默认的语言
+                    [[NSUserDefaults standardUserDefaults] setObject:userDefaultLanguages forKey:@"AppleLanguages"];
+                }
+            }];
+        }
+    }];
+    
+    //系统自带定位
+    //    [[MPLocationManager shareInstance]  startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
+    //        DDLogError(@"系统自带定位信息：%f,%f",loction.coordinate.latitude,loction.coordinate.longitude);
+    //    }];
+    
+    
+    /*   //////////////////////////////////////                 */
+    
+}
 //进入主页
 -(void)setUpHomeViewController{
+    //左侧菜单栏
+    LeftViewController *leftViewController = [[LeftViewController alloc] init];
+    SUPNavigationController *lefNav = [[SUPNavigationController alloc]initWithRootViewController:leftViewController];
+    
+    //右侧菜单栏
+    RightViewController *rightViewController = [[RightViewController alloc] init];
+    
     // 设置主窗口,并设置根控制器
     [CYLPlusButtonSubclass registerPlusButton];
     SUPTabBarController *tabBarControllerConfig = [[SUPTabBarController alloc] init];
     CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
-    self.window.rootViewController = tabBarController;
-    [self.window makeKeyAndVisible];
+    SUPNavigationController *nav = [[SUPNavigationController alloc]initWithRootViewController:tabBarController];
+    
+    
+    
+    //SWRevealViewController 这是一种侧滑
+//    [self swRevealViewController:leftViewController right:rightViewController tabbar:tabBarController];
+    
+    //MMDrawerController  这是一种侧滑
+    [self mmDrawerController:lefNav right:rightViewController tabbar:nav];
     [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
     
     
@@ -227,9 +253,42 @@
 //        [self checkVersion:response];
 //    }];
     
-    
-    
 }
+
+//SWRevealViewController 这是一种侧滑
+-(void)swRevealViewController:(UIViewController*)leftViewController right:(UIViewController*)rightViewController tabbar:(CYLTabBarController*)tabBarController{
+        //首页
+//    BaseAnimationController *centerView1Controller = [[BaseAnimationController alloc] init];
+    
+    SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:leftViewController frontViewController:tabBarController];
+    
+    revealViewController.rightViewController = rightViewController;
+    
+    //浮动层离左边距的宽度
+    revealViewController.rearViewRevealWidth = 230;
+    //revealViewController.rightViewRevealWidth = 230;
+    
+    //是否让浮动层弹回原位
+    //mainRevealController.bounceBackOnOverdraw = NO;
+    [revealViewController setFrontViewPosition:FrontViewPositionLeft animated:YES];
+    self.window.rootViewController = revealViewController;
+    [self.window makeKeyAndVisible];
+}
+
+//MMDrawerController  这是一种侧滑
+-(void)mmDrawerController:(UIViewController*)leftViewController right:(UIViewController*)rightViewController tabbar:(SUPNavigationController*)nav{
+    self.drawerController =[[MMDrawerController alloc]initWithCenterViewController:nav leftDrawerViewController:leftViewController rightDrawerViewController:rightViewController];
+    //4、设置打开/关闭抽屉的手势
+    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    self.drawerController.closeDrawerGestureModeMask =MMCloseDrawerGestureModeAll;
+    //5、设置左边抽屉显示的多少
+    self.drawerController.maximumLeftDrawerWidth = 320.0;
+    //    self.drawerController.maximumRightDrawerWidth = 80;
+    [self.drawerController setShowsShadow:YES];
+    self.window.rootViewController = self.drawerController;
+    [self.window makeKeyAndVisible];
+}
+
 #pragma mark -应用跳转
 //Universal link
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler

@@ -30,6 +30,16 @@
 @implementation SUPMeViewController
 
 #pragma mark viewController生命周期
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //关闭抽屉模式
+//    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
+    
+    //设置打开抽屉模式
+    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -42,6 +52,7 @@
         make.right.offset(-50);
     }];
 }
+
 /**
  *  多个控件固定间隔的等间隔排列，变化的是控件的长度或者宽度值
  *

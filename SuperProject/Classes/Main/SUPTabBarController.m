@@ -82,13 +82,13 @@
 
 //控制器设置
 - (NSArray *)viewControllers {
-    SUPNavigationController *one = [[SUPNavigationController alloc] initWithRootViewController:[[SUPHomeViewController alloc] init]];
+    UIViewController *one = [[SUPNavigationController alloc] initWithRootViewController:[[SUPHomeViewController alloc] init]];
 
-    SUPNavigationController *two = [[SUPNavigationController alloc] initWithRootViewController:[[SUPNewViewController alloc] init]];
+    UIViewController *two = [[SUPNavigationController alloc] initWithRootViewController:[[SUPNewViewController alloc] init]];
 
-    SUPNavigationController *three = [[SUPNavigationController alloc] initWithRootViewController:[[SUPMessageViewController alloc] init]];
+    UIViewController *three = [[SUPNavigationController alloc] initWithRootViewController:[[SUPMessageViewController alloc] init]];
 
-    SUPNavigationController *four = [[SUPNavigationController alloc] initWithRootViewController:[[SUPMeViewController alloc] init]];
+    UIViewController *four = [[SUPNavigationController alloc] initWithRootViewController:[[SUPMeViewController alloc] init]];
 
     NSArray *viewControllers = @[
                                  three,two,one,four

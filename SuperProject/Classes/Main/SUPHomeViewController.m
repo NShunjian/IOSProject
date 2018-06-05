@@ -28,6 +28,16 @@
 @implementation SUPHomeViewController
 
 #pragma mark viewController生命周期
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //关闭抽屉模式
+//    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
+    
+    //设置打开抽屉模式
+    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 

@@ -31,7 +31,7 @@
 #import "UIView+Nib.h"
 //#import "UIView+SUPConfigBlank.h"
 #import "UIImageView+FitNet.h"
-
+#import "UIViewController+MMDrawerController.h"
 
 // libs
 //#import "UMessage.h"
@@ -50,8 +50,11 @@
 #import <Toast.h>
 #import <SMS_SDK/SMSSDK.h>
 #import <WebViewJavascriptBridge.h>
+#import <MMDrawerController.h>
+
 
 #import "ViewControllerFour.h"
+
 //弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
 
 #define SUPWeakSelf(type)  __weak typeof(type) weak##type = type
@@ -108,6 +111,8 @@
 // MainScreen Height&Width
 #define SUPScreenHeight      [[UIScreen mainScreen] bounds].size.height
 #define SUPScreenWidth       [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 
 // MainScreen bounds
 #define Main_Screen_Bounds [[UIScreen mainScreen] bounds]

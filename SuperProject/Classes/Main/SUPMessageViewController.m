@@ -174,7 +174,14 @@
     [alert show];
 }
 
-
+/**
+ *  加载控制器的时候设置打开抽屉模式  (因为在后面会关闭)
+ */
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //设置打开抽屉模式
+    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+}
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.backBtn.hidden = !self.presentedViewController;
@@ -253,6 +260,39 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+/** 导航条左边的按钮 */
+- (UIImage *)SUPNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(SUPNavigationBar *)navigationBar
+{
+    [leftButton setTitle:@"点击核心动画" forState:UIControlStateNormal];
+    leftButton.SUP_width = 120;
+     [leftButton setTitleColor:[UIColor RandomColor] forState:UIControlStateNormal];
+    return nil;
+}
+/** 导航条右边的按钮 */
+- (UIImage *)SUPNavigationBarRightButtonImage:(UIButton *)rightButton navigationBar:(SUPNavigationBar *)navigationBar
+{
+    [rightButton setTitle:@"点击右侧菜单栏" forState:UIControlStateNormal];
+    rightButton.SUP_width = 120;
+    [rightButton setTitleColor:[UIColor RandomColor] forState:UIControlStateNormal];
+    return nil;
+}
 
+
+
+#pragma mark - Delegate
+/** 左边的按钮的点击 */
+-(void)leftButtonEvent:(UIButton *)sender navigationBar:(SUPNavigationBar *)navigationBar
+{
+    NSLog(@"%s", __func__);
+#pragma mark -实现侧滑...
+    //这里的话是通过遍历循环拿到之前在AppDelegate中声明的那个MMDrawerController属性，然后判断是否为打开状态，如果是就关闭，否就是打开(初略解释，里面还有一些条件)
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+/** 右边的按钮的点击 */
+-(void)rightButtonEvent:(UIButton *)sender navigationBar:(SUPNavigationBar *)navigationBar
+{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+    NSLog(@"%s", __func__);
+}
 @end
 
