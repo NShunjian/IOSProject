@@ -11,6 +11,7 @@
 #import "JiaMediator.h"
 #import "JiaMediator+UserModuleActions.h"
 #import "SUPSearchBarViewController.h"
+#import "SUPTabBarController.h"
 //#import "JiaAlertView.h"
 //#import "SINTabBarController.h"
 //#import "IMHTabBarController.h"
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     SUPWeakSelf(self);
     NSLog(@"%@", weakself);
-    self.navigationItem.title = @"功能实例";
+    self.navigationItem.title = @"请您触摸";
     
     UIEdgeInsets edgeInsets = self.tableView.contentInset;
     edgeInsets.bottom += self.tabBarController.tabBar.SUP_height;
@@ -36,7 +37,9 @@
     //监听返回值通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userVCNotification:) name:kUserViewControllerNotificationWithName object:nil];
     
-    
+    SUPTabBarController *tabBarControllerConfig = [[SUPTabBarController alloc] init];
+    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
+    tabBarController.delegate = self;
     
     SUPWordItem *item0 = [SUPWordItem itemWithTitle:@"MQTT协议实现物联网开发" subTitle: @""];
     [item0 setItemOperation:^(NSIndexPath *indexPath){
@@ -294,5 +297,19 @@
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
     NSLog(@"%s", __func__);
 }
+//触摸屏幕跳转到对应索引的tabbarItem  (在这里可以触摸 导航标题)
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self cyl_popSelectTabBarChildViewControllerAtIndex:3 completion:^(__kindof UIViewController *selectedTabBarChildViewController) {
+        NSLog(@"%@",selectedTabBarChildViewController);
+       
+    }];
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    UIViewController *viewController_ = [viewController  cyl_getViewControllerInsteadOfNavigationController];
+    [[viewController_ cyl_tabBarController] updateSelectionStatusIfNeededForTabBarController:tabBarController shouldSelectViewController:viewController];
+    return YES;
+}
+
 @end
 

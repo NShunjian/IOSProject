@@ -18,6 +18,61 @@
 IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，IOSProject对于项目的搭建也进行很明确的划分，各个模块职责也比较明确，IOSProject也引入的一些常用第三方插件、宏定义、工具帮助类等;
 
 
+
+<h2><a id="homeList">首页功能列表</a></h2>
+<div>
+<img src="./imgs/QQ20180603-123055-HD.gif" width="24%">|
+<img src="./imgs/QQ20180604-162210-HD.gif" width="24%">|
+<img src="./imgs/Snip20180603_4.png" width="24%">|
+<img src="./imgs/Snip20180603_1.png" width="24%">|
+<img src="./imgs/Snip20180603_2.png" width="24%">|
+<img src="./imgs/QQ20180603-122759-HD.gif" width="24%">|
+<img src="./imgs/Snip20180603_3.png" width="24%">|
+<img src="./imgs/QQ20180603-123343-HD.gif" width="24%">|
+<img src="./imgs/QQ20180603-121704-HD.gif" width="24%">
+</div>
+<br>
+<br>
+
+<h2><a id="homeList">实用技术列表</a></h2>
+<div>
+<img src="./imgs/QQ20180603-120838-HD.gif" width="24%">|
+<img src="./imgs/WechatIMG35.png" width="24%">|
+<img src="./imgs/WechatIMG32.png" width="24%">|
+<img src="./imgs/Snip20180604_4.png" width="24%">|
+<img src="./imgs/WechatIMG31.png" width="24%">|
+<img src="./imgs/WechatIMG29.png" width="24%">|
+<img src="./imgs/Snip20180604_1.png" width="24%">|
+<img src="./imgs/Snip20180604_3.png" width="24%">|
+<img src="./imgs/QQ20180603-124453-HD.gif" width="24%">|
+<img src="./imgs/QQ20180603-124119-HD.gif" width="24%">|
+<img src="./imgs/QQ20180603-123912-HD.gif" width="24%">
+</div>
+<br>
+<br>
+
+<h2><a id="homeList">友盟分享和第三方登录</a></h2>
+<div>
+<img src="./imgs/QQ20180603-122441-HD.gif" width="24%">|
+<img src="./imgs/WechatIMG27.png" width="24%">|
+<img src="./imgs/WechatIMG28.png" width="24%">|
+<img src="./imgs/WechatIMG38.png" width="24%" height="40%">|
+<img src="./imgs/WechatIMG39.png" width="24%" height="40%">
+</div>
+<br>
+<br>
+
+
+<h2><a id="homeList">核心动画</a></h2>
+<div>
+<img src="./imgs/QQ20180605-180539-HD.gif" width="24%">|
+<img src="./imgs/QQ20180605-180248-HD.gif" width="24%">
+</div>
+<br>
+<br>
+
+
+
 # 功能模块的集成
 1 集成百度地图(3.0.0版)，目前有百度定位功能（ThirdMacros.h修改相应的key值）
 
@@ -89,57 +144,7 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 
 35 长按列表行拖动效果 实现列表中的某一行进行动态拉动，并插入到其它位置效果
 
-<h2><a id="homeList">首页功能列表</a></h2>
-<div>
-<img src="./imgs/QQ20180603-123055-HD.gif" width="24%">|
-<img src="./imgs/QQ20180604-162210-HD.gif" width="24%">|
-<img src="./imgs/Snip20180603_4.png" width="24%">|
-<img src="./imgs/Snip20180603_1.png" width="24%">|
-<img src="./imgs/Snip20180603_2.png" width="24%">|
-<img src="./imgs/QQ20180603-122759-HD.gif" width="24%">|
-<img src="./imgs/Snip20180603_3.png" width="24%">|
-<img src="./imgs/QQ20180603-123343-HD.gif" width="24%">|
-<img src="./imgs/QQ20180603-121704-HD.gif" width="24%">
-</div>
-<br>
-<br>
 
-<h2><a id="homeList">实用技术列表</a></h2>
-<div>
-<img src="./imgs/QQ20180603-120838-HD.gif" width="24%">|
-<img src="./imgs/WechatIMG35.png" width="24%">|
-<img src="./imgs/WechatIMG32.png" width="24%">|
-<img src="./imgs/Snip20180604_4.png" width="24%">|
-<img src="./imgs/WechatIMG31.png" width="24%">|
-<img src="./imgs/WechatIMG29.png" width="24%">|
-<img src="./imgs/Snip20180604_1.png" width="24%">|
-<img src="./imgs/Snip20180604_3.png" width="24%">|
-<img src="./imgs/QQ20180603-124453-HD.gif" width="24%">|
-<img src="./imgs/QQ20180603-124119-HD.gif" width="24%">|
-<img src="./imgs/QQ20180603-123912-HD.gif" width="24%">
-</div>
-<br>
-<br>
-
-<h2><a id="homeList">友盟分享和第三方登录</a></h2>
-<div>
-<img src="./imgs/QQ20180603-122441-HD.gif" width="24%">|
-<img src="./imgs/WechatIMG27.png" width="24%">|
-<img src="./imgs/WechatIMG28.png" width="24%">|
-<img src="./imgs/WechatIMG38.png" width="24%" height="40%">|
-<img src="./imgs/WechatIMG39.png" width="24%" height="40%">
-</div>
-<br>
-<br>
-
-
-<h2><a id="homeList">核心动画</a></h2>
-<div>
-<img src="./imgs/QQ20180605-180539-HD.gif" width="24%">|
-<img src="./imgs/QQ20180605-180248-HD.gif" width="24%">
-</div>
-<br>
-<br>
 
 # 联系方式
 

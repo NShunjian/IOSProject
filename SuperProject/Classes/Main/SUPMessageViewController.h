@@ -8,6 +8,6 @@
 
 #import "SUPStaticTableViewController.h"
 
-@interface SUPMessageViewController : SUPStaticTableViewController
+@interface SUPMessageViewController : SUPStaticTableViewController<UITabBarControllerDelegate>
 
 @end

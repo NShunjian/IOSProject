@@ -65,7 +65,7 @@
 
 
 
-    SUPWordArrowItem *item10 = [SUPWordArrowItem itemWithTitle:@"NSThread 多线程" subTitle: nil];
+//    SUPWordArrowItem *item10 = [SUPWordArrowItem itemWithTitle:@"NSThread 多线程" subTitle: nil];
 //    item10.destVc = [SUPNSThreadViewController class];
 
 //    SUPWordArrowItem *item11 = [SUPWordArrowItem itemWithTitle:@"GCD 多线程" subTitle: nil];
@@ -79,14 +79,14 @@
 //
 //
 //
-    SUPItemSection *section1 = [SUPItemSection sectionWithItems:@[item10] andHeaderTitle:@"NSThread, GCD, NSOperation, Lock" footerTitle:nil];
+//    SUPItemSection *section1 = [SUPItemSection sectionWithItems:@[item10] andHeaderTitle:@"NSThread, GCD, NSOperation, Lock" footerTitle:nil];
 //
-    [section1.items makeObjectsPerformSelector:@selector(setTitleColor:) withObject:[UIColor RandomColor]];
+//    [section1.items makeObjectsPerformSelector:@selector(setTitleColor:) withObject:[UIColor RandomColor]];
 
-    [self.sections addObject:section1];
+//    [self.sections addObject:section1];
 //
 //
-    SUPWordArrowItem *item20 = [SUPWordArrowItem itemWithTitle:@"物理仿真" subTitle: @""];
+//    SUPWordArrowItem *item20 = [SUPWordArrowItem itemWithTitle:@"物理仿真" subTitle: @""];
 
 //    item20.destVc = [SUPDynamicViewController class];
 //
@@ -98,9 +98,9 @@
 //
 //    item22.destVc = [SUPDrawRectViewController class];
 //
-    SUPItemSection *section2 = [SUPItemSection sectionWithItems:@[item20] andHeaderTitle:@"物理仿真, 核心动画, 绘图 Quartz2D" footerTitle:nil];
+//    SUPItemSection *section2 = [SUPItemSection sectionWithItems:@[item20] andHeaderTitle:@"物理仿真, 核心动画, 绘图 Quartz2D" footerTitle:nil];
 //
-    [self.sections addObject:section2];
+//    [self.sections addObject:section2];
 
 
     UITabBarItem *homeItem = self.navigationController.tabBarItem;
