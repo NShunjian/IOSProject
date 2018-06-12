@@ -24,10 +24,11 @@
 #import "LeftViewController.h"
 #import "BaseAnimationController.h"
 #import "RightViewController.h"
-
+#import "Definition.h"
 @interface SUPAppDelegate ()<UITabBarControllerDelegate,CYLTabBarControllerDelegate>
 @property(nonatomic, strong)BMKMapManager* mapManager;
 @property(nonatomic,strong) MMDrawerController * drawerController;
+@property(nonatomic, strong)CYLTabBarController *tabBarController;
 @end
 
 @implementation SUPAppDelegate
@@ -74,12 +75,12 @@
     
     //短信验证
     [SMSSDK enableAppContactFriends:YES];
-    
+     [self Hkustxunfei];
     //publicButton
-    [CYLPlusButtonSubclass registerPlusButton];
+//    [CYLPlusButtonSubclass registerPlusButton];
     
     [self setupLoginViewController];
-    
+   
     if (![GVUserDefaults standardUserDefaults].isLanuchedApp) {
         // 欢迎视图
         [SUPIntroductoryPagesHelper showIntroductoryPageView:@[@"intro_0.jpg", @"intro_1.jpg", @"intro_2.jpg", @"intro_3.jpg"]];
@@ -111,8 +112,9 @@
     //统一处理一些为数组、集合等对nil插入会引起闪退
     [SYSafeCategory callSafeCategory];
     
-    //清空未读标识
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    //清空未读标识removeAllPendingNotificationRequests
+//    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    [[UNUserNotificationCenter currentNotificationCenter] removeAllPendingNotificationRequests];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 
     if (launchOptions) {
@@ -120,21 +122,135 @@
         [WJYAlertView showOneButtonWithTitle:@"有launchOptions!!" Message:launchOptions.description ButtonType:WJYAlertViewButtonTypeCancel ButtonTitle:@"知道了" Click:^{
             NSLog(@"是的有  launchOptions");
         }];
-        
-        
+
     }
     
     
     return YES;
 }
 
+#pragma mark -科大讯飞
+
+-(void)Hkustxunfei{
+    
+    //Set log level
+    [IFlySetting setLogFile:LVL_ALL];
+    
+    //Set whether to output log messages in Xcode console
+    [IFlySetting showLogcat:YES];
+    
+    //Set the local storage path of SDK
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachePath = [paths objectAtIndex:0];
+    [IFlySetting setLogFilePath:cachePath];
+    
+    //Set APPID
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",APPID_VALUE];
+    
+    //Configure and initialize iflytek services.(This interface must been invoked in application:didFinishLaunchingWithOptions:)
+    [IFlySpeechUtility createUtility:initString];
+
+}
+
+//登录页面
+-(void)setupLoginViewController{
+    
+    [CYLPlusButtonSubclass registerPlusButton];
+    
+    SUPLoginViewController *login = [[SUPLoginViewController alloc]init];
+    self.window.rootViewController = login;
+    [self.window makeKeyAndVisible];
+
+}
+
+//进入主页
+-(void)setUpHomeViewController{
+    //左侧菜单栏
+    LeftViewController *leftViewController = [[LeftViewController alloc] init];
+    SUPNavigationController *lefNav = [[SUPNavigationController alloc]initWithRootViewController:leftViewController];
+    //右侧菜单栏
+    RightViewController *rightViewController = [[RightViewController alloc] init];
+    
+    
+//    // 设置主窗口,并设置根控制器
+//    [CYLPlusButtonSubclass registerPlusButton];
+//    SUPTabBarController *tabBarControllerConfig = [[SUPTabBarController alloc] init];
+//    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
+    //放在代理下面 不会有tabbar标记    这个要放开self.window.rootViewController = tabBarController; //这种可以实现tabbar 按钮的动画
+//    SUPNavigationController *nav = [[SUPNavigationController alloc]initWithRootViewController:_tabBarController];
+
+    SUPTabBarController *tabBarControllerConfig = [[SUPTabBarController alloc] init];
+    _tabBarController = tabBarControllerConfig.tabBarController;
+    _tabBarController.delegate = self;
+    self.nav = [[SUPNavigationController alloc]initWithRootViewController:_tabBarController];
+    
+    
+    //SWRevealViewController 这是一种侧滑
+//    [self swRevealViewController:leftViewController right:rightViewController tabbar:tabBarController];
+    
+    //MMDrawerController  这是一种侧滑
+    [self mmDrawerController:lefNav right:rightViewController tabbar:_tabBarController navController:self.nav];
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
+    
+    
+
+    
+//   =======================================================================
+    // 检查更新
+//    [[SUPRequestManager sharedManager] GET:[SUPShunJianBaseUrl stringByAppendingPathComponent:@"jsons/updateapp.json"] parameters:nil completion:^(SUPBaseResponse *response) {
+//        [self checkVersion:response];
+//    }];
+    
+}
+
+//SWRevealViewController 这是一种侧滑
+-(void)swRevealViewController:(UIViewController*)leftViewController right:(UIViewController*)rightViewController tabbar:(CYLTabBarController*)tabBarController{
+        //首页
+//    BaseAnimationController *centerView1Controller = [[BaseAnimationController alloc] init];
+    
+    SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:leftViewController frontViewController:tabBarController];
+    
+    revealViewController.rightViewController = rightViewController;
+    
+    //浮动层离左边距的宽度
+    revealViewController.rearViewRevealWidth = 230;
+    //revealViewController.rightViewRevealWidth = 230;
+    
+    //是否让浮动层弹回原位
+    //mainRevealController.bounceBackOnOverdraw = NO;
+    [revealViewController setFrontViewPosition:FrontViewPositionLeft animated:YES];
+    self.window.rootViewController = revealViewController;
+    [self.window makeKeyAndVisible];
+}
+
+//MMDrawerController  这是一种侧滑
+-(void)mmDrawerController:(UIViewController*)leftViewController right:(UIViewController*)rightViewController tabbar:(CYLTabBarController*)tabBarController navController:(SUPNavigationController*)nav{
+    self.drawerController =[[MMDrawerController alloc]initWithCenterViewController:nav leftDrawerViewController:leftViewController rightDrawerViewController:rightViewController];
+    //4、设置打开/关闭抽屉的手势
+    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    self.drawerController.closeDrawerGestureModeMask =MMCloseDrawerGestureModeAll;
+    //5、设置左边抽屉显示的多少
+    self.drawerController.maximumLeftDrawerWidth = 320.0;
+    //    self.drawerController.maximumRightDrawerWidth = 80;
+    [self.drawerController setShowsShadow:YES];
+    
+//    self.window.rootViewController = tabBarController; //这种可以实现tabbar 按钮的动画
+    self.window.rootViewController = self.drawerController;
+    
+    [self.window makeKeyAndVisible];
+    
+    [self customizeInterfaceWithTabBarController:tabBarController];
+    
+}
+
 - (void)customizeInterfaceWithTabBarController:(CYLTabBarController *)tabBarController {
-        
+    
     [tabBarController hideTabBadgeBackgroundSeparator];
+    
     //添加小红点
     UIViewController *viewController = tabBarController.viewControllers[0];
     SUPLog(@"tabBarController = %@",viewController.tabBarItem);
-        SUPLog(@"tabBarController = %@",viewController.tabBarItem.cyl_tabButton);
+    SUPLog(@"tabBarController == %@",viewController.tabBarItem.cyl_tabButton);
     UIView *tabBadgePointView0 = [UIView cyl_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
     [viewController.tabBarItem.cyl_tabButton cyl_setTabBadgePointView:tabBadgePointView0];
     [viewController cyl_showTabBadgePoint];
@@ -156,17 +272,8 @@
 }
 
 
+#pragma mark -地图
 
-//登录页面
--(void)setupLoginViewController{
-    
-    SUPLoginViewController *login = [[SUPLoginViewController alloc]init];
-    self.window.rootViewController = login;
-    [self.window makeKeyAndVisible];
-    
-}
-
-//地图
 -(void)map{
     //  这个百度地图对应 SUPBaiduMapViewController.h  这个类/////////////////////////
     
@@ -243,85 +350,6 @@
     /*   //////////////////////////////////////                 */
     
 }
-//进入主页
--(void)setUpHomeViewController{
-    //左侧菜单栏
-    LeftViewController *leftViewController = [[LeftViewController alloc] init];
-    SUPNavigationController *lefNav = [[SUPNavigationController alloc]initWithRootViewController:leftViewController];
-    //右侧菜单栏
-    RightViewController *rightViewController = [[RightViewController alloc] init];
-    
-    
-    // 设置主窗口,并设置根控制器
-    [CYLPlusButtonSubclass registerPlusButton];
-    SUPTabBarController *tabBarControllerConfig = [[SUPTabBarController alloc] init];
-    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
-    SUPNavigationController *nav = [[SUPNavigationController alloc]initWithRootViewController:tabBarController];
-    
-    
-    
-    //SWRevealViewController 这是一种侧滑
-//    [self swRevealViewController:leftViewController right:rightViewController tabbar:tabBarController];
-    
-    //MMDrawerController  这是一种侧滑
-    [self mmDrawerController:lefNav right:rightViewController tabbar:tabBarController navController:nav];
-    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
-    
-    
-    
-//    SUPTabBarController *main = [[SUPTabBarController alloc] init];
-//    self.window.rootViewController = main;
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
-//    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
-
-    
-//   =======================================================================
-    // 检查更新
-//    [[SUPRequestManager sharedManager] GET:[SUPShunJianBaseUrl stringByAppendingPathComponent:@"jsons/updateapp.json"] parameters:nil completion:^(SUPBaseResponse *response) {
-//        [self checkVersion:response];
-//    }];
-    
-}
-
-//SWRevealViewController 这是一种侧滑
--(void)swRevealViewController:(UIViewController*)leftViewController right:(UIViewController*)rightViewController tabbar:(CYLTabBarController*)tabBarController{
-        //首页
-//    BaseAnimationController *centerView1Controller = [[BaseAnimationController alloc] init];
-    
-    SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:leftViewController frontViewController:tabBarController];
-    
-    revealViewController.rightViewController = rightViewController;
-    
-    //浮动层离左边距的宽度
-    revealViewController.rearViewRevealWidth = 230;
-    //revealViewController.rightViewRevealWidth = 230;
-    
-    //是否让浮动层弹回原位
-    //mainRevealController.bounceBackOnOverdraw = NO;
-    [revealViewController setFrontViewPosition:FrontViewPositionLeft animated:YES];
-    self.window.rootViewController = revealViewController;
-    [self.window makeKeyAndVisible];
-}
-
-//MMDrawerController  这是一种侧滑
--(void)mmDrawerController:(UIViewController*)leftViewController right:(UIViewController*)rightViewController tabbar:(CYLTabBarController*)tabBarController navController:(SUPNavigationController*)nav{
-    self.drawerController =[[MMDrawerController alloc]initWithCenterViewController:nav leftDrawerViewController:leftViewController rightDrawerViewController:rightViewController];
-    //4、设置打开/关闭抽屉的手势
-    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
-    self.drawerController.closeDrawerGestureModeMask =MMCloseDrawerGestureModeAll;
-    //5、设置左边抽屉显示的多少
-    self.drawerController.maximumLeftDrawerWidth = 320.0;
-    //    self.drawerController.maximumRightDrawerWidth = 80;
-    [self.drawerController setShowsShadow:YES];
-    self.window.rootViewController = self.drawerController;
-    tabBarController.delegate = self;
-    [self.window makeKeyAndVisible];
-
-    [self customizeInterfaceWithTabBarController:tabBarController];
-}
-
-
 
 #pragma mark -应用跳转
 //Universal link
@@ -611,6 +639,9 @@
 #pragma mark - delegate
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    SUPLog(@"cyl_tabButton = %@",viewController.tabBarItem.cyl_tabButton);
+    
+    
     [[self cyl_tabBarController] updateSelectionStatusIfNeededForTabBarController:tabBarController shouldSelectViewController:viewController];
     return YES;
 }
@@ -618,7 +649,7 @@
 #pragma mark - CYLTabBarControllerDelegate
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectControl:(UIControl *)control {
     UIView *animationView;
-    
+    SUPLog(@"[control cyl_isTabButton] = %zd",[control cyl_isTabButton]);
     if ([control cyl_isTabButton]) {
         //更改红标状态
         if ([[self cyl_tabBarController].selectedViewController cyl_isShowTabBadgePoint]) {
@@ -627,6 +658,13 @@
             [[self cyl_tabBarController].selectedViewController cyl_showTabBadgePoint];
         }
         
+//        //更改红标状态
+//        if ([tabBarController.selectedViewController cyl_isShowTabBadgePoint]) {
+//            [tabBarController.selectedViewController cyl_removeTabBadgePoint];
+//        } else {
+//            [tabBarController.selectedViewController cyl_showTabBadgePoint];
+//        }
+        SUPLog(@"[control cyl_tabImageView] = %@",[control cyl_tabImageView]);
         animationView = [control cyl_tabImageView];
     }
     
@@ -635,10 +673,20 @@
         UIButton *button = CYLExternPlusButton;
         animationView = button.imageView;
     }
-      SUPLog(@"[self cyl_tabBarController] == %@",tabBarController);
+      SUPLog(@"tabBarController == %@",tabBarController);
+     SUPLog(@"tabBarController.selectedIndex == %zd",tabBarController.selectedIndex);
     SUPLog(@"[self cyl_tabBarController] == %@",[self cyl_tabBarController]);
-    if ([self cyl_tabBarController].selectedIndex % 2 == 0) {
-        [self addScaleAnimationOnView:animationView repeatCount:1];
+    
+//    这个要放开self.window.rootViewController = tabBarController; //这种可以实现tabbar 按钮的动画
+//    if ([self cyl_tabBarController].selectedIndex % 2 == 0) {
+//        [self addScaleAnimationOnView:animationView repeatCount:1];
+//    } else {
+//        [self addRotateAnimationOnView:animationView];
+//    }
+    
+    //这个是添加了侧滑之后用这个
+    if (tabBarController.selectedIndex % 2 == 0) {
+        [self addScaleAnimationOnView:animationView repeatCount:10];
     } else {
         [self addRotateAnimationOnView:animationView];
     }

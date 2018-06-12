@@ -17,7 +17,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
-
+@property (strong, nonatomic) SUPNavigationController *nav;
 //- (void)saveContext;
 
 -(void)setupLoginViewController;

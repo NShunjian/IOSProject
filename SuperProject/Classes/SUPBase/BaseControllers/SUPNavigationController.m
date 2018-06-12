@@ -61,16 +61,16 @@
 }
 
 
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-
-    if (self.childViewControllers.count != 0) {
-
-        viewController.hidesBottomBarWhenPushed = YES;
-    }
-
-    [super pushViewController:viewController animated:animated];
-}
+//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//
+//    if (self.childViewControllers.count != 0) {
+//
+//        viewController.hidesBottomBarWhenPushed = YES;
+//    }
+//
+//    [super pushViewController:viewController animated:animated];
+//}
 
 //- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
 //    if (self.viewControllers.count > 0) {
@@ -79,6 +79,14 @@
 //    }
 //    [super pushViewController:viewController animated:animated];
 //}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
 
 @end
 

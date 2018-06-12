@@ -52,8 +52,6 @@
 #import <SMS_SDK/SMSSDK.h>
 #import <WebViewJavascriptBridge.h>
 #import <MMDrawerController.h>
-
-
 #import "ViewControllerFour.h"
 
 //弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
@@ -173,6 +171,50 @@
 // 是否空对象
 #define IS_NULL_CLASS(OBJECT) [OBJECT isKindOfClass:[NSNull class]]
 
+
+
+
+
+
+
+
+
+
+#ifdef __OBJC__
+
+#import "iflyMSC/iflyMSC.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "macrodef.h"
+#import "typedef.h"
+#import "commonConstDef.h"
+#import "QQingUtils.h"
+#import "MBProgressHUD.h"
+#import "GCDObjC.h"
+
+#import "PlaceholderTextView.h"
+#import "UIView+Frame.h"
+#import "UIView+Hierarchy.h"
+#import "NSString+PlaceHolder.h"
+
+#import "UITextField+ExtentRange.h"
+#import "QQObjectSafe.h"
+
+#import "Masonry.h"
+
+
+#import "QQingWindowRootViewController.h"
+#import "BaseBottomPopoverVC.h"
+
+#import "QQingSpeechRecognizer.h"
+#import "VolumeWaveView.h"
+#import "QQingSTTBottomVC.h"
+#import "QQingSTTView.h"
+
+
+
+#endif
 
 
 #endif /* PrefixHeader_pch */

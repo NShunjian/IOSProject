@@ -14,7 +14,7 @@
 #import "TransitionAnimationController.h"
 #import "ComprehensiveCaseController.h"
 #import "AffineTransformController.h"
-
+#import "SUPAppDelegate.h"
 @interface LeftViewController()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -101,12 +101,17 @@
 //    //调用pushFrontViewController进行页面切换
 //    [revealViewController pushFrontViewController:viewController animated:YES];
 
+    SUPAppDelegate *tempAppDelegate = (SUPAppDelegate *)[[UIApplication sharedApplication] delegate];
+     [tempAppDelegate.nav pushViewController:viewController animated:NO];
     
-    
-    SUPNavigationController* nav =(SUPNavigationController*)self.mm_drawerController.centerViewController;
-    SUPLog(@"%@",nav);
-    SUPLog(@"centerViewController=%@",self.mm_drawerController.centerViewController);
-    [nav pushViewController:viewController animated:NO];
+//============================================================================
+    //    这也是一种:
+//    SUPNavigationController* nav =(SUPNavigationController*)self.mm_drawerController.centerViewController;
+//    SUPLog(@"%@",nav);
+//    SUPLog(@"centerViewController=%@",self.mm_drawerController.centerViewController);
+//    [nav pushViewController:viewController animated:NO];
+   //============================================================================
+   
     
     //模态
 //    [self presentViewController:viewController animated:NO completion:nil];

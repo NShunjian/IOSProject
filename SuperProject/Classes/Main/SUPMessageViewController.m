@@ -12,6 +12,8 @@
 #import "JiaMediator+UserModuleActions.h"
 #import "SUPSearchBarViewController.h"
 #import "SUPTabBarController.h"
+#import "HomePageVC.h"
+#import "SUPIATViewController.h"
 //#import "JiaAlertView.h"
 //#import "SINTabBarController.h"
 //#import "IMHTabBarController.h"
@@ -64,12 +66,14 @@
     
     SUPWordItem *item3 = [SUPWordItem itemWithTitle:@"自定义分享模板" subTitle: nil];
     [item3 setItemOperation:^(NSIndexPath *indexPath){
-        NSArray *contentArray = @[@{@"name":@"新浪微博",@"icon":@"sns_icon_3"},
+        NSArray *contentArray = @[
+                                  @{@"name":@"新浪微博",@"icon":@"sns_icon_3"},
                                   @{@"name":@"QQ空间 ",@"icon":@"sns_icon_5"},
                                   @{@"name":@"QQ",@"icon":@"sns_icon_4"},
                                   @{@"name":@"微信",@"icon":@"sns_icon_7"},
                                   @{@"name":@"朋友圈",@"icon":@"sns_icon_8"},
-                                  @{@"name":@"微信收藏",@"icon":@"sns_icon_9"}];
+                                  @{@"name":@"微信收藏",@"icon":@"sns_icon_9"}
+                                  ];
         JiaShareMenuView *shareView = [[JiaShareMenuView alloc] init];
         shareView.rowNumberItem=3;
         shareView.cancelButtonText=@"取消分享";
@@ -103,11 +107,23 @@
         [weakself.navigationController pushViewController:[[SUPWKViewController alloc]init] animated:NO];
     }];
     
+    SUPWordItem *item7 = [SUPWordItem itemWithTitle:@"科技大飞讯" subTitle: @""];
+    [item7 setItemOperation:^(NSIndexPath *indexPath){
+        
+        [weakself.navigationController pushViewController:[[HomePageVC alloc]init] animated:NO];
+    }];
     
-    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6] andHeaderTitle:nil footerTitle:nil];
+    SUPWordItem *item8 = [SUPWordItem itemWithTitle:@"科技大飞讯防淘宝语音" subTitle: nil];
+        [item8 setItemOperation:^(NSIndexPath *indexPath){
+            [weakself presentViewController:[[SUPIATViewController alloc] init] animated:NO completion:nil];
+        }];
+    
+    
+    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6,item7,item8] andHeaderTitle:nil footerTitle:nil];
     
     [self.sections addObject:section0];
     
+   
     
     
     
@@ -128,13 +144,7 @@
     
     
     
-    
-    //
-    //    SUPWordItem *item1 = [SUPWordItem itemWithTitle:@"SIN" subTitle: @"新浪微博"];
-    //    [item1 setItemOperation:^(NSIndexPath *indexPath){
-    //        [weakself presentViewController:[[SINTabBarController alloc] init] animated:YES completion:nil];
-    //    }];
-    //
+   
     
     
     //    SUPWordItem *item2 = [SUPWordItem itemWithTitle:@"IM_HX" subTitle: @"环信聊天"];
@@ -298,12 +308,15 @@
     NSLog(@"%s", __func__);
 }
 //触摸屏幕跳转到对应索引的tabbarItem  (在这里可以触摸 导航标题)
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)titleClickEvent:(UILabel *)sender navigationBar:(SUPNavigationBar *)navigationBar
+{
+    NSLog(@"%@", sender);
     [self cyl_popSelectTabBarChildViewControllerAtIndex:3 completion:^(__kindof UIViewController *selectedTabBarChildViewController) {
         NSLog(@"%@",selectedTabBarChildViewController);
-       
+        
     }];
 }
+
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
     UIViewController *viewController_ = [viewController  cyl_getViewControllerInsteadOfNavigationController];
