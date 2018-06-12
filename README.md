@@ -4,7 +4,7 @@
 
 
 
-# 这个综合性项目(持续更新中),如果帮助到你，麻烦给个star ⭐️ ⭐️⭐️,↑点个赞👍👍👍。
+# 这个综合性项目(持续更新中),如果帮助到你，麻烦给个star ⭐️ ⭐️⭐️。
 
 
 
@@ -21,6 +21,8 @@ IOSProject项目是一个以MVC模式搭建的开源功能集合，基于Objecti
 
 <h2><a id="homeList">首页功能列表</a></h2>
 <div>
+<img src="./imgs/QQ20180612-150017-HD.gif" width="24%">|
+<img src="./imgs/QQ20180612-150212-HD.gif" width="24%">|
 <img src="./imgs/QQ20180603-123055-HD.gif" width="24%">|
 <img src="./imgs/QQ20180604-162210-HD.gif" width="24%">|
 <img src="./imgs/Snip20180603_4.png" width="24%">|
