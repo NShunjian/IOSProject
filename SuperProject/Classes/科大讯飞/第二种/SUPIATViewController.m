@@ -9,7 +9,7 @@
 #import "SUPIATViewController.h"
 #import "iatConfig.h"
 #import <QuartzCore/QuartzCore.h>
-//#import <AVFoundation/AVAudioSession.h>
+//#import <AVFoundation/AVAudioSession.h>  //如果有问题可以打开
 #import <AudioToolbox/AudioSession.h>
 #import "PopupView.h"
 #import "AlertView.h"
@@ -895,16 +895,31 @@
     [button addTarget:self action:@selector(voiceBtnClickUpOutside:) forControlEvents:UIControlEventTouchUpOutside];
     [button addTarget:self action:@selector(voiceBtnClickDragEnter:) forControlEvents:UIControlEventTouchDragEnter];
     [self.view addSubview:button];
+    /*
+     
+     UIControlEventTouchDown 按下
+     
+     UIControlEventTouchCancel 意外取消
+     
+     UIControlEventTouchUpInside 点击
+     
+     UIControlEventTouchDragExit 拖出
+     
+     UIControlEventTouchUpOutside 手势外部抬起
+     
+     UIControlEventTouchDragEnter 拖回
+     
+     */
 }
 
 
 -(void)voiceBtnClickDown:(UIButton *)btn{//按下
     
     
-    if ([_iFlySpeechRecognizer startListening]) {
-        [_iFlySpeechRecognizer cancel];
-        _iFlySpeechRecognizer = nil;
-    }
+//    if ([_iFlySpeechRecognizer startListening]) {
+//        [_iFlySpeechRecognizer cancel];
+//        _iFlySpeechRecognizer = nil;
+//    }
     
     [self yuyinF];
     

@@ -204,7 +204,10 @@
 {
     self.SUP_navgationBar.backgroundColor = backgroundColor;
 }
-
+-(void)changeNavgationBarBackgroundView:(UIView *)view{
+    
+    self.SUP_navgationBar = (SUPNavigationBar*)view;
+}
 
 @end
 

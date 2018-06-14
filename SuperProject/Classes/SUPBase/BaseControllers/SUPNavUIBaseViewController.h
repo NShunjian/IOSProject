@@ -29,7 +29,7 @@
 -(void)changeNavigationBarHeight:(CGFloat)height;
 
 -(void)changeNavgationBarBackgroundColor:(UIColor *)backgroundColor;
-
+-(void)changeNavgationBarBackgroundView:(UIView *)view;
 /** <#digest#> */
 @property (weak, nonatomic) SUPNavigationBar *SUP_navgationBar;
 @end

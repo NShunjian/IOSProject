@@ -57,7 +57,7 @@
     self.rightView.frame = CGRectMake(self.SUP_width - self.rightView.SUP_width, kStatusBarHeight, self.rightView.SUP_width, self.rightView.SUP_height);
     
     self.titleView.frame = CGRectMake(0, kStatusBarHeight + (44.0 - self.titleView.SUP_height) * 0.5, MIN(self.SUP_width - MAX(self.leftView.SUP_width, self.rightView.SUP_width) * 2 - kViewMargin * 2, self.titleView.SUP_width), self.titleView.SUP_height);
-    
+//    self.titleView.backgroundColor = [UIColor redColor];
     self.titleView.SUP_x = (self.SUP_width * 0.5 - self.titleView.SUP_width * 0.5);
     
     self.bottomBlackLineView.frame = CGRectMake(0, self.SUP_height, self.SUP_width, 0.5);

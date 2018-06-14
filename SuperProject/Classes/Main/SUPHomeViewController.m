@@ -40,7 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     UIEdgeInsets edgeInsets = self.tableView.contentInset;
     edgeInsets.bottom += self.tabBarController.tabBar.SUP_height;
     self.tableView.contentInset = edgeInsets;
@@ -108,7 +108,6 @@
     [homeItem setBadgeValue:@"3"];
 
 }
-
 
 
 #pragma mark - SUPNavUIBaseViewControllerDataSource

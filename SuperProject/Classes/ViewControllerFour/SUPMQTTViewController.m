@@ -69,9 +69,13 @@ static NSString *const ID = @"ChatCell";
 @end
 
 @implementation SUPMQTTViewController
-
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+   
+         [self.manager disconnect];
+}
 - (void)viewDidLoad {
-    
+    [super viewDidLoad];
     NSURL *bundleURL = [[NSBundle mainBundle] bundleURL];
     NSURL *mqttPlistUrl = [bundleURL URLByAppendingPathComponent:@"mqtt.plist"];
     self.mqttSettings = [NSDictionary dictionaryWithContentsOfURL:mqttPlistUrl];
@@ -136,8 +140,6 @@ static NSString *const ID = @"ChatCell";
     [super viewWillAppear:animated];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     switch (self.manager.state) {
@@ -211,6 +213,8 @@ static NSString *const ID = @"ChatCell";
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
     [self.manager disconnect];
 }
+
+
 
 - (IBAction)send:(id)sender {
     /*

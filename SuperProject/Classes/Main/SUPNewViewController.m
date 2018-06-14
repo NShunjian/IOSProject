@@ -37,24 +37,37 @@
 #import "SUPDownLoadFileViewControllerTWO.h"
 #import "SUPOfflineDownloadViewController.h"
 
+#import "YFMarqueeViewController.h"
+#import "GZView.h"
+#import "YFCycleView.h"
 @interface SUPNewViewController ()
 @property (weak, nonatomic) UILabel *backBtn;
+@property(nonatomic,strong) UIView *viewAnima; //装 滚动视图的容器
+@property(nonatomic,weak) UILabel *customLab;
+
 @end
 
 @implementation SUPNewViewController
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+
+    [self positionAnimation];
+    
     //关闭抽屉模式
 //    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
     
     //设置打开抽屉模式
     [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    //    *******添加中间标题
+    [self addMiddleTitleView];
+    [self positionAnimation];
+    
     self.tableView.backgroundColor = [UIColor whiteColor];
 
     [self.navigationController.tabBarItem setBadgeColor:[UIColor RandomColor]];
@@ -190,8 +203,55 @@
     
     [self.sections addObject:section0];
     [self backBtn];
+    
+    
 }
 
+-(void)positionAnimation{
+    
+    //使用CABasicAnimation创建基础动画
+    CABasicAnimation *anima = [CABasicAnimation animationWithKeyPath:@"position"];
+    anima.fromValue = [NSValue valueWithCGPoint:CGPointMake((SUPScreenWidth+self.customLab.SUP_width/2)-100, 18)];
+    anima.toValue = [NSValue valueWithCGPoint:CGPointMake(-self.customLab.SUP_width/2-20, 18)];
+    anima.duration = 10.0f;
+//    anima.speed = 0.6;
+    anima.repeatCount = 30;
+//    anima.repeatDuration = 60;
+    //如果fillMode=kCAFillModeForwards和removedOnComletion=NO，那么在动画执行完毕后，图层会保持显示动画执行后的状态。但在实质上，图层的属性值还是动画执行前的初始值，并没有真正被改变。
+    //anima.fillMode = kCAFillModeForwards;
+    //anima.removedOnCompletion = NO;
+    anima.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    [_customLab.layer addAnimation:anima forKey:@"positionAnimation"];
+    
+}
+
+
+
+- (UIView *)SUPNavigationBarTitleView:(SUPNavigationBar *)navigationBar{
+    
+    return self.viewAnima;
+}
+
+//添加中间视图
+-(void) addMiddleTitleView
+{
+    //定义视图大小
+    UIView *viewAnima = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SUPScreenWidth, 40)];
+//    viewAnima.backgroundColor = [UIColor  blueColor];
+    self.viewAnima = viewAnima;
+    
+    UILabel *customLab = [[UILabel alloc] init];
+//    customLab.backgroundColor = [UIColor yellowColor];
+    customLab.frame = CGRectMake(SUPScreenWidth, 18, 300, 30);
+    [customLab setTextColor:[UIColor redColor]];
+    [customLab setText:@"自定义导航栏 View！(～￣▽￣)～"];
+    customLab.font = [UIFont boldSystemFontOfSize:18];
+    self.customLab = customLab;
+    
+    //添加视图
+    [self.viewAnima addSubview:customLab];
+}
 
 
 #pragma mark 重写BaseViewController设置内容
@@ -220,10 +280,10 @@
     NSLog(@"%@", sender);
 }
 
-- (NSMutableAttributedString*)SUPNavigationBarTitle:(SUPNavigationBar *)navigationBar
-{
-    return [self changeTitle:@"自定义导航栏 View"];
-}
+//- (NSMutableAttributedString*)SUPNavigationBarTitle:(SUPNavigationBar *)navigationBar
+//{
+//    return [self changeTitle:@"自定义导航栏 View"];
+//}
 
 
 - (UIImage *)SUPNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(SUPNavigationBar *)navigationBar

@@ -166,6 +166,18 @@
 		C6768AD02024361900638781 /* UIImageView+FitNet.m in Sources */ = {isa = PBXBuildFile; fileRef = C6768ACF2024361900638781 /* UIImageView+FitNet.m */; };
 		C686B67520CF9DE200CE5D35 /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C686B67320CF9DE000CE5D35 /* microphone@2x.png */; };
 		C686B67620CF9DE200CE5D35 /* microphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C686B67420CF9DE200CE5D35 /* microphone@3x.png */; };
+		C686B68F20CFCB9D00CE5D35 /* JFCityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B67A20CFCB9D00CE5D35 /* JFCityCollectionViewCell.m */; };
+		C686B69020CFCB9D00CE5D35 /* JFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B67C20CFCB9D00CE5D35 /* JFLocation.m */; };
+		C686B69120CFCB9D00CE5D35 /* JFAreaDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68020CFCB9D00CE5D35 /* JFAreaDataManager.m */; };
+		C686B69220CFCB9D00CE5D35 /* JFCityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68220CFCB9D00CE5D35 /* JFCityHeaderView.m */; };
+		C686B69320CFCB9D00CE5D35 /* JFSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68320CFCB9D00CE5D35 /* JFSearchView.m */; };
+		C686B69420CFCB9E00CE5D35 /* JFCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68420CFCB9D00CE5D35 /* JFCityViewController.m */; };
+		C686B69520CFCB9E00CE5D35 /* JFCityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68520CFCB9D00CE5D35 /* JFCityTableViewCell.m */; };
+		C686B69620CFCB9E00CE5D35 /* JFCityCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68620CFCB9D00CE5D35 /* JFCityCollectionFlowLayout.m */; };
+		C686B69720CFCB9E00CE5D35 /* JFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B68820CFCB9D00CE5D35 /* JFButton.m */; };
+		C686B69820CFCB9E00CE5D35 /* shop_area.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C686B68C20CFCB9D00CE5D35 /* shop_area.sqlite */; };
+		C686B69C20CFD10800CE5D35 /* SUPCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C686B69A20CFD10800CE5D35 /* SUPCityViewController.m */; };
+		C686B69D20CFD10800CE5D35 /* SUPCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C686B69B20CFD10800CE5D35 /* SUPCityViewController.xib */; };
 		C68800572029972B00950524 /* SUPRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68800542029972B00950524 /* SUPRegisterViewController.m */; };
 		C68800582029972B00950524 /* SUPRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68800552029972B00950524 /* SUPRegisterViewController.xib */; };
 		C688005C2029973C00950524 /* SUPISSRegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68800592029973C00950524 /* SUPISSRegistController.xib */; };
@@ -311,6 +323,11 @@
 		C6C1256220C132A6006F212B /* HXWebModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1255F20C132A4006F212B /* HXWebModel.m */; };
 		C6C1256420C13345006F212B /* SUPWKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C1256320C13345006F212B /* SUPWKViewController.xib */; };
 		C6C1256A20C15C0F006F212B /* WWPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1256920C15C0F006F212B /* WWPickerView.m */; };
+		C6D7B14120D0E32A002862F0 /* gift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D7B13C20D0E329002862F0 /* gift@2x.png */; };
+		C6D7B14220D0E32A002862F0 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D7B13D20D0E329002862F0 /* UIImage+Extend.m */; };
+		C6D7B14320D0E32A002862F0 /* YFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D7B13E20D0E329002862F0 /* YFCycleView.m */; };
+		C6D7B14420D0E32A002862F0 /* GZView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D7B13F20D0E329002862F0 /* GZView.m */; };
+		C6D7B14520D0E32A002862F0 /* YFMarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D7B14020D0E329002862F0 /* YFMarqueeViewController.m */; };
 		C6D9C92820108A8700AEA963 /* SUPNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9C92720108A8700AEA963 /* SUPNewViewController.m */; };
 		C6D9C92E201090E100AEA963 /* SUPAddressPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9C92D201090E100AEA963 /* SUPAddressPickerViewController.m */; };
 		C6D9C931201093BC00AEA963 /* SUPNoNavBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9C930201093BC00AEA963 /* SUPNoNavBarViewController.m */; };
@@ -773,6 +790,28 @@
 		C6768ACF2024361900638781 /* UIImageView+FitNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FitNet.m"; sourceTree = "<group>"; };
 		C686B67320CF9DE000CE5D35 /* microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@2x.png"; sourceTree = "<group>"; };
 		C686B67420CF9DE200CE5D35 /* microphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@3x.png"; sourceTree = "<group>"; };
+		C686B67920CFCB9D00CE5D35 /* JFCityCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityCollectionFlowLayout.h; sourceTree = "<group>"; };
+		C686B67A20CFCB9D00CE5D35 /* JFCityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityCollectionViewCell.m; sourceTree = "<group>"; };
+		C686B67C20CFCB9D00CE5D35 /* JFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLocation.m; sourceTree = "<group>"; };
+		C686B67D20CFCB9D00CE5D35 /* JFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLocation.h; sourceTree = "<group>"; };
+		C686B67F20CFCB9D00CE5D35 /* JFAreaDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAreaDataManager.h; sourceTree = "<group>"; };
+		C686B68020CFCB9D00CE5D35 /* JFAreaDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAreaDataManager.m; sourceTree = "<group>"; };
+		C686B68120CFCB9D00CE5D35 /* JFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFButton.h; sourceTree = "<group>"; };
+		C686B68220CFCB9D00CE5D35 /* JFCityHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityHeaderView.m; sourceTree = "<group>"; };
+		C686B68320CFCB9D00CE5D35 /* JFSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSearchView.m; sourceTree = "<group>"; };
+		C686B68420CFCB9D00CE5D35 /* JFCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityViewController.m; sourceTree = "<group>"; };
+		C686B68520CFCB9D00CE5D35 /* JFCityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityTableViewCell.m; sourceTree = "<group>"; };
+		C686B68620CFCB9D00CE5D35 /* JFCityCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCityCollectionFlowLayout.m; sourceTree = "<group>"; };
+		C686B68720CFCB9D00CE5D35 /* JFCityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityCollectionViewCell.h; sourceTree = "<group>"; };
+		C686B68820CFCB9D00CE5D35 /* JFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFButton.m; sourceTree = "<group>"; };
+		C686B68920CFCB9D00CE5D35 /* JFCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityViewController.h; sourceTree = "<group>"; };
+		C686B68A20CFCB9D00CE5D35 /* JFCityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityTableViewCell.h; sourceTree = "<group>"; };
+		C686B68C20CFCB9D00CE5D35 /* shop_area.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = shop_area.sqlite; sourceTree = "<group>"; };
+		C686B68D20CFCB9D00CE5D35 /* JFSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSearchView.h; sourceTree = "<group>"; };
+		C686B68E20CFCB9D00CE5D35 /* JFCityHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCityHeaderView.h; sourceTree = "<group>"; };
+		C686B69920CFD10800CE5D35 /* SUPCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUPCityViewController.h; sourceTree = "<group>"; };
+		C686B69A20CFD10800CE5D35 /* SUPCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUPCityViewController.m; sourceTree = "<group>"; };
+		C686B69B20CFD10800CE5D35 /* SUPCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SUPCityViewController.xib; sourceTree = "<group>"; };
 		C68800542029972B00950524 /* SUPRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPRegisterViewController.m; sourceTree = "<group>"; };
 		C68800552029972B00950524 /* SUPRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUPRegisterViewController.xib; sourceTree = "<group>"; };
 		C68800562029972B00950524 /* SUPRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPRegisterViewController.h; sourceTree = "<group>"; };
@@ -1000,6 +1039,15 @@
 		C6C1256320C13345006F212B /* SUPWKViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SUPWKViewController.xib; sourceTree = "<group>"; };
 		C6C1256820C15C0D006F212B /* WWPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPickerView.h; sourceTree = "<group>"; };
 		C6C1256920C15C0F006F212B /* WWPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPickerView.m; sourceTree = "<group>"; };
+		C6D7B13820D0E329002862F0 /* YFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCycleView.h; sourceTree = "<group>"; };
+		C6D7B13920D0E329002862F0 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		C6D7B13A20D0E329002862F0 /* YFMarqueeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFMarqueeViewController.h; sourceTree = "<group>"; };
+		C6D7B13B20D0E329002862F0 /* GZView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZView.h; sourceTree = "<group>"; };
+		C6D7B13C20D0E329002862F0 /* gift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift@2x.png"; sourceTree = "<group>"; };
+		C6D7B13D20D0E329002862F0 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		C6D7B13E20D0E329002862F0 /* YFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCycleView.m; sourceTree = "<group>"; };
+		C6D7B13F20D0E329002862F0 /* GZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZView.m; sourceTree = "<group>"; };
+		C6D7B14020D0E329002862F0 /* YFMarqueeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFMarqueeViewController.m; sourceTree = "<group>"; };
 		C6D9C92620108A8700AEA963 /* SUPNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPNewViewController.h; sourceTree = "<group>"; };
 		C6D9C92720108A8700AEA963 /* SUPNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPNewViewController.m; sourceTree = "<group>"; };
 		C6D9C92C201090E100AEA963 /* SUPAddressPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPAddressPickerViewController.h; sourceTree = "<group>"; };
@@ -1696,6 +1744,8 @@
 				C6DC20F120BE46FA0005BFA1 /* SUPSearchBarViewController.m */,
 				C6DC244E20BEA31E0005BFA1 /* DesignerViewController.h */,
 				C6DC244D20BEA31D0005BFA1 /* DesignerViewController.m */,
+				C6D7B13720D0E329002862F0 /* Marquee */,
+				C686B67720CFCB7400CE5D35 /* 城市选择 */,
 				C6C1256720C15BFD006F212B /* 日期选择 */,
 				C6C1254B20C13258006F212B /* WKWebView */,
 				C6C124C120C12226006F212B /* oc与js交互 */,
@@ -1948,7 +1998,10 @@
 		C6572A6820CE0A1800615BC4 /* 第二种 */ = {
 			isa = PBXGroup;
 			children = (
-				C6572AAF20CE131D00615BC4 /* 第三种 */,
+				C6572AAD20CE131600615BC4 /* LLSpeakingView.h */,
+				C6572AAC20CE131400615BC4 /* LLSpeakingView.m */,
+				C6572AB020CE142B00615BC4 /* microphone@2x.png */,
+				C6572AB120CE142D00615BC4 /* microphone@3x.png */,
 				C6572AA920CE0D0400615BC4 /* definition.h */,
 				C6572AA820CE0D0200615BC4 /* iatConfig.h */,
 				C6572AAA20CE0D0500615BC4 /* iatConfig.m */,
@@ -2035,17 +2088,6 @@
 			path = tts;
 			sourceTree = "<group>";
 		};
-		C6572AAF20CE131D00615BC4 /* 第三种 */ = {
-			isa = PBXGroup;
-			children = (
-				C6572AAD20CE131600615BC4 /* LLSpeakingView.h */,
-				C6572AAC20CE131400615BC4 /* LLSpeakingView.m */,
-				C6572AB020CE142B00615BC4 /* microphone@2x.png */,
-				C6572AB120CE142D00615BC4 /* microphone@3x.png */,
-			);
-			path = "第三种";
-			sourceTree = "<group>";
-		};
 		C65A365D201EC9990066A895 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -2054,6 +2096,67 @@
 				C6AAB7C82021BBBF000CF990 /* Foundation+Log.m */,
 			);
 			path = libs;
+			sourceTree = "<group>";
+		};
+		C686B67720CFCB7400CE5D35 /* 城市选择 */ = {
+			isa = PBXGroup;
+			children = (
+				C686B67820CFCB9D00CE5D35 /* JFCityViewController */,
+				C686B69920CFD10800CE5D35 /* SUPCityViewController.h */,
+				C686B69A20CFD10800CE5D35 /* SUPCityViewController.m */,
+				C686B69B20CFD10800CE5D35 /* SUPCityViewController.xib */,
+			);
+			path = "城市选择";
+			sourceTree = "<group>";
+		};
+		C686B67820CFCB9D00CE5D35 /* JFCityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C686B67920CFCB9D00CE5D35 /* JFCityCollectionFlowLayout.h */,
+				C686B67A20CFCB9D00CE5D35 /* JFCityCollectionViewCell.m */,
+				C686B67B20CFCB9D00CE5D35 /* Location */,
+				C686B67E20CFCB9D00CE5D35 /* AreaDataManager */,
+				C686B68120CFCB9D00CE5D35 /* JFButton.h */,
+				C686B68220CFCB9D00CE5D35 /* JFCityHeaderView.m */,
+				C686B68320CFCB9D00CE5D35 /* JFSearchView.m */,
+				C686B68420CFCB9D00CE5D35 /* JFCityViewController.m */,
+				C686B68520CFCB9D00CE5D35 /* JFCityTableViewCell.m */,
+				C686B68620CFCB9D00CE5D35 /* JFCityCollectionFlowLayout.m */,
+				C686B68720CFCB9D00CE5D35 /* JFCityCollectionViewCell.h */,
+				C686B68820CFCB9D00CE5D35 /* JFButton.m */,
+				C686B68920CFCB9D00CE5D35 /* JFCityViewController.h */,
+				C686B68A20CFCB9D00CE5D35 /* JFCityTableViewCell.h */,
+				C686B68B20CFCB9D00CE5D35 /* AreaDB */,
+				C686B68D20CFCB9D00CE5D35 /* JFSearchView.h */,
+				C686B68E20CFCB9D00CE5D35 /* JFCityHeaderView.h */,
+			);
+			path = JFCityViewController;
+			sourceTree = "<group>";
+		};
+		C686B67B20CFCB9D00CE5D35 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				C686B67D20CFCB9D00CE5D35 /* JFLocation.h */,
+				C686B67C20CFCB9D00CE5D35 /* JFLocation.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		C686B67E20CFCB9D00CE5D35 /* AreaDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C686B67F20CFCB9D00CE5D35 /* JFAreaDataManager.h */,
+				C686B68020CFCB9D00CE5D35 /* JFAreaDataManager.m */,
+			);
+			path = AreaDataManager;
+			sourceTree = "<group>";
+		};
+		C686B68B20CFCB9D00CE5D35 /* AreaDB */ = {
+			isa = PBXGroup;
+			children = (
+				C686B68C20CFCB9D00CE5D35 /* shop_area.sqlite */,
+			);
+			path = AreaDB;
 			sourceTree = "<group>";
 		};
 		C68800532029970B00950524 /* 短信注册 */ = {
@@ -2616,6 +2719,22 @@
 				C6C1256920C15C0F006F212B /* WWPickerView.m */,
 			);
 			path = "日期选择";
+			sourceTree = "<group>";
+		};
+		C6D7B13720D0E329002862F0 /* Marquee */ = {
+			isa = PBXGroup;
+			children = (
+				C6D7B13C20D0E329002862F0 /* gift@2x.png */,
+				C6D7B13920D0E329002862F0 /* UIImage+Extend.h */,
+				C6D7B13D20D0E329002862F0 /* UIImage+Extend.m */,
+				C6D7B13B20D0E329002862F0 /* GZView.h */,
+				C6D7B13F20D0E329002862F0 /* GZView.m */,
+				C6D7B13820D0E329002862F0 /* YFCycleView.h */,
+				C6D7B13E20D0E329002862F0 /* YFCycleView.m */,
+				C6D7B13A20D0E329002862F0 /* YFMarqueeViewController.h */,
+				C6D7B14020D0E329002862F0 /* YFMarqueeViewController.m */,
+			);
+			path = Marquee;
 			sourceTree = "<group>";
 		};
 		C6D9C92920108FE800AEA963 /* ViewControllerOne */ = {
@@ -3456,6 +3575,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = C69630AA2008968E006958F7;
 			productRefGroup = C69630B42008968E006958F7 /* Products */;
@@ -3493,9 +3613,11 @@
 				C6C1256420C13345006F212B /* SUPWKViewController.xib in Resources */,
 				C6C1250220C122D0006F212B /* requirement .png in Resources */,
 				C623C43120C4E27500BA2B48 /* chooser-moment-icon-camera@2x.png in Resources */,
+				C686B69820CFCB9E00CE5D35 /* shop_area.sqlite in Resources */,
 				C6E3A92120BFE43200733402 /* mqtt.plist in Resources */,
 				C6C1251E20C122D1006F212B /* style.css in Resources */,
 				C6C1251520C122D1006F212B /* workreport.png in Resources */,
+				C6D7B14120D0E32A002862F0 /* gift@2x.png in Resources */,
 				C68800582029972B00950524 /* SUPRegisterViewController.xib in Resources */,
 				C6C1253920C125AD006F212B /* bootstrap-theme.css in Resources */,
 				C623C42E20C4E27500BA2B48 /* chooser-button-tab@2x.png in Resources */,
@@ -3567,6 +3689,7 @@
 				C68B044120185CE5004B3F51 /* intro_0.jpg in Resources */,
 				C6C1251820C122D1006F212B /* app9.png in Resources */,
 				C646FE2D20B6980D000DCE65 /* SUPAnnotationCustomPopView.xib in Resources */,
+				C686B69D20CFD10800CE5D35 /* SUPCityViewController.xib in Resources */,
 				C623C42720C4E27500BA2B48 /* chooser-moment-icon-place@2x.png in Resources */,
 				C6C1250B20C122D0006F212B /* supplier.png in Resources */,
 				C69630C02008968E006958F7 /* Assets.xcassets in Resources */,
@@ -3726,6 +3849,7 @@
 				C6D9C96B2011C33500AEA963 /* SUPAdaptFontCell.m in Sources */,
 				C623C40420C4DE8C00BA2B48 /* DCPathButton.m in Sources */,
 				C6E71174201894F500336169 /* UIView+Find.m in Sources */,
+				C686B69620CFCB9E00CE5D35 /* JFCityCollectionFlowLayout.m in Sources */,
 				C688005D2029973C00950524 /* SUPISSRegistController.m in Sources */,
 				C68B040020176858004B3F51 /* ZFPlayerView.m in Sources */,
 				C65624AB20CBD2DF0066877E /* BaseSTTInputHandler.m in Sources */,
@@ -3757,6 +3881,7 @@
 				C646FE2920B6980D000DCE65 /* SUPCountDownCell.m in Sources */,
 				C68B043B20185CDA004B3F51 /* SUPIntroductoryPagesView.m in Sources */,
 				C623C40820C4DE8C00BA2B48 /* MCFireworksView.m in Sources */,
+				C6D7B14420D0E32A002862F0 /* GZView.m in Sources */,
 				C646FE1F20B6980D000DCE65 /* SUPCoordinateModel.m in Sources */,
 				C623C40320C4DE8C00BA2B48 /* TitleButton.m in Sources */,
 				C6D9C96E2011C35500AEA963 /* SUPListExpendHeaderView.m in Sources */,
@@ -3780,12 +3905,15 @@
 				C68B042220182A48004B3F51 /* SUPNavBarFadeViewController.m in Sources */,
 				C68B043020184E9D004B3F51 /* SUPFingerCheckViewController.m in Sources */,
 				C68B040220176858004B3F51 /* ASValueTrackingSlider.m in Sources */,
+				C6D7B14220D0E32A002862F0 /* UIImage+Extend.m in Sources */,
 				C6DC23CE20BE8C3F0005BFA1 /* NSURLConnection+SelfSigned.m in Sources */,
 				C646FE3D20B6A36C000DCE65 /* ChatCell.m in Sources */,
 				C65624B020CBD2DF0066877E /* MBProgressHUD+Add.m in Sources */,
 				C656249920CBD2DF0066877E /* QQingSpeechRecognizer.m in Sources */,
 				C6DC23DA20BE8C400005BFA1 /* NSString+XML.m in Sources */,
 				C6DC242320BE8C400005BFA1 /* CATransaction+AnimateWithDuration.m in Sources */,
+				C686B69020CFCB9D00CE5D35 /* JFLocation.m in Sources */,
+				C686B69320CFCB9D00CE5D35 /* JFSearchView.m in Sources */,
 				C6DC23FB20BE8C400005BFA1 /* NSTimer+Addition.m in Sources */,
 				C6DC23E520BE8C400005BFA1 /* NSString+Contains.m in Sources */,
 				C68800692029AE2800950524 /* SMSSDKUIProcessHUD.m in Sources */,
@@ -3793,6 +3921,7 @@
 				C623C3FC20C4DE8C00BA2B48 /* GroupAnimationController.m in Sources */,
 				C6DC23C920BE8C3F0005BFA1 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				C6DC23D420BE8C3F0005BFA1 /* NSData+Hash.m in Sources */,
+				C686B69420CFCB9E00CE5D35 /* JFCityViewController.m in Sources */,
 				C6D9C931201093BC00AEA963 /* SUPNoNavBarViewController.m in Sources */,
 				C6556C0C201B2F6000A3C882 /* SUPUMeng.m in Sources */,
 				C6DC240420BE8C400005BFA1 /* NSObject+AddProperty.m in Sources */,
@@ -3851,6 +3980,7 @@
 				C68B03FA20176858004B3F51 /* UIImageView+ZFCache.m in Sources */,
 				C68B03FC20176858004B3F51 /* ZFBrightnessView.m in Sources */,
 				C6DC23C720BE8C3F0005BFA1 /* NSDictionary+JSONString.m in Sources */,
+				C686B69520CFCB9E00CE5D35 /* JFCityTableViewCell.m in Sources */,
 				C6DC23E820BE8C400005BFA1 /* NSMutableString+Ruby.m in Sources */,
 				C62DEF8B200F20EA0042A7C7 /* SUPChildBlockViewController.m in Sources */,
 				C65624B420CBD2DF0066877E /* GCDSemaphore.m in Sources */,
@@ -3893,6 +4023,7 @@
 				C6572A8920CE0CB200615BC4 /* SBJson4StreamTokeniser.m in Sources */,
 				C68800572029972B00950524 /* SUPRegisterViewController.m in Sources */,
 				C656249720CBD2DF0066877E /* QQingSTTView.m in Sources */,
+				C686B69220CFCB9D00CE5D35 /* JFCityHeaderView.m in Sources */,
 				C6DC23D920BE8C400005BFA1 /* NSIndexPath+Offset.m in Sources */,
 				C62DEF7F200F1F820042A7C7 /* SUPBlockLoopOperation.m in Sources */,
 				C6768AD02024361900638781 /* UIImageView+FitNet.m in Sources */,
@@ -3926,21 +4057,26 @@
 				C69630F720089D87006958F7 /* NSDecimalNumber+Addtion.m in Sources */,
 				C6C1255A20C13258006F212B /* SecondViewController.m in Sources */,
 				C6DC23F320BE8C400005BFA1 /* NSUserDefaults+SafeAccess.m in Sources */,
+				C686B69C20CFD10800CE5D35 /* SUPCityViewController.m in Sources */,
 				C6DC23FA20BE8C400005BFA1 /* NSTimer+Blocks.m in Sources */,
 				C68B044B20186A16004B3F51 /* AdvertiseView.m in Sources */,
 				C6572A9020CE0CB200615BC4 /* PcmPlayer.m in Sources */,
 				C65624B320CBD2DF0066877E /* GCDGroup.m in Sources */,
 				C6E7117E2018C54D00336169 /* SUPLoginViewController.m in Sources */,
+				C6D7B14520D0E32A002862F0 /* YFMarqueeViewController.m in Sources */,
 				C6DC23E220BE8C400005BFA1 /* NSString+RemoveEmoji.m in Sources */,
 				C646FE1E20B6980D000DCE65 /* MyLocation.m in Sources */,
+				C686B69720CFCB9E00CE5D35 /* JFButton.m in Sources */,
 				C656249B20CBD2DF0066877E /* BaseBottomPopoverVC.m in Sources */,
 				C68B03F620176858004B3F51 /* UIWindow+CurrentViewController.m in Sources */,
+				C686B68F20CFCB9D00CE5D35 /* JFCityCollectionViewCell.m in Sources */,
 				C6DC23D020BE8C3F0005BFA1 /* NSFileHandle+readLine.m in Sources */,
 				C6DC23D520BE8C3F0005BFA1 /* NSData+Encrypt.m in Sources */,
 				C6C1256A20C15C0F006F212B /* WWPickerView.m in Sources */,
 				C6DC23DB20BE8C400005BFA1 /* NSString+Hash.m in Sources */,
 				C623C40720C4DE8C00BA2B48 /* MCFireworksButton.m in Sources */,
 				C6DC242020BE8C400005BFA1 /* CAAnimation+EasingEquations.m in Sources */,
+				C686B69120CFCB9D00CE5D35 /* JFAreaDataManager.m in Sources */,
 				C6D9C94C201098CA00AEA963 /* SUPEasyBlankPageView.m in Sources */,
 				C68B040520176858004B3F51 /* ZFHttpRequest.m in Sources */,
 				C646FE2420B6980D000DCE65 /* SUPUpLoadImagesViewController.m in Sources */,
@@ -3997,6 +4133,7 @@
 				C6DC23D220BE8C3F0005BFA1 /* NSData+zlib.m in Sources */,
 				C6DC23C620BE8C3F0005BFA1 /* NSDictionary+SafeAccess.m in Sources */,
 				C6963112200C4593006958F7 /* SUPWebViewController.m in Sources */,
+				C6D7B14320D0E32A002862F0 /* YFCycleView.m in Sources */,
 				C6E71176201894F500336169 /* UIView+Screenshot.m in Sources */,
 				C6DC23EF20BE8C400005BFA1 /* NSArray+SafeAccess.m in Sources */,
 				C68B041020176EAF004B3F51 /* SUPCalendarViewController.m in Sources */,
@@ -4030,6 +4167,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -4087,6 +4225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -4205,6 +4344,7 @@
 					"$(PROJECT_DIR)/SuperProject/libs/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/SuperProject/Classes/视频播放/百思不得姐/Vitamio",
 					"$(PROJECT_DIR)/SuperProject/Classes/百思不得姐/Vitamio",
+					"$(PROJECT_DIR)Pods/FMDB/src/fmdb",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -4345,6 +4485,7 @@
 					"$(PROJECT_DIR)/SuperProject/libs/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/SuperProject/Classes/视频播放/百思不得姐/Vitamio",
 					"$(PROJECT_DIR)/SuperProject/Classes/百思不得姐/Vitamio",
+					"$(PROJECT_DIR)Pods/FMDB/src/fmdb",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

@@ -137,7 +137,7 @@
 //NotificationContants_Advertise_Key
 - (void)adClick:(NSNotification *)noti
 {
-    NSString *url = @"https://github.com/NJHu/iOSProject/blob/master/README.md";
+    NSString *url = @"https://github.com/NShunjian/IOSProject/blob/master/README.md";
     if (!SUPIsEmpty(url)) {
         if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:url]]) {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{@"username" : @"njhu"} completionHandler:^(BOOL success) {

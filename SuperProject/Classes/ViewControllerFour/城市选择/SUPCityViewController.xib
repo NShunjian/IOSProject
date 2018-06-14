@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SUPCityViewController">
+            <connections>
+                <outlet property="resultLabel" destination="BPd-is-bgV" id="M7C-c3-Zz8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="405"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYu-ul-8JY">
+                    <rect key="frame" x="0.0" y="218" width="400" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.87715886919999997" blue="0.2215827078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ohf-3B-K49"/>
+                    </constraints>
+                    <state key="normal" title="选择城市">
+                        <color key="titleColor" red="0.0042188814839999996" green="0.84569472069999996" blue="0.78639632459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickedButtonEvent:" destination="-1" eventType="touchUpInside" id="65m-hb-uET"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前城市：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4X-zB-dls">
+                    <rect key="frame" x="22" y="162" width="87" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ILa-el-2R9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0042188814839999996" green="0.84569472069999996" blue="0.78639632459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市选择器" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-G8-KWh">
+                    <rect key="frame" x="0.0" y="64" width="400" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0042188814839999996" green="0.84569472069999996" blue="0.78639632459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请您选择城市！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPd-is-bgV">
+                    <rect key="frame" x="110" y="160" width="238" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="238" id="UTV-N4-aTI"/>
+                        <constraint firstAttribute="height" constant="21" id="Z6b-0V-Dck"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29160442949999998" green="0.56568789480000004" blue="0.88535696269999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Oas-G8-KWh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="3yI-rC-C8l"/>
+                <constraint firstItem="SYu-ul-8JY" firstAttribute="top" secondItem="E4X-zB-dls" secondAttribute="bottom" constant="35" id="4dy-ry-yOD"/>
+                <constraint firstItem="SYu-ul-8JY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="LDT-MX-0b6"/>
+                <constraint firstItem="BPd-is-bgV" firstAttribute="top" secondItem="Oas-G8-KWh" secondAttribute="bottom" constant="75" id="RCp-ed-1op"/>
+                <constraint firstItem="BPd-is-bgV" firstAttribute="leading" secondItem="E4X-zB-dls" secondAttribute="trailing" constant="1" id="RHx-I7-pLd"/>
+                <constraint firstItem="Oas-G8-KWh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="UQd-JW-saR"/>
+                <constraint firstItem="Oas-G8-KWh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W8y-ch-hmk"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Oas-G8-KWh" secondAttribute="trailing" id="cdb-XD-EGO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SYu-ul-8JY" secondAttribute="trailing" id="kww-0c-eG1"/>
+                <constraint firstItem="SYu-ul-8JY" firstAttribute="top" secondItem="BPd-is-bgV" secondAttribute="bottom" constant="37" id="mtG-Zq-pNR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BPd-is-bgV" secondAttribute="trailing" constant="52" id="sh8-3V-RfC"/>
+                <constraint firstItem="SYu-ul-8JY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y7k-yM-wYA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="47" y="-57.5"/>
+        </view>
+    </objects>
+</document>

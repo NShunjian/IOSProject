@@ -14,6 +14,12 @@
 #import "SUPTabBarController.h"
 #import "HomePageVC.h"
 #import "SUPIATViewController.h"
+#import "SUPCityViewController.h"
+#import "YFMarqueeViewController.h"
+#import "GZView.h"
+
+#import "YFCycleView.h"
+
 //#import "JiaAlertView.h"
 //#import "SINTabBarController.h"
 //#import "IMHTabBarController.h"
@@ -30,6 +36,7 @@
     [super viewDidLoad];
     SUPWeakSelf(self);
     NSLog(@"%@", weakself);
+    
     self.navigationItem.title = @"请您触摸";
     
     UIEdgeInsets edgeInsets = self.tableView.contentInset;
@@ -118,32 +125,29 @@
             [weakself presentViewController:[[SUPIATViewController alloc] init] animated:NO completion:nil];
         }];
     
+    SUPWordItem *item9 = [SUPWordItem itemWithTitle:@"城市选择" subTitle: @""];
+    [item9 setItemOperation:^(NSIndexPath *indexPath){
+        
+        [weakself.navigationController pushViewController:[[SUPCityViewController alloc]init] animated:YES];
+    }];
     
-    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6,item7,item8] andHeaderTitle:nil footerTitle:nil];
+    SUPWordItem *item10 = [SUPWordItem itemWithTitle:@"跑马灯" subTitle: @""];
+    [item10 setItemOperation:^(NSIndexPath *indexPath){
+        YFMarqueeViewController *yf = [[YFMarqueeViewController alloc]init];
+        [weakself.navigationController pushViewController:yf animated:YES];
+    }];
+    
+    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10] andHeaderTitle:nil footerTitle:nil];
     
     [self.sections addObject:section0];
     
    
     
+    YFCycleView *cycleView = [[YFCycleView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 40)];
+    cycleView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:cycleView];
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
    
     
     
@@ -174,6 +178,7 @@
     
     
 }
+
 
 #pragma mark - Events
 
