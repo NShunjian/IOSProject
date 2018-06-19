@@ -379,7 +379,7 @@
 {
     UIButton *btn = rightButton;
     
-    btn.backgroundColor = [UIColor yellowColor];
+    btn.backgroundColor = SUPRGBColor(241, 158, 194);
 
     [btn setTitle:@"分享" forState:UIControlStateNormal];
     

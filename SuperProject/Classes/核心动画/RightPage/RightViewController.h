@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 yixiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SUPTableViewController.h"
 
-@interface RightViewController : UIViewController
+@interface RightViewController : SUPTableViewController
 
 @end

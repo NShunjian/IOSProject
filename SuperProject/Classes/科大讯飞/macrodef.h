@@ -9,8 +9,8 @@
 #ifndef QQing_def_h
 #define QQing_def_h
 
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #undef  FA_EXTERN
 #define FA_EXTERN    extern __attribute__((visibility ("default")))

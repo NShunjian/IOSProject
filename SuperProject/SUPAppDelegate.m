@@ -173,7 +173,7 @@
     SUPNavigationController *lefNav = [[SUPNavigationController alloc]initWithRootViewController:leftViewController];
     //右侧菜单栏
     RightViewController *rightViewController = [[RightViewController alloc] init];
-    
+    SUPNavigationController *rigNav = [[SUPNavigationController alloc]initWithRootViewController:rightViewController];
     
 //    // 设置主窗口,并设置根控制器
 //    [CYLPlusButtonSubclass registerPlusButton];
@@ -192,7 +192,7 @@
 //    [self swRevealViewController:leftViewController right:rightViewController tabbar:tabBarController];
     
     //MMDrawerController  这是一种侧滑
-    [self mmDrawerController:lefNav right:rightViewController tabbar:_tabBarController navController:self.nav];
+    [self mmDrawerController:lefNav right:rigNav tabbar:_tabBarController navController:self.nav];
     [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
     
     

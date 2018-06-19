@@ -20,12 +20,7 @@
     
     [self setupBaseTableViewUI];
     
-    
 }
-
-
-
-
 
 - (void)setupBaseTableViewUI
 {
@@ -42,12 +37,7 @@
     }
     
     
-    
-    
-    
 }
-
-
 
 #pragma mark - scrollDeleggate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView

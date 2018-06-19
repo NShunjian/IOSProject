@@ -30,14 +30,23 @@
         _titleColor = [UIColor blackColor];
         _subTitleColor = [UIColor blackColor];
         
-        _cellHeight = AdaptedHeight(50);
+//        _cellHeight = AdaptedHeight(50);
         _titleFont = AdaptedFontSize(16);
         _subTitleFont = AdaptedFontSize(16);
-        
+        _subTitleNumberOfLines = 1;
 }
     
     return self;
 }
-
+- (CGFloat)cellHeight {
+    if (!_cellHeight) {
+        _cellHeight += 20;
+        NSString *totalString = [NSString stringWithFormat:@"%@%@", self.title, self.subTitle];
+        _cellHeight += [totalString boundingRectWithSize:CGSizeMake(kScreenWidth - 20, MAXFLOAT) options:0 attributes:@{NSFontAttributeName : self.subTitleFont} context:nil].size.height;
+        _cellHeight = MAX(_cellHeight, 50);
+        _cellHeight = AdaptedWidth(_cellHeight);
+    }
+    return _cellHeight;
+}
 
 @end

@@ -45,7 +45,6 @@
 {
     SUPWordItem *item = self.sections[indexPath.section].items[indexPath.row];
     
-    
     SUPSettingCell *cell = [SUPSettingCell cellWithTableView:tableView andCellStyle:UITableViewCellStyleValue1];
     
     cell.item = item;

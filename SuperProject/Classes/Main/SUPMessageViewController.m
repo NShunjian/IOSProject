@@ -17,9 +17,8 @@
 #import "SUPCityViewController.h"
 #import "YFMarqueeViewController.h"
 #import "GZView.h"
-
 #import "YFCycleView.h"
-
+#import "SUPRSAViewController.h"
 //#import "JiaAlertView.h"
 //#import "SINTabBarController.h"
 //#import "IMHTabBarController.h"
@@ -137,7 +136,15 @@
         [weakself.navigationController pushViewController:yf animated:YES];
     }];
     
-    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10] andHeaderTitle:nil footerTitle:nil];
+    SUPWordItem *item11 = [SUPWordItem itemWithTitle:@"RSA加密解密" subTitle: @"可对网络数据"];
+    [item11 setItemOperation:^(NSIndexPath *indexPath){
+        SUPRSAViewController *RSA = [[SUPRSAViewController alloc]init];
+        [weakself.navigationController pushViewController:RSA animated:YES];
+    }];
+    
+    
+    
+    SUPItemSection *section0 = [SUPItemSection sectionWithItems:@[item0,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11] andHeaderTitle:nil footerTitle:nil];
     
     [self.sections addObject:section0];
     

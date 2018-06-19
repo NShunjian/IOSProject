@@ -23,10 +23,16 @@
 @property (nonatomic, strong) UIFont *subTitleFont;
 /** 副标题的颜色 */
 @property (nonatomic, strong) UIColor *subTitleColor;
+/** 副标题行数限制 */
+@property (nonatomic, assign)  NSInteger subTitleNumberOfLines;
 
 
 /** 左边的图片 */
-@property (nonatomic, strong) UIImage *image;
+//@property (nonatomic, strong) UIImage *image;
+
+
+/** 左边的图片 UIImage 或者 NSURL 或者 URLString 或者 ImageName */
+@property (nonatomic, strong) id image;
 
 /** 设置cell的高度, 默认50 */
 @property (assign, nonatomic) CGFloat cellHeight;
