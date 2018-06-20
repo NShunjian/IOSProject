@@ -296,7 +296,7 @@
 /** 导航条右边的按钮 */
 - (UIImage *)SUPNavigationBarRightButtonImage:(UIButton *)rightButton navigationBar:(SUPNavigationBar *)navigationBar
 {
-    [rightButton setTitle:@"点击右侧菜单栏" forState:UIControlStateNormal];
+    [rightButton setTitle:@"点击动画特效" forState:UIControlStateNormal];
     rightButton.SUP_width = 120;
     [rightButton setTitleColor:[UIColor RandomColor] forState:UIControlStateNormal];
     return nil;
