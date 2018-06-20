@@ -50,26 +50,26 @@
 		C623C43A20C4E31E00BA2B48 /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = C623C43720C4E31D00BA2B48 /* selected.caf */; };
 		C623C43B20C4E31E00BA2B48 /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = C623C43820C4E31D00BA2B48 /* fold.caf */; };
 		C623C43C20C4E31E00BA2B48 /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = C623C43920C4E31D00BA2B48 /* bloom.caf */; };
-		C627559620DA8DC500D0DE8D /* YSCWaveAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627556220DA8DC500D0DE8D /* YSCWaveAnimationViewController.m */; };
-		C627559720DA8DC500D0DE8D /* YSCButterflyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627556520DA8DC500D0DE8D /* YSCButterflyViewController.m */; };
-		C627559820DA8DC500D0DE8D /* YSCFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627556620DA8DC500D0DE8D /* YSCFireViewController.m */; };
-		C627559920DA8DC500D0DE8D /* YSCEmitterAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627556A20DA8DC500D0DE8D /* YSCEmitterAnimationViewController.m */; };
-		C627559A20DA8DC500D0DE8D /* YSCloadGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627556C20DA8DC500D0DE8D /* YSCloadGifViewController.m */; };
-		C627559B20DA8DC500D0DE8D /* YSCCarouselTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627556F20DA8DC500D0DE8D /* YSCCarouselTitleViewController.m */; };
-		C627559C20DA8DC500D0DE8D /* YSCVoiceWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627557320DA8DC500D0DE8D /* YSCVoiceWaveViewController.m */; };
-		C627559D20DA8DC500D0DE8D /* YSCFanshapedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627557520DA8DC500D0DE8D /* YSCFanshapedViewController.m */; };
-		C627559E20DA8DC500D0DE8D /* YSCMaskAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627557620DA8DC500D0DE8D /* YSCMaskAnimationViewController.m */; };
-		C627559F20DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627557820DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.m */; };
-		C62755A020DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627557B20DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.m */; };
-		C62755A120DA8DC500D0DE8D /* YSCRippleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627557F20DA8DC500D0DE8D /* YSCRippleAnimationViewController.m */; };
-		C62755A220DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627558320DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.m */; };
-		C62755A320DA8DC500D0DE8D /* YSCCircleRippleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627558420DA8DC500D0DE8D /* YSCCircleRippleViewController.m */; };
-		C62755A420DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627558520DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.m */; };
-		C62755A520DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627558920DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.m */; };
-		C62755A620DA8DC500D0DE8D /* YSCRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627558B20DA8DC500D0DE8D /* YSCRefreshTableViewController.m */; };
-		C62755A720DA8DC500D0DE8D /* YSCWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627558F20DA8DC500D0DE8D /* YSCWaterWaveViewController.m */; };
-		C62755A820DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627559220DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.m */; };
-		C62755A920DA8DC500D0DE8D /* YSCLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C627559520DA8DC500D0DE8D /* YSCLayerAnimationViewController.m */; };
+		C62755E020DA90C300D0DE8D /* YSCWaveAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755AC20DA90C300D0DE8D /* YSCWaveAnimationViewController.m */; };
+		C62755E120DA90C300D0DE8D /* YSCButterflyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755AF20DA90C300D0DE8D /* YSCButterflyViewController.m */; };
+		C62755E220DA90C300D0DE8D /* YSCFireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755B020DA90C300D0DE8D /* YSCFireViewController.m */; };
+		C62755E320DA90C300D0DE8D /* YSCEmitterAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755B420DA90C300D0DE8D /* YSCEmitterAnimationViewController.m */; };
+		C62755E420DA90C300D0DE8D /* YSCloadGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755B620DA90C300D0DE8D /* YSCloadGifViewController.m */; };
+		C62755E520DA90C300D0DE8D /* YSCCarouselTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755B920DA90C300D0DE8D /* YSCCarouselTitleViewController.m */; };
+		C62755E620DA90C300D0DE8D /* YSCVoiceWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755BD20DA90C300D0DE8D /* YSCVoiceWaveViewController.m */; };
+		C62755E720DA90C300D0DE8D /* YSCFanshapedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755BF20DA90C300D0DE8D /* YSCFanshapedViewController.m */; };
+		C62755E820DA90C300D0DE8D /* YSCMaskAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755C020DA90C300D0DE8D /* YSCMaskAnimationViewController.m */; };
+		C62755E920DA90C300D0DE8D /* YSCMicrophoneWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755C220DA90C300D0DE8D /* YSCMicrophoneWaveViewController.m */; };
+		C62755EA20DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755C520DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.m */; };
+		C62755EB20DA90C300D0DE8D /* YSCRippleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755C920DA90C300D0DE8D /* YSCRippleAnimationViewController.m */; };
+		C62755EC20DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755CD20DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.m */; };
+		C62755ED20DA90C300D0DE8D /* YSCCircleRippleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755CE20DA90C300D0DE8D /* YSCCircleRippleViewController.m */; };
+		C62755EE20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755CF20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.m */; };
+		C62755EF20DA90C300D0DE8D /* YSCHeartBeatPulseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755D320DA90C300D0DE8D /* YSCHeartBeatPulseViewController.m */; };
+		C62755F020DA90C300D0DE8D /* YSCRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755D520DA90C300D0DE8D /* YSCRefreshTableViewController.m */; };
+		C62755F120DA90C300D0DE8D /* YSCWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755D920DA90C300D0DE8D /* YSCWaterWaveViewController.m */; };
+		C62755F220DA90C300D0DE8D /* YSCSeaWaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755DC20DA90C300D0DE8D /* YSCSeaWaterWaveViewController.m */; };
+		C62755F320DA90C300D0DE8D /* YSCLayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62755DF20DA90C300D0DE8D /* YSCLayerAnimationViewController.m */; };
 		C62DEF3B200D98710042A7C7 /* SUPTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DEF39200D98710042A7C7 /* SUPTextViewController.m */; };
 		C62DEF3E200DC4380042A7C7 /* SUPRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DEF3C200DC4380042A7C7 /* SUPRunTimeViewController.m */; };
 		C62DEF47200DC5790042A7C7 /* SUPRunTimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C62DEF45200DC5790042A7C7 /* SUPRunTimeTest.m */; };
@@ -648,46 +648,46 @@
 		C623C43720C4E31D00BA2B48 /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
 		C623C43820C4E31D00BA2B48 /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
 		C623C43920C4E31D00BA2B48 /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
-		C627556220DA8DC500D0DE8D /* YSCWaveAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCWaveAnimationViewController.m; sourceTree = "<group>"; };
-		C627556320DA8DC500D0DE8D /* YSCWaveAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCWaveAnimationViewController.h; sourceTree = "<group>"; };
-		C627556520DA8DC500D0DE8D /* YSCButterflyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCButterflyViewController.m; sourceTree = "<group>"; };
-		C627556620DA8DC500D0DE8D /* YSCFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCFireViewController.m; sourceTree = "<group>"; };
-		C627556720DA8DC500D0DE8D /* YSCEmitterAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCEmitterAnimationViewController.h; sourceTree = "<group>"; };
-		C627556820DA8DC500D0DE8D /* YSCFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCFireViewController.h; sourceTree = "<group>"; };
-		C627556920DA8DC500D0DE8D /* YSCButterflyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCButterflyViewController.h; sourceTree = "<group>"; };
-		C627556A20DA8DC500D0DE8D /* YSCEmitterAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCEmitterAnimationViewController.m; sourceTree = "<group>"; };
-		C627556C20DA8DC500D0DE8D /* YSCloadGifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCloadGifViewController.m; sourceTree = "<group>"; };
-		C627556D20DA8DC500D0DE8D /* YSCloadGifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCloadGifViewController.h; sourceTree = "<group>"; };
-		C627556F20DA8DC500D0DE8D /* YSCCarouselTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCarouselTitleViewController.m; sourceTree = "<group>"; };
-		C627557020DA8DC500D0DE8D /* YSCCarouselTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCarouselTitleViewController.h; sourceTree = "<group>"; };
-		C627557220DA8DC500D0DE8D /* YSCVoiceWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCVoiceWaveViewController.h; sourceTree = "<group>"; };
-		C627557320DA8DC500D0DE8D /* YSCVoiceWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCVoiceWaveViewController.m; sourceTree = "<group>"; };
-		C627557520DA8DC500D0DE8D /* YSCFanshapedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCFanshapedViewController.m; sourceTree = "<group>"; };
-		C627557620DA8DC500D0DE8D /* YSCMaskAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCMaskAnimationViewController.m; sourceTree = "<group>"; };
-		C627557720DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCircleLoadAnimationViewController.h; sourceTree = "<group>"; };
-		C627557820DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCMicrophoneWaveViewController.m; sourceTree = "<group>"; };
-		C627557920DA8DC500D0DE8D /* YSCFanshapedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCFanshapedViewController.h; sourceTree = "<group>"; };
-		C627557A20DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCMicrophoneWaveViewController.h; sourceTree = "<group>"; };
-		C627557B20DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCircleLoadAnimationViewController.m; sourceTree = "<group>"; };
-		C627557C20DA8DC500D0DE8D /* YSCMaskAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCMaskAnimationViewController.h; sourceTree = "<group>"; };
-		C627557E20DA8DC500D0DE8D /* YSCRippleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCRippleAnimationViewController.h; sourceTree = "<group>"; };
-		C627557F20DA8DC500D0DE8D /* YSCRippleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCRippleAnimationViewController.m; sourceTree = "<group>"; };
-		C627558120DA8DC500D0DE8D /* YSCCircleRippleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCircleRippleViewController.h; sourceTree = "<group>"; };
-		C627558220DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCReplicatorAnimationViewController.h; sourceTree = "<group>"; };
-		C627558320DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCircleReplicatorAnimationViewController.m; sourceTree = "<group>"; };
-		C627558420DA8DC500D0DE8D /* YSCCircleRippleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCircleRippleViewController.m; sourceTree = "<group>"; };
-		C627558520DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCReplicatorAnimationViewController.m; sourceTree = "<group>"; };
-		C627558620DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCircleReplicatorAnimationViewController.h; sourceTree = "<group>"; };
-		C627558820DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCHeartBeatPulseViewController.h; sourceTree = "<group>"; };
-		C627558920DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCHeartBeatPulseViewController.m; sourceTree = "<group>"; };
-		C627558B20DA8DC500D0DE8D /* YSCRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCRefreshTableViewController.m; sourceTree = "<group>"; };
-		C627558C20DA8DC500D0DE8D /* YSCRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCRefreshTableViewController.h; sourceTree = "<group>"; };
-		C627558E20DA8DC500D0DE8D /* YSCWaterWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCWaterWaveViewController.h; sourceTree = "<group>"; };
-		C627558F20DA8DC500D0DE8D /* YSCWaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCWaterWaveViewController.m; sourceTree = "<group>"; };
-		C627559120DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCSeaWaterWaveViewController.h; sourceTree = "<group>"; };
-		C627559220DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCSeaWaterWaveViewController.m; sourceTree = "<group>"; };
-		C627559420DA8DC500D0DE8D /* YSCLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCLayerAnimationViewController.h; sourceTree = "<group>"; };
-		C627559520DA8DC500D0DE8D /* YSCLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCLayerAnimationViewController.m; sourceTree = "<group>"; };
+		C62755AC20DA90C300D0DE8D /* YSCWaveAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCWaveAnimationViewController.m; sourceTree = "<group>"; };
+		C62755AD20DA90C300D0DE8D /* YSCWaveAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCWaveAnimationViewController.h; sourceTree = "<group>"; };
+		C62755AF20DA90C300D0DE8D /* YSCButterflyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCButterflyViewController.m; sourceTree = "<group>"; };
+		C62755B020DA90C300D0DE8D /* YSCFireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCFireViewController.m; sourceTree = "<group>"; };
+		C62755B120DA90C300D0DE8D /* YSCEmitterAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCEmitterAnimationViewController.h; sourceTree = "<group>"; };
+		C62755B220DA90C300D0DE8D /* YSCFireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCFireViewController.h; sourceTree = "<group>"; };
+		C62755B320DA90C300D0DE8D /* YSCButterflyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCButterflyViewController.h; sourceTree = "<group>"; };
+		C62755B420DA90C300D0DE8D /* YSCEmitterAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCEmitterAnimationViewController.m; sourceTree = "<group>"; };
+		C62755B620DA90C300D0DE8D /* YSCloadGifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCloadGifViewController.m; sourceTree = "<group>"; };
+		C62755B720DA90C300D0DE8D /* YSCloadGifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCloadGifViewController.h; sourceTree = "<group>"; };
+		C62755B920DA90C300D0DE8D /* YSCCarouselTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCarouselTitleViewController.m; sourceTree = "<group>"; };
+		C62755BA20DA90C300D0DE8D /* YSCCarouselTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCarouselTitleViewController.h; sourceTree = "<group>"; };
+		C62755BC20DA90C300D0DE8D /* YSCVoiceWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCVoiceWaveViewController.h; sourceTree = "<group>"; };
+		C62755BD20DA90C300D0DE8D /* YSCVoiceWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCVoiceWaveViewController.m; sourceTree = "<group>"; };
+		C62755BF20DA90C300D0DE8D /* YSCFanshapedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCFanshapedViewController.m; sourceTree = "<group>"; };
+		C62755C020DA90C300D0DE8D /* YSCMaskAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCMaskAnimationViewController.m; sourceTree = "<group>"; };
+		C62755C120DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCircleLoadAnimationViewController.h; sourceTree = "<group>"; };
+		C62755C220DA90C300D0DE8D /* YSCMicrophoneWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCMicrophoneWaveViewController.m; sourceTree = "<group>"; };
+		C62755C320DA90C300D0DE8D /* YSCFanshapedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCFanshapedViewController.h; sourceTree = "<group>"; };
+		C62755C420DA90C300D0DE8D /* YSCMicrophoneWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCMicrophoneWaveViewController.h; sourceTree = "<group>"; };
+		C62755C520DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCircleLoadAnimationViewController.m; sourceTree = "<group>"; };
+		C62755C620DA90C300D0DE8D /* YSCMaskAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCMaskAnimationViewController.h; sourceTree = "<group>"; };
+		C62755C820DA90C300D0DE8D /* YSCRippleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCRippleAnimationViewController.h; sourceTree = "<group>"; };
+		C62755C920DA90C300D0DE8D /* YSCRippleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCRippleAnimationViewController.m; sourceTree = "<group>"; };
+		C62755CB20DA90C300D0DE8D /* YSCCircleRippleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCircleRippleViewController.h; sourceTree = "<group>"; };
+		C62755CC20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCReplicatorAnimationViewController.h; sourceTree = "<group>"; };
+		C62755CD20DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCircleReplicatorAnimationViewController.m; sourceTree = "<group>"; };
+		C62755CE20DA90C300D0DE8D /* YSCCircleRippleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCCircleRippleViewController.m; sourceTree = "<group>"; };
+		C62755CF20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCReplicatorAnimationViewController.m; sourceTree = "<group>"; };
+		C62755D020DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCCircleReplicatorAnimationViewController.h; sourceTree = "<group>"; };
+		C62755D220DA90C300D0DE8D /* YSCHeartBeatPulseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCHeartBeatPulseViewController.h; sourceTree = "<group>"; };
+		C62755D320DA90C300D0DE8D /* YSCHeartBeatPulseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCHeartBeatPulseViewController.m; sourceTree = "<group>"; };
+		C62755D520DA90C300D0DE8D /* YSCRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCRefreshTableViewController.m; sourceTree = "<group>"; };
+		C62755D620DA90C300D0DE8D /* YSCRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCRefreshTableViewController.h; sourceTree = "<group>"; };
+		C62755D820DA90C300D0DE8D /* YSCWaterWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCWaterWaveViewController.h; sourceTree = "<group>"; };
+		C62755D920DA90C300D0DE8D /* YSCWaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCWaterWaveViewController.m; sourceTree = "<group>"; };
+		C62755DB20DA90C300D0DE8D /* YSCSeaWaterWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCSeaWaterWaveViewController.h; sourceTree = "<group>"; };
+		C62755DC20DA90C300D0DE8D /* YSCSeaWaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCSeaWaterWaveViewController.m; sourceTree = "<group>"; };
+		C62755DE20DA90C300D0DE8D /* YSCLayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCLayerAnimationViewController.h; sourceTree = "<group>"; };
+		C62755DF20DA90C300D0DE8D /* YSCLayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCLayerAnimationViewController.m; sourceTree = "<group>"; };
 		C62DEF39200D98710042A7C7 /* SUPTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPTextViewController.m; sourceTree = "<group>"; };
 		C62DEF3A200D98710042A7C7 /* SUPTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPTextViewController.h; sourceTree = "<group>"; };
 		C62DEF3C200DC4380042A7C7 /* SUPRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPRunTimeViewController.m; sourceTree = "<group>"; };
@@ -1761,7 +1761,7 @@
 		C623C40B20C4DEB300BA2B48 /* RightPage */ = {
 			isa = PBXGroup;
 			children = (
-				C627556020DA8DC500D0DE8D /* Demo controllers */,
+				C62755AA20DA90C300D0DE8D /* Demo controllers */,
 				C64AD43520D921C5008955FF /* YSCAnimation */,
 				C64AD3DE20D90BA7008955FF /* Resource */,
 				C623C40D20C4DEB300BA2B48 /* RightViewController.h */,
@@ -1808,154 +1808,153 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		C627556020DA8DC500D0DE8D /* Demo controllers */ = {
+		C62755AA20DA90C300D0DE8D /* Demo controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C627556120DA8DC500D0DE8D /* custom wave */,
-				C627556420DA8DC500D0DE8D /* emitter */,
-				C627556B20DA8DC500D0DE8D /* LoadGif */,
-				C627556E20DA8DC500D0DE8D /* carouselTitle */,
-				C627557120DA8DC500D0DE8D /* voice wave */,
-				C627557420DA8DC500D0DE8D /* maskAnimation */,
-				C627557D20DA8DC500D0DE8D /* ripple */,
-				C627558020DA8DC500D0DE8D /* replicator */,
-				C627558720DA8DC500D0DE8D /* heartBeatPulse */,
-				C627558A20DA8DC500D0DE8D /* tableRefresh */,
-				C627558D20DA8DC500D0DE8D /* water wave */,
-				C627559020DA8DC500D0DE8D /* seawater */,
-				C627559320DA8DC500D0DE8D /* custom */,
+				C62755AB20DA90C300D0DE8D /* custom wave */,
+				C62755AE20DA90C300D0DE8D /* emitter */,
+				C62755B520DA90C300D0DE8D /* LoadGif */,
+				C62755B820DA90C300D0DE8D /* carouselTitle */,
+				C62755BB20DA90C300D0DE8D /* voice wave */,
+				C62755BE20DA90C300D0DE8D /* maskAnimation */,
+				C62755C720DA90C300D0DE8D /* ripple */,
+				C62755CA20DA90C300D0DE8D /* replicator */,
+				C62755D120DA90C300D0DE8D /* heartBeatPulse */,
+				C62755D420DA90C300D0DE8D /* tableRefresh */,
+				C62755D720DA90C300D0DE8D /* water wave */,
+				C62755DA20DA90C300D0DE8D /* seawater */,
+				C62755DD20DA90C300D0DE8D /* custom */,
 			);
-			name = "Demo controllers";
-			path = "../../../../../../YSCAnimation-master/YSCAnimationDemo/YSCAnimationDemo/Demo controllers";
+			path = "Demo controllers";
 			sourceTree = "<group>";
 		};
-		C627556120DA8DC500D0DE8D /* custom wave */ = {
+		C62755AB20DA90C300D0DE8D /* custom wave */ = {
 			isa = PBXGroup;
 			children = (
-				C627556220DA8DC500D0DE8D /* YSCWaveAnimationViewController.m */,
-				C627556320DA8DC500D0DE8D /* YSCWaveAnimationViewController.h */,
+				C62755AC20DA90C300D0DE8D /* YSCWaveAnimationViewController.m */,
+				C62755AD20DA90C300D0DE8D /* YSCWaveAnimationViewController.h */,
 			);
 			path = "custom wave";
 			sourceTree = "<group>";
 		};
-		C627556420DA8DC500D0DE8D /* emitter */ = {
+		C62755AE20DA90C300D0DE8D /* emitter */ = {
 			isa = PBXGroup;
 			children = (
-				C627556520DA8DC500D0DE8D /* YSCButterflyViewController.m */,
-				C627556620DA8DC500D0DE8D /* YSCFireViewController.m */,
-				C627556720DA8DC500D0DE8D /* YSCEmitterAnimationViewController.h */,
-				C627556820DA8DC500D0DE8D /* YSCFireViewController.h */,
-				C627556920DA8DC500D0DE8D /* YSCButterflyViewController.h */,
-				C627556A20DA8DC500D0DE8D /* YSCEmitterAnimationViewController.m */,
+				C62755AF20DA90C300D0DE8D /* YSCButterflyViewController.m */,
+				C62755B020DA90C300D0DE8D /* YSCFireViewController.m */,
+				C62755B120DA90C300D0DE8D /* YSCEmitterAnimationViewController.h */,
+				C62755B220DA90C300D0DE8D /* YSCFireViewController.h */,
+				C62755B320DA90C300D0DE8D /* YSCButterflyViewController.h */,
+				C62755B420DA90C300D0DE8D /* YSCEmitterAnimationViewController.m */,
 			);
 			path = emitter;
 			sourceTree = "<group>";
 		};
-		C627556B20DA8DC500D0DE8D /* LoadGif */ = {
+		C62755B520DA90C300D0DE8D /* LoadGif */ = {
 			isa = PBXGroup;
 			children = (
-				C627556C20DA8DC500D0DE8D /* YSCloadGifViewController.m */,
-				C627556D20DA8DC500D0DE8D /* YSCloadGifViewController.h */,
+				C62755B620DA90C300D0DE8D /* YSCloadGifViewController.m */,
+				C62755B720DA90C300D0DE8D /* YSCloadGifViewController.h */,
 			);
 			path = LoadGif;
 			sourceTree = "<group>";
 		};
-		C627556E20DA8DC500D0DE8D /* carouselTitle */ = {
+		C62755B820DA90C300D0DE8D /* carouselTitle */ = {
 			isa = PBXGroup;
 			children = (
-				C627556F20DA8DC500D0DE8D /* YSCCarouselTitleViewController.m */,
-				C627557020DA8DC500D0DE8D /* YSCCarouselTitleViewController.h */,
+				C62755B920DA90C300D0DE8D /* YSCCarouselTitleViewController.m */,
+				C62755BA20DA90C300D0DE8D /* YSCCarouselTitleViewController.h */,
 			);
 			path = carouselTitle;
 			sourceTree = "<group>";
 		};
-		C627557120DA8DC500D0DE8D /* voice wave */ = {
+		C62755BB20DA90C300D0DE8D /* voice wave */ = {
 			isa = PBXGroup;
 			children = (
-				C627557220DA8DC500D0DE8D /* YSCVoiceWaveViewController.h */,
-				C627557320DA8DC500D0DE8D /* YSCVoiceWaveViewController.m */,
+				C62755BC20DA90C300D0DE8D /* YSCVoiceWaveViewController.h */,
+				C62755BD20DA90C300D0DE8D /* YSCVoiceWaveViewController.m */,
 			);
 			path = "voice wave";
 			sourceTree = "<group>";
 		};
-		C627557420DA8DC500D0DE8D /* maskAnimation */ = {
+		C62755BE20DA90C300D0DE8D /* maskAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				C627557520DA8DC500D0DE8D /* YSCFanshapedViewController.m */,
-				C627557620DA8DC500D0DE8D /* YSCMaskAnimationViewController.m */,
-				C627557720DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.h */,
-				C627557820DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.m */,
-				C627557920DA8DC500D0DE8D /* YSCFanshapedViewController.h */,
-				C627557A20DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.h */,
-				C627557B20DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.m */,
-				C627557C20DA8DC500D0DE8D /* YSCMaskAnimationViewController.h */,
+				C62755BF20DA90C300D0DE8D /* YSCFanshapedViewController.m */,
+				C62755C020DA90C300D0DE8D /* YSCMaskAnimationViewController.m */,
+				C62755C120DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.h */,
+				C62755C220DA90C300D0DE8D /* YSCMicrophoneWaveViewController.m */,
+				C62755C320DA90C300D0DE8D /* YSCFanshapedViewController.h */,
+				C62755C420DA90C300D0DE8D /* YSCMicrophoneWaveViewController.h */,
+				C62755C520DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.m */,
+				C62755C620DA90C300D0DE8D /* YSCMaskAnimationViewController.h */,
 			);
 			path = maskAnimation;
 			sourceTree = "<group>";
 		};
-		C627557D20DA8DC500D0DE8D /* ripple */ = {
+		C62755C720DA90C300D0DE8D /* ripple */ = {
 			isa = PBXGroup;
 			children = (
-				C627557E20DA8DC500D0DE8D /* YSCRippleAnimationViewController.h */,
-				C627557F20DA8DC500D0DE8D /* YSCRippleAnimationViewController.m */,
+				C62755C820DA90C300D0DE8D /* YSCRippleAnimationViewController.h */,
+				C62755C920DA90C300D0DE8D /* YSCRippleAnimationViewController.m */,
 			);
 			path = ripple;
 			sourceTree = "<group>";
 		};
-		C627558020DA8DC500D0DE8D /* replicator */ = {
+		C62755CA20DA90C300D0DE8D /* replicator */ = {
 			isa = PBXGroup;
 			children = (
-				C627558120DA8DC500D0DE8D /* YSCCircleRippleViewController.h */,
-				C627558220DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.h */,
-				C627558320DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.m */,
-				C627558420DA8DC500D0DE8D /* YSCCircleRippleViewController.m */,
-				C627558520DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.m */,
-				C627558620DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.h */,
+				C62755CB20DA90C300D0DE8D /* YSCCircleRippleViewController.h */,
+				C62755CC20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.h */,
+				C62755CD20DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.m */,
+				C62755CE20DA90C300D0DE8D /* YSCCircleRippleViewController.m */,
+				C62755CF20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.m */,
+				C62755D020DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.h */,
 			);
 			path = replicator;
 			sourceTree = "<group>";
 		};
-		C627558720DA8DC500D0DE8D /* heartBeatPulse */ = {
+		C62755D120DA90C300D0DE8D /* heartBeatPulse */ = {
 			isa = PBXGroup;
 			children = (
-				C627558820DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.h */,
-				C627558920DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.m */,
+				C62755D220DA90C300D0DE8D /* YSCHeartBeatPulseViewController.h */,
+				C62755D320DA90C300D0DE8D /* YSCHeartBeatPulseViewController.m */,
 			);
 			path = heartBeatPulse;
 			sourceTree = "<group>";
 		};
-		C627558A20DA8DC500D0DE8D /* tableRefresh */ = {
+		C62755D420DA90C300D0DE8D /* tableRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				C627558B20DA8DC500D0DE8D /* YSCRefreshTableViewController.m */,
-				C627558C20DA8DC500D0DE8D /* YSCRefreshTableViewController.h */,
+				C62755D520DA90C300D0DE8D /* YSCRefreshTableViewController.m */,
+				C62755D620DA90C300D0DE8D /* YSCRefreshTableViewController.h */,
 			);
 			path = tableRefresh;
 			sourceTree = "<group>";
 		};
-		C627558D20DA8DC500D0DE8D /* water wave */ = {
+		C62755D720DA90C300D0DE8D /* water wave */ = {
 			isa = PBXGroup;
 			children = (
-				C627558E20DA8DC500D0DE8D /* YSCWaterWaveViewController.h */,
-				C627558F20DA8DC500D0DE8D /* YSCWaterWaveViewController.m */,
+				C62755D820DA90C300D0DE8D /* YSCWaterWaveViewController.h */,
+				C62755D920DA90C300D0DE8D /* YSCWaterWaveViewController.m */,
 			);
 			path = "water wave";
 			sourceTree = "<group>";
 		};
-		C627559020DA8DC500D0DE8D /* seawater */ = {
+		C62755DA20DA90C300D0DE8D /* seawater */ = {
 			isa = PBXGroup;
 			children = (
-				C627559120DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.h */,
-				C627559220DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.m */,
+				C62755DB20DA90C300D0DE8D /* YSCSeaWaterWaveViewController.h */,
+				C62755DC20DA90C300D0DE8D /* YSCSeaWaterWaveViewController.m */,
 			);
 			path = seawater;
 			sourceTree = "<group>";
 		};
-		C627559320DA8DC500D0DE8D /* custom */ = {
+		C62755DD20DA90C300D0DE8D /* custom */ = {
 			isa = PBXGroup;
 			children = (
-				C627559420DA8DC500D0DE8D /* YSCLayerAnimationViewController.h */,
-				C627559520DA8DC500D0DE8D /* YSCLayerAnimationViewController.m */,
+				C62755DE20DA90C300D0DE8D /* YSCLayerAnimationViewController.h */,
+				C62755DF20DA90C300D0DE8D /* YSCLayerAnimationViewController.m */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -4453,7 +4452,7 @@
 				C6DC23DF20BE8C400005BFA1 /* NSString+Encrypt.m in Sources */,
 				C6D9C9852011CF2B00AEA963 /* SUPHorizontalLayoutViewController.m in Sources */,
 				C69631022008A4C1006958F7 /* SUPWordItem.m in Sources */,
-				C627559D20DA8DC500D0DE8D /* YSCFanshapedViewController.m in Sources */,
+				C62755E720DA90C300D0DE8D /* YSCFanshapedViewController.m in Sources */,
 				C64AD48620D921C5008955FF /* YSCFanShapedView.m in Sources */,
 				C646FE2720B6980D000DCE65 /* SUPAlertViewsViewController.m in Sources */,
 				C68B040D20176DC0004B3F51 /* SUPDragTableViewController.m in Sources */,
@@ -4482,7 +4481,7 @@
 				C6572AAE20CE131600615BC4 /* LLSpeakingView.m in Sources */,
 				C6D9C92E201090E100AEA963 /* SUPAddressPickerViewController.m in Sources */,
 				C646FE2820B6980D000DCE65 /* SUPFillTableFormViewController.m in Sources */,
-				C627559E20DA8DC500D0DE8D /* YSCMaskAnimationViewController.m in Sources */,
+				C62755E820DA90C300D0DE8D /* YSCMaskAnimationViewController.m in Sources */,
 				C6768A1D2024342D00638781 /* SUPMessageViewController.m in Sources */,
 				C6DC20E020BD94220005BFA1 /* UserViewController.m in Sources */,
 				C6963118200C479A006958F7 /* SUPRequestBaseViewController.m in Sources */,
@@ -4496,7 +4495,7 @@
 				C69630F220089D87006958F7 /* UIColor+Random.m in Sources */,
 				C6E71168201894F500336169 /* UIView+Debug.m in Sources */,
 				C64AD32520D8F5BB008955FF /* YSCGlobleMethod.m in Sources */,
-				C627559620DA8DC500D0DE8D /* YSCWaveAnimationViewController.m in Sources */,
+				C62755E020DA90C300D0DE8D /* YSCWaveAnimationViewController.m in Sources */,
 				C6DC242120BE8C400005BFA1 /* CAShapeLayer+UIBezierPath.m in Sources */,
 				C6DC240520BE8C400005BFA1 /* NSObject+GCD.m in Sources */,
 				C6572A9520CE0CCF00615BC4 /* isrDataHelper.m in Sources */,
@@ -4511,7 +4510,7 @@
 				C65624A920CBD2DF0066877E /* TextFieldSTTInputHandler.m in Sources */,
 				C6D9C97E2011CA9200AEA963 /* SUPHorizontalFlowLayout.m in Sources */,
 				C6E71175201894F500336169 /* UIView+Constraints.m in Sources */,
-				C62755A920DA8DC500D0DE8D /* YSCLayerAnimationViewController.m in Sources */,
+				C62755F320DA90C300D0DE8D /* YSCLayerAnimationViewController.m in Sources */,
 				C6DC23FC20BE8C400005BFA1 /* NSSet+Block.m in Sources */,
 				C62DEF82200F1FB70042A7C7 /* SUPBlockLoopViewController.m in Sources */,
 				C64AD49520D921C5008955FF /* YSCMatrixCircleAnimationView.m in Sources */,
@@ -4544,7 +4543,7 @@
 				C6DC23FB20BE8C400005BFA1 /* NSTimer+Addition.m in Sources */,
 				C6DC23E520BE8C400005BFA1 /* NSString+Contains.m in Sources */,
 				C68800692029AE2800950524 /* SMSSDKUIProcessHUD.m in Sources */,
-				C62755A520DA8DC500D0DE8D /* YSCHeartBeatPulseViewController.m in Sources */,
+				C62755EF20DA90C300D0DE8D /* YSCHeartBeatPulseViewController.m in Sources */,
 				C65624A120CBD2DF0066877E /* NSArray+ObjectAtIndexWithBoundsCheck.m in Sources */,
 				C623C3FC20C4DE8C00BA2B48 /* GroupAnimationController.m in Sources */,
 				C6DC23C920BE8C3F0005BFA1 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
@@ -4562,7 +4561,7 @@
 				C6D9C9522011980E00AEA963 /* SUPAnimationNavBarViewController.m in Sources */,
 				C6D9C9582011BF0500AEA963 /* SUPYYTextViewController.m in Sources */,
 				C6DC23F220BE8C400005BFA1 /* NSMutableURLRequest+Upload.m in Sources */,
-				C62755A420DA8DC500D0DE8D /* YSCReplicatorAnimationViewController.m in Sources */,
+				C62755EE20DA90C300D0DE8D /* YSCReplicatorAnimationViewController.m in Sources */,
 				C6DC23EC20BE8C400005BFA1 /* NSString+MIME.m in Sources */,
 				C646FE2620B6980D000DCE65 /* SUPH5_OCViewController.m in Sources */,
 				C6E71171201894F500336169 /* UIView+Recursion.m in Sources */,
@@ -4579,7 +4578,7 @@
 				C6D9C9762011CA2800AEA963 /* SUPCollectionViewController.m in Sources */,
 				C69630DA2008988C006958F7 /* SUPNavigationController.m in Sources */,
 				C623C40E20C4DEB300BA2B48 /* RightViewController.m in Sources */,
-				C62755A320DA8DC500D0DE8D /* YSCCircleRippleViewController.m in Sources */,
+				C62755ED20DA90C300D0DE8D /* YSCCircleRippleViewController.m in Sources */,
 				C69630DC2008988C006958F7 /* SUPHomeViewController.m in Sources */,
 				C6DC23F720BE8C400005BFA1 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				C65624A520CBD2DF0066877E /* QQingUtils.m in Sources */,
@@ -4602,7 +4601,7 @@
 				C6572AA420CE0CE900615BC4 /* AKPickerView.m in Sources */,
 				C62DEF7C200EE4740042A7C7 /* SUPUsertProtocol.m in Sources */,
 				C64AD49120D921C5008955FF /* YSCWaveView.m in Sources */,
-				C627559720DA8DC500D0DE8D /* YSCButterflyViewController.m in Sources */,
+				C62755E120DA90C300D0DE8D /* YSCButterflyViewController.m in Sources */,
 				C696310F2008A709006958F7 /* SUPNavigationBar.m in Sources */,
 				C69631062008A516006958F7 /* SUPSettingCell.m in Sources */,
 				C623C40220C4DE8C00BA2B48 /* BaseAnimationController.m in Sources */,
@@ -4628,7 +4627,7 @@
 				C6D9C97F2011CA9200AEA963 /* SUPVerticalFlowLayout.m in Sources */,
 				C6DC241520BE8C400005BFA1 /* NSManagedObjectContext+Fetching.m in Sources */,
 				C65624AA20CBD2DF0066877E /* TextViewInputHandler.m in Sources */,
-				C627559B20DA8DC500D0DE8D /* YSCCarouselTitleViewController.m in Sources */,
+				C62755E520DA90C300D0DE8D /* YSCCarouselTitleViewController.m in Sources */,
 				C6D9C940201096F400AEA963 /* SUPRefreshTableViewController.m in Sources */,
 				C64AD48420D921C5008955FF /* YSCGifLoadImageView.m in Sources */,
 				C68B03FE20176858004B3F51 /* ASValuePopUpView.m in Sources */,
@@ -4687,14 +4686,14 @@
 				C6DC23E920BE8C400005BFA1 /* NSString+Matcher.m in Sources */,
 				C6DC241120BE8C400005BFA1 /* NSManagedObject+DictionaryExport.m in Sources */,
 				C6DC240A20BE8C400005BFA1 /* NSDate+Formatter.m in Sources */,
-				C627559920DA8DC500D0DE8D /* YSCEmitterAnimationViewController.m in Sources */,
+				C62755E320DA90C300D0DE8D /* YSCEmitterAnimationViewController.m in Sources */,
 				C62DEF8E200F20FE0042A7C7 /* SUPModalBlockViewController.m in Sources */,
 				C6572A8720CE0CB200615BC4 /* PopupView.m in Sources */,
 				C6C1256220C132A6006F212B /* HXWebModel.m in Sources */,
 				C6DC244C20BEA0D90005BFA1 /* Target_Designer.m in Sources */,
 				C6E7118520196BF400336169 /* WJYAlertInputTextView.m in Sources */,
 				C6DC241B20BE8C400005BFA1 /* MKMapView+ZoomLevel.m in Sources */,
-				C62755A820DA8DC500D0DE8D /* YSCSeaWaterWaveViewController.m in Sources */,
+				C62755F220DA90C300D0DE8D /* YSCSeaWaterWaveViewController.m in Sources */,
 				C6572AAB20CE0D0600615BC4 /* iatConfig.m in Sources */,
 				C6DC23D120BE8C3F0005BFA1 /* NSData+APNSToken.m in Sources */,
 				C69630F720089D87006958F7 /* NSDecimalNumber+Addtion.m in Sources */,
@@ -4702,7 +4701,7 @@
 				C6C1255A20C13258006F212B /* SecondViewController.m in Sources */,
 				C6DC23F320BE8C400005BFA1 /* NSUserDefaults+SafeAccess.m in Sources */,
 				C686B69C20CFD10800CE5D35 /* SUPCityViewController.m in Sources */,
-				C62755A620DA8DC500D0DE8D /* YSCRefreshTableViewController.m in Sources */,
+				C62755F020DA90C300D0DE8D /* YSCRefreshTableViewController.m in Sources */,
 				C6DC23FA20BE8C400005BFA1 /* NSTimer+Blocks.m in Sources */,
 				C64AD48920D921C5008955FF /* YSCVoiceLoadingCircleView.m in Sources */,
 				C68B044B20186A16004B3F51 /* AdvertiseView.m in Sources */,
@@ -4725,7 +4724,7 @@
 				C6DC242020BE8C400005BFA1 /* CAAnimation+EasingEquations.m in Sources */,
 				C686B69120CFCB9D00CE5D35 /* JFAreaDataManager.m in Sources */,
 				C6D9C94C201098CA00AEA963 /* SUPEasyBlankPageView.m in Sources */,
-				C627559C20DA8DC500D0DE8D /* YSCVoiceWaveViewController.m in Sources */,
+				C62755E620DA90C300D0DE8D /* YSCVoiceWaveViewController.m in Sources */,
 				C68B040520176858004B3F51 /* ZFHttpRequest.m in Sources */,
 				C646FE2420B6980D000DCE65 /* SUPUpLoadImagesViewController.m in Sources */,
 				C6D9C92820108A8700AEA963 /* SUPNewViewController.m in Sources */,
@@ -4737,7 +4736,7 @@
 				C6DC23F020BE8C400005BFA1 /* NSArray+Block.m in Sources */,
 				C623C3FD20C4DE8C00BA2B48 /* AffineTransformController.m in Sources */,
 				C6DC244820BE94F50005BFA1 /* JiaShareMenuView.m in Sources */,
-				C627559A20DA8DC500D0DE8D /* YSCloadGifViewController.m in Sources */,
+				C62755E420DA90C300D0DE8D /* YSCloadGifViewController.m in Sources */,
 				C68B041520176EDD004B3F51 /* SUPExpandHeader.m in Sources */,
 				C610F7E420BB94930098D4F9 /* SUPDownLoadFileViewControllerTWO.m in Sources */,
 				C6C124C420C1224F006F212B /* JSCallOCViewController.m in Sources */,
@@ -4772,7 +4771,7 @@
 				C610F7EC20BBCE0D0098D4F9 /* SUPVersionButton.m in Sources */,
 				C646FE2120B6980D000DCE65 /* SUPBaiduPointAnnotation.m in Sources */,
 				C69631032008A4C1006958F7 /* SUPWordArrowItem.m in Sources */,
-				C62755A020DA8DC500D0DE8D /* YSCCircleLoadAnimationViewController.m in Sources */,
+				C62755EA20DA90C300D0DE8D /* YSCCircleLoadAnimationViewController.m in Sources */,
 				C6DC242220BE8C400005BFA1 /* CALayer+UIColor.m in Sources */,
 				C65624AD20CBD2DF0066877E /* QQingSTTBottomVC.m in Sources */,
 				C6DC241C20BE8C400005BFA1 /* CLLocationManager+Blocks.m in Sources */,
@@ -4781,14 +4780,14 @@
 				C69630FA2008A485006958F7 /* SUPStaticTableViewController.m in Sources */,
 				C6DC20D020BCEFA30005BFA1 /* MJDownloadManager.m in Sources */,
 				C646FE2A20B6980D000DCE65 /* SUPAnnotationCustomPopView.m in Sources */,
-				C62755A220DA8DC500D0DE8D /* YSCCircleReplicatorAnimationViewController.m in Sources */,
+				C62755EC20DA90C300D0DE8D /* YSCCircleReplicatorAnimationViewController.m in Sources */,
 				C6DC23FD20BE8C400005BFA1 /* NSObject+AssociatedObject.m in Sources */,
 				C62DEF57200DCB580042A7C7 /* UIWindow+CurrentViewController.m in Sources */,
 				C6DC240320BE8C400005BFA1 /* NSObject+Blocks.m in Sources */,
 				C6DC23FF20BE8C400005BFA1 /* NSObject+MKBlockTimer.m in Sources */,
 				C6DC23D220BE8C3F0005BFA1 /* NSData+zlib.m in Sources */,
 				C6DC23C620BE8C3F0005BFA1 /* NSDictionary+SafeAccess.m in Sources */,
-				C62755A120DA8DC500D0DE8D /* YSCRippleAnimationViewController.m in Sources */,
+				C62755EB20DA90C300D0DE8D /* YSCRippleAnimationViewController.m in Sources */,
 				C6963112200C4593006958F7 /* SUPWebViewController.m in Sources */,
 				C6D7B14320D0E32A002862F0 /* YFCycleView.m in Sources */,
 				C6E71176201894F500336169 /* UIView+Screenshot.m in Sources */,
@@ -4796,7 +4795,7 @@
 				C68B041020176EAF004B3F51 /* SUPCalendarViewController.m in Sources */,
 				C6DC23EA20BE8C400005BFA1 /* NSString+UUID.m in Sources */,
 				C6D9C99E2011DCBA00AEA963 /* SUPBaseRequest.m in Sources */,
-				C627559F20DA8DC500D0DE8D /* YSCMicrophoneWaveViewController.m in Sources */,
+				C62755E920DA90C300D0DE8D /* YSCMicrophoneWaveViewController.m in Sources */,
 				C6DC23C820BE8C3F0005BFA1 /* NSDictionary+Merge.m in Sources */,
 				C62DEF5D200DD5600042A7C7 /* SUPOraceDataBase.m in Sources */,
 				C6DC23E620BE8C400005BFA1 /* NSString+Trims.m in Sources */,
@@ -4806,7 +4805,7 @@
 				C6E7118D2019AAFE00336169 /* SUPMeViewController.m in Sources */,
 				C6D9C9792011CA7D00AEA963 /* SUPElementsFlowLayout.m in Sources */,
 				C6D9C9492010983F00AEA963 /* UIView+SUPConfigBlank.m in Sources */,
-				C627559820DA8DC500D0DE8D /* YSCFireViewController.m in Sources */,
+				C62755E220DA90C300D0DE8D /* YSCFireViewController.m in Sources */,
 				C62DEF47200DC5790042A7C7 /* SUPRunTimeTest.m in Sources */,
 				C68B04382018596E004B3F51 /* SUPIntroductoryPagesHelper.m in Sources */,
 				C62DEF3B200D98710042A7C7 /* SUPTextViewController.m in Sources */,
@@ -4817,7 +4816,7 @@
 				C68800612029977B00950524 /* SUPLoginSuccessViewControlle.m in Sources */,
 				C656249D20CBD2DF0066877E /* NSString+PlaceHolder.m in Sources */,
 				C6E7116D201894F500336169 /* UIView+BlockGesture.m in Sources */,
-				C62755A720DA8DC500D0DE8D /* YSCWaterWaveViewController.m in Sources */,
+				C62755F120DA90C300D0DE8D /* YSCWaterWaveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
