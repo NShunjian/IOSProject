@@ -205,6 +205,8 @@
 //        [self checkVersion:response];
 //    }];
     
+    
+    //
 }
 
 //SWRevealViewController 这是一种侧滑
