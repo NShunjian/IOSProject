@@ -76,6 +76,8 @@
     
     if (self.gotoURL.length > 0) {
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.gotoURL]]];
+    }else if (!SUPIsEmpty(self.contentHTML)) {
+        [self.webView loadHTMLString:self.contentHTML baseURL:nil];
     }
     
 }

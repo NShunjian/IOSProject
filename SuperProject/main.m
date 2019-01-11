@@ -12,7 +12,7 @@ void UncaughtExceptionHandler(NSException *exception);
 int main(int argc, char * argv[]) {
     @autoreleasepool {
           @try {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([SUPAppDelegate class]));
+              return UIApplicationMain(argc, argv, nil, NSStringFromClass([SUPAppDelegate class]));
           }@catch (NSException *exception) {
               
               UncaughtExceptionHandler(exception);

@@ -30,6 +30,7 @@
 @property(nonatomic, strong)BMKMapManager* mapManager;
 @property(nonatomic,strong) MMDrawerController * drawerController;
 @property(nonatomic, strong)CYLTabBarController *tabBarController;
+@property(nonatomic, strong)SUPLoginViewController *login;
 @end
 
 @implementation SUPAppDelegate
@@ -72,9 +73,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //地图
     [self map];
    
-    
     //短信验证
     [SMSSDK enableAppContactFriends:YES];
      [self Hkustxunfei];
@@ -159,8 +160,8 @@
     
     [CYLPlusButtonSubclass registerPlusButton];
     
-    SUPLoginViewController *login = [[SUPLoginViewController alloc]init];
-    self.window.rootViewController = login;
+    self.login = [[SUPLoginViewController alloc]init];
+    self.window.rootViewController = _login;
     [self.window makeKeyAndVisible];
 
 }

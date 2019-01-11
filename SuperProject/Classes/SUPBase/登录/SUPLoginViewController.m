@@ -10,6 +10,7 @@
 #import "SUPAppDelegate.h"
 #import "NetworkTool.h"
 #import "SUPRequestManager.h"
+#import "SUPUMengHelper.h"
 @interface SUPLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *SUPUserNameTextField;
@@ -25,6 +26,10 @@
 //    [(SUPAppDelegate*)AppDelegateInstance setUpHomeViewController];
 }
 - (IBAction)loginButton:(UIButton *)sender {
+    
+    [SUPUMengHelper umengEventCountWithId:@"click1"];
+    
+    
      [(SUPAppDelegate*)AppDelegateInstance setUpHomeViewController];
 //    NSString *username = _SUPUserNameTextField.text;
 //    NSString *psd = _SUPUserPasswordTextField.text;

@@ -161,6 +161,46 @@ DEPENDENCIES:
   - YYText
   - ZJScrollPageView
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - ASIHTTPRequest
+    - BaiduMapKit
+    - BMKLocationKit
+    - CocoaLumberjack
+    - CYLTabBarController
+    - FCUUID
+    - FDFullscreenPopGesture
+    - FMDB
+    - GVUserDefaults
+    - HMQRCodeScanner
+    - IQKeyboardManager
+    - M13ProgressSuite
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - MMDrawerController
+    - mob_smssdk
+    - MOBFoundation
+    - MOFSPickerManager
+    - MQTTClient
+    - pop
+    - Reachability
+    - SDWebImage
+    - SocketRocket
+    - TDTouchID
+    - Toast
+    - TZImagePickerController
+    - UICKeyChainStore
+    - UMengAnalytics-NO-IDFA
+    - UMengUShare
+    - WebViewJavascriptBridge
+    - YYCategories
+    - YYImage
+    - YYText
+    - ZJScrollPageView
+
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
@@ -200,6 +240,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZJScrollPageView: dd8778909cb2413782616ab156e873956f6b0682
 
-PODFILE CHECKSUM: f51523086e84cbfad7de00cd48f00d48f2b63a85
+PODFILE CHECKSUM: 5e9f0a9bb2b38f3037b5129814c05c6180ba6084
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

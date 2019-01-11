@@ -222,8 +222,6 @@
 		C6572AA720CE0CE900615BC4 /* TTSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C6572AA120CE0CE900615BC4 /* TTSConfig.m */; };
 		C6572AAB20CE0D0600615BC4 /* iatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C6572AAA20CE0D0500615BC4 /* iatConfig.m */; };
 		C6572AAE20CE131600615BC4 /* LLSpeakingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6572AAC20CE131400615BC4 /* LLSpeakingView.m */; };
-		C6572AB220CE142D00615BC4 /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6572AB020CE142B00615BC4 /* microphone@2x.png */; };
-		C6572AB320CE142D00615BC4 /* microphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6572AB120CE142D00615BC4 /* microphone@3x.png */; };
 		C6768A1D2024342D00638781 /* SUPMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6768A1B2024342D00638781 /* SUPMessageViewController.m */; };
 		C6768AD02024361900638781 /* UIImageView+FitNet.m in Sources */ = {isa = PBXBuildFile; fileRef = C6768ACF2024361900638781 /* UIImageView+FitNet.m */; };
 		C686B67520CF9DE200CE5D35 /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C686B67320CF9DE000CE5D35 /* microphone@2x.png */; };
@@ -387,8 +385,6 @@
 		C6C1256A20C15C0F006F212B /* WWPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1256920C15C0F006F212B /* WWPickerView.m */; };
 		C6CF38E920D4E9C100F39C5D /* RSA证书 in Resources */ = {isa = PBXBuildFile; fileRef = C6CF38E820D4E9C100F39C5D /* RSA证书 */; };
 		C6CF38F120D5307A00F39C5D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CF38F020D5307A00F39C5D /* Security.framework */; };
-		C6CF392720D53BA500F39C5D /* Snip20180615_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CF392620D53BA400F39C5D /* Snip20180615_4.png */; };
-		C6CF392920D53BD500F39C5D /* readMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6CF392820D53BD400F39C5D /* readMe.txt */; };
 		C6CF394E20D56DDB00F39C5D /* SUPRSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF394C20D56DD800F39C5D /* SUPRSAViewController.m */; };
 		C6CF395820D56EA000F39C5D /* DES3Encryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF395120D56E9F00F39C5D /* DES3Encryptor.m */; };
 		C6CF395920D56EA000F39C5D /* EncryptorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF395220D56E9F00F39C5D /* EncryptorTool.m */; };
@@ -954,8 +950,6 @@
 		C6572AAA20CE0D0500615BC4 /* iatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iatConfig.m; sourceTree = "<group>"; };
 		C6572AAC20CE131400615BC4 /* LLSpeakingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSpeakingView.m; sourceTree = "<group>"; };
 		C6572AAD20CE131600615BC4 /* LLSpeakingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSpeakingView.h; sourceTree = "<group>"; };
-		C6572AB020CE142B00615BC4 /* microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@2x.png"; sourceTree = "<group>"; };
-		C6572AB120CE142D00615BC4 /* microphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@3x.png"; sourceTree = "<group>"; };
 		C65A377A201EEA010066A895 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C65A377C201EEA0B0066A895 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C65A377E201EEA280066A895 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -1219,8 +1213,6 @@
 		C6C1256920C15C0F006F212B /* WWPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPickerView.m; sourceTree = "<group>"; };
 		C6CF38E820D4E9C100F39C5D /* RSA证书 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "RSA证书"; sourceTree = "<group>"; };
 		C6CF38F020D5307A00F39C5D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		C6CF392620D53BA400F39C5D /* Snip20180615_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20180615_4.png; sourceTree = "<group>"; };
-		C6CF392820D53BD400F39C5D /* readMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe.txt; sourceTree = "<group>"; };
 		C6CF394C20D56DD800F39C5D /* SUPRSAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUPRSAViewController.m; sourceTree = "<group>"; };
 		C6CF394D20D56DDB00F39C5D /* SUPRSAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUPRSAViewController.h; sourceTree = "<group>"; };
 		C6CF395020D56E9F00F39C5D /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
@@ -2558,8 +2550,6 @@
 			children = (
 				C6572AAD20CE131600615BC4 /* LLSpeakingView.h */,
 				C6572AAC20CE131400615BC4 /* LLSpeakingView.m */,
-				C6572AB020CE142B00615BC4 /* microphone@2x.png */,
-				C6572AB120CE142D00615BC4 /* microphone@3x.png */,
 				C6572AA920CE0D0400615BC4 /* definition.h */,
 				C6572AA820CE0D0200615BC4 /* iatConfig.h */,
 				C6572AAA20CE0D0500615BC4 /* iatConfig.m */,
@@ -3285,8 +3275,6 @@
 				C6CF394F20D56E9F00F39C5D /* RSATools */,
 				C6CF394D20D56DDB00F39C5D /* SUPRSAViewController.h */,
 				C6CF394C20D56DD800F39C5D /* SUPRSAViewController.m */,
-				C6CF392820D53BD400F39C5D /* readMe.txt */,
-				C6CF392620D53BA400F39C5D /* Snip20180615_4.png */,
 			);
 			name = "RSA 加密解密";
 			path = "SuperProject/Classes/ViewControllerFour/RSA 加密解密";
@@ -4115,7 +4103,6 @@
 				C69630AF2008968E006958F7 /* Sources */,
 				C69630B02008968E006958F7 /* Frameworks */,
 				C69630B12008968E006958F7 /* Resources */,
-				5A6F9CBE6E2DC107D1E05724 /* [CP] Embed Pods Frameworks */,
 				B9BC2E307959D1F9EC7F76E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -4182,7 +4169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C1253720C125AD006F212B /* bootstrap.min.css in Resources */,
-				C6CF392720D53BA500F39C5D /* Snip20180615_4.png in Resources */,
 				C6C1250020C122D0006F212B /* msg.png in Resources */,
 				C623C43C20C4E31E00BA2B48 /* bloom.caf in Resources */,
 				C68B03FD20176858004B3F51 /* ZFPlayer.bundle in Resources */,
@@ -4242,7 +4228,6 @@
 				C623C42F20C4E27500BA2B48 /* chooser-moment-icon-music@2x.png in Resources */,
 				C6C1253F20C125AD006F212B /* glyphicons-halflings-regular.eot in Resources */,
 				C623C42820C4E27500BA2B48 /* chooser-moment-icon-music-highlighted@2x.png in Resources */,
-				C6CF392920D53BD500F39C5D /* readMe.txt in Resources */,
 				C686B67520CF9DE200CE5D35 /* microphone@2x.png in Resources */,
 				C6CF395B20D56EA000F39C5D /* readMe.txt in Resources */,
 				C6C1253C20C125AD006F212B /* bootstrap.js in Resources */,
@@ -4289,7 +4274,6 @@
 				C64AD48C20D921C5008955FF /* fill.png in Resources */,
 				C65624BE20CBD2E70066877E /* sound_icon@2x.png in Resources */,
 				C64AD48D20D921C5008955FF /* secondLine.png in Resources */,
-				C6572AB220CE142D00615BC4 /* microphone@2x.png in Resources */,
 				C6E711442018898900336169 /* SUPGuidePushView.xib in Resources */,
 				C6C124FD20C122D0006F212B /* app2.png in Resources */,
 				C68B044420185CE5004B3F51 /* intro_2.jpg in Resources */,
@@ -4326,7 +4310,6 @@
 				C6C1255820C13258006F212B /* README.md in Resources */,
 				C623C42520C4E27500BA2B48 /* chooser-moment-button-highlighted@2x.png in Resources */,
 				C646FE3620B6A23A000DCE65 /* SUPMQTTViewController.xib in Resources */,
-				C6572AB320CE142D00615BC4 /* microphone@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4349,21 +4332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A6F9CBE6E2DC107D1E05724 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperProject/Pods-SuperProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B9BC2E307959D1F9EC7F76E3 /* [CP] Copy Pods Resources */ = {

@@ -73,7 +73,8 @@ pod 'UMengUShare/Social/QQ'
 pod 'UMengUShare/Social/Sina'
 #统计
 pod 'UMengAnalytics-NO-IDFA'
-
+#pod 'UMCCommon'
+#pod 'UMCSecurityPlugins'
 #SMSSDK
 pod 'mob_smssdk'
 
@@ -104,7 +105,11 @@ pod 'MMDrawerController'
 #数据库
 pod 'FMDB'
 
+# 泡泡uibutton
+#pod 'DWBubbleMenuButton'
 
+# 无限轮播
+#pod 'SDCycleScrollView'
 
 
 
