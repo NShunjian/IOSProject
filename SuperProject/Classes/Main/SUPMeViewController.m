@@ -24,6 +24,7 @@
 @property (weak, nonatomic) UIButton *shareBtn;
 
 @property (nonatomic,weak)UIButton *SMSBtn;
+@property (nonatomic,weak)UIButton *alipay;
 
 @property(nonatomic,strong) UIView *viewAnima; //装 滚动视图的容器
 @property(nonatomic,weak) UILabel *customLab;
@@ -56,7 +57,7 @@
                                                   target:self selector:@selector(changePos)
                                                 userInfo:nil repeats:YES];
 
-    NSArray<UIButton *> *btns = @[self.shareBtn, self.SinaLoginBtn, self.QQLoginBtn, self.WXLoginBtn,self.SMSBtn];
+    NSArray<UIButton *> *btns = @[self.shareBtn, self.SinaLoginBtn, self.QQLoginBtn, self.WXLoginBtn,self.SMSBtn,self.alipay];
     
     [btns mas_distributeViewsAlongAxis:MASAxisTypeVertical withFixedItemLength:44 leadSpacing:150 tailSpacing:200];
     
@@ -279,6 +280,45 @@
     }
     return _SMSBtn;
 }
+
+
+
+
+
+- (UIButton *)alipay
+{
+    if(_alipay == nil)
+    {
+        UIButton *loginBtn = [[UIButton alloc] init];
+        [loginBtn setTitle:@"支付宝" forState:UIControlStateNormal];
+        
+        [loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        [loginBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+        
+        
+        [loginBtn addTarget:self action:@selector(alipayBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view addSubview:loginBtn];
+        
+        
+        loginBtn.titleLabel.font = AdaptedFontSize(20);
+        
+        [loginBtn setBackgroundColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [loginBtn setBackgroundColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        
+        _alipay = loginBtn;
+        
+    }
+    return _alipay;
+}
+
+#pragma mark 支付宝
+-(void)alipayBtnClick:(UIButton *)loginBtn{
+   
+}
+
+
 
 #pragma mark 短信验证
 
